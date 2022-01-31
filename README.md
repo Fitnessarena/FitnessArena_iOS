@@ -1,1 +1,1 @@
-# FitnessArena_iOS
+# FitnessApp
