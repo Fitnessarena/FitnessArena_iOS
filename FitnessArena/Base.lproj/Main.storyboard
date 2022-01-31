@@ -914,11 +914,11 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="WIO-ZF-QM7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Lh-Um-7C8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7S-P3-VFY">
-                                <rect key="frame" x="20" y="50" width="374" height="40"/>
+                                <rect key="frame" x="20" y="94" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Gz-Hw-Hp9"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="9Cc-yl-SU1"/>
@@ -948,11 +948,11 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="0Yq-WB-rBE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQ7-a1-PEJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sso-EN-Qf1">
-                                <rect key="frame" x="20" y="63" width="374" height="40"/>
+                                <rect key="frame" x="20" y="107" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aEI-ta-Ngc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="hAa-ZE-c7O"/>
@@ -4679,7 +4679,7 @@
         <segue reference="EAu-GY-VPf"/>
         <segue reference="IID-mm-JAJ"/>
         <segue reference="IvN-uk-txY"/>
-        <segue reference="sU3-ja-TzC"/>
+        <segue reference="KLY-q4-wWn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Abdominals" width="48" height="48"/>

@@ -19,6 +19,10 @@ class ForgotPasswordViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    class func identifier() -> ForgotPasswordViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
+    }
+    
     @IBAction func sendButtonTapped(_ sender: Any) {
         let auth = Auth.auth()
         

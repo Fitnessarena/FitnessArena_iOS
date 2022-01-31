@@ -58,6 +58,7 @@
 		41BDBC6C2768126500E23F78 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBC6B2768126500E23F78 /* Utilities.swift */; };
 		41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBCAA2768694400E23F78 /* CardioViewController.swift */; };
 		551EE4E2B57CD7B4403151CE /* Pods_FitnessArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */; };
+		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		44BB24AA7373D5BCECBF73CD /* Pods-FitnessArena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessArena.release.xcconfig"; path = "Target Support Files/Pods-FitnessArena/Pods-FitnessArena.release.xcconfig"; sourceTree = "<group>"; };
 		9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessArena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBFA123D61C03CB71ECC6FF /* Pods-FitnessArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessArena.debug.xcconfig"; path = "Target Support Files/Pods-FitnessArena/Pods-FitnessArena.debug.xcconfig"; sourceTree = "<group>"; };
+		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				41BDBC9E276865F400E23F78 /* Nutrition */,
 				415D30E12768F55A001AA95E /* CustomViewController.swift */,
 				415D30E32768F568001AA95E /* SleepTrackerViewController.swift */,
+				BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				41BDBC6827680A6200E23F78 /* ProfileViewController.swift in Sources */,
 				323462CE27A2EB2A001519AE /* ArmsDetailViewController.swift in Sources */,
 				41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */,
+				BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */,
 				415D30DE2768F508001AA95E /* weightsViewController.swift in Sources */,
 				41BDBC4D2768084000E23F78 /* SceneDelegate.swift in Sources */,
 				41BDBC6C2768126500E23F78 /* Utilities.swift in Sources */,

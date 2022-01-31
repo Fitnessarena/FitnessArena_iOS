@@ -23,6 +23,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    class func identifier() -> LoginViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+    }
+    
     func validateFields() -> String? {
         
         // Check that all fields are filled in
@@ -79,7 +83,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func ForgotPasswordTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "ForgotPasswordSegue", sender: nil)
+        
+        let vc = ForgotPasswordViewController.identifier()
+        vc.emailTextField = self.emailTextField
+        self.push(vc: vc)
+        
     }
     
     
