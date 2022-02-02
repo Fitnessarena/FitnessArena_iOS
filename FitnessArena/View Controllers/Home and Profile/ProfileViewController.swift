@@ -113,6 +113,6 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeScreenSegue", sender: nil)
+        self.popController(vc: nil)
     }
 }

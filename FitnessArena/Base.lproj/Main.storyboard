@@ -1302,7 +1302,7 @@
         <!--Nutrition View Controller-->
         <scene sceneID="Tog-bl-KQo">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="fTA-PX-Ktr" customClass="NutritionViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NutritionViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="fTA-PX-Ktr" customClass="NutritionViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5U-48-jEs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2119,7 +2119,6 @@
                         <outlet property="lastNameTextField" destination="lFQ-JZ-O4Y" id="nEK-lM-eba"/>
                         <outlet property="passwordTextField" destination="2nF-va-08m" id="1gV-HX-Nj4"/>
                         <outlet property="phoneTextField" destination="taa-dC-KlT" id="KdG-My-0Gc"/>
-                        <segue destination="xYc-s4-CsQ" kind="show" identifier="homeScreenSegue" id="mp7-Pp-LoT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeB-ke-btc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -4936,7 +4935,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Cbd-zK-UUD"/>
-        <segue reference="XvB-D5-7pj"/>
+        <segue reference="SNI-uA-3rt"/>
         <segue reference="vL3-j7-C5D"/>
         <segue reference="EtU-gm-xaz"/>
         <segue reference="7v1-CQ-3Cg"/>
@@ -4948,7 +4947,7 @@
         <segue reference="B91-OZ-Y69"/>
         <segue reference="AZ2-im-E7d"/>
         <segue reference="pk5-cB-fPr"/>
-        <segue reference="mp7-Pp-LoT"/>
+        <segue reference="9DT-Is-mKJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Abdominals" width="48" height="48"/>
