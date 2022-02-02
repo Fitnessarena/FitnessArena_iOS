@@ -85,8 +85,12 @@ class SignUpViewController: UIViewController {
                     ])
                     // Transition to the home screen
                     
-                    defaults.set(true, forKey: "isUserSignedIn")
-                    self.performSegue(withIdentifier: "UserSignedUpSegue", sender: nil)
+                    //PREVIOUS CODE TO GO TO HOME
+//                    defaults.set(true, forKey: "isUserSignedIn")
+//                    self.performSegue(withIdentifier: "UserSignedUpSegue", sender: nil)
+                    
+                    //NEW CODE - GO BACK TO LOGIN PAGE
+                    self.popController(vc: nil)
                 } else {
                     self.present(Utilities.createAlertController(title: "Cannot Sign Up", message: "Please check entered Fields"), animated: true, completion: nil)
                 }

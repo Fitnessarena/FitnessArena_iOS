@@ -135,7 +135,6 @@
                         <outlet property="PasswordTextField" destination="voF-li-IIe" id="CFo-qr-4yz"/>
                         <outlet property="emailTextField" destination="uoc-FF-oos" id="BFv-B4-8Nz"/>
                         <segue destination="xRg-gQ-w6L" kind="show" identifier="UserLoggedInSegue" id="Bt8-RK-OkS"/>
-                        <segue destination="WkW-mn-ypq" kind="show" identifier="ForgotPasswordSegue" id="gqf-86-64d"/>
                         <segue destination="QoJ-DM-TnF" kind="show" identifier="UserSignedUpSegue" id="K8W-fh-guU"/>
                     </connections>
                 </viewController>
@@ -1853,7 +1852,7 @@
         <!--Forgot Password View Controller-->
         <scene sceneID="4sC-pL-aDM">
             <objects>
-                <viewController id="WkW-mn-ypq" customClass="ForgotPasswordViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="WkW-mn-ypq" customClass="ForgotPasswordViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nJ0-46-ilF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1862,7 +1861,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-lG-xSo">
-                                <rect key="frame" x="20" y="138" width="374" height="160"/>
+                                <rect key="frame" x="20" y="94" width="374" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOv-j9-JiG">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>

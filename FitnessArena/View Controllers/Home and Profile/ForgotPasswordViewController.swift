@@ -10,13 +10,16 @@ import Firebase
 
 class ForgotPasswordViewController: UIViewController {
     
+    var email = ""
     
     @IBOutlet weak var emailTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if self.email != "" {
+            self.emailTextField.text = email
+        }
     }
     
     class func identifier() -> ForgotPasswordViewController {

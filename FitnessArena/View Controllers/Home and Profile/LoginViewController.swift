@@ -85,7 +85,7 @@ class LoginViewController: UIViewController {
     @IBAction func ForgotPasswordTapped(_ sender: Any) {
         
         let vc = ForgotPasswordViewController.identifier()
-        vc.emailTextField = self.emailTextField
+        vc.email = self.emailTextField.text ?? ""
         self.push(vc: vc)
         
     }
