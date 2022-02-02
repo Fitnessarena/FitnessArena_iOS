@@ -2490,7 +2490,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="heart-unfilled" title=" "/>
                                         <connections>
-                                            <action selector="favouriteButtonTapped:" destination="bgQ-Oq-41v" eventType="touchUpInside" id="Rmd-c6-7Q5"/>
+                                            <action selector="favouriteButtonTapped:" destination="bgQ-Oq-41v" eventType="touchUpInside" id="o4V-bO-ZK9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2555,11 +2555,10 @@
                     <connections>
                         <outlet property="backBtn" destination="ZGx-H6-fWJ" id="wKW-no-aGe"/>
                         <outlet property="detailList" destination="VBa-eX-d1F" id="7Ug-bK-CCy"/>
-                        <outlet property="favouriteBtn" destination="auZ-Pr-yC8" id="riY-RB-L3h"/>
+                        <outlet property="favouriteBtn" destination="auZ-Pr-yC8" id="9hu-yf-a5q"/>
                         <outlet property="homeBtn" destination="1SL-MT-Mp6" id="iM1-Hw-mAe"/>
                         <outlet property="imageView" destination="DSA-Y0-Jbi" id="3gT-XY-ev0"/>
                         <outlet property="labeltxt" destination="UkU-c8-pHa" id="NBd-Rv-hBX"/>
-                        <segue destination="7xJ-8U-4xm" kind="show" identifier="backSegue" id="7v1-CQ-3Cg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgH-Hu-yie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -4938,7 +4937,6 @@
         <segue reference="SNI-uA-3rt"/>
         <segue reference="vL3-j7-C5D"/>
         <segue reference="EtU-gm-xaz"/>
-        <segue reference="7v1-CQ-3Cg"/>
         <segue reference="kwJ-Jk-xN7"/>
         <segue reference="tIR-Vh-B5c"/>
         <segue reference="CVT-le-fJc"/>
@@ -4946,7 +4944,7 @@
         <segue reference="vZD-pl-8LH"/>
         <segue reference="B91-OZ-Y69"/>
         <segue reference="AZ2-im-E7d"/>
-        <segue reference="pk5-cB-fPr"/>
+        <segue reference="9LB-2y-lQx"/>
         <segue reference="9DT-Is-mKJ"/>
     </inferredMetricsTieBreakers>
     <resources>

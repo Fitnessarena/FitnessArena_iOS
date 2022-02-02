@@ -48,7 +48,8 @@ class WeightsViewController: UIViewController {
     }
     
     @IBAction func armsButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "armsSegue", sender: nil)
+        let vc = ArmsViewController.identifier()
+        self.push(vc: vc)
     }
     @IBAction func chestButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "chestSegue", sender: nil)

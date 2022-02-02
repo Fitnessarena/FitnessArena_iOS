@@ -59,8 +59,6 @@ class FavouritesDetailViewController: UIViewController {
             // show the alert
             self.present(alert, animated: true, completion: nil)
         }
-        
-        
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
