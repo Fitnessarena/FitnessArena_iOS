@@ -257,7 +257,7 @@
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="nutritionButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="lwZ-dn-1k6"/>
+                                                            <action selector="favouritesButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="0pq-Z0-5lX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -4711,20 +4711,20 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SNI-uA-3rt"/>
+        <segue reference="XvB-D5-7pj"/>
         <segue reference="vL3-j7-C5D"/>
-        <segue reference="EtU-gm-xaz"/>
-        <segue reference="Wkc-l8-duf"/>
-        <segue reference="LSc-aM-Eg9"/>
-        <segue reference="kwJ-Jk-xN7"/>
-        <segue reference="tIR-Vh-B5c"/>
+        <segue reference="90w-h1-ljl"/>
+        <segue reference="7v1-CQ-3Cg"/>
+        <segue reference="cMR-Nj-AcN"/>
+        <segue reference="MAQ-AJ-ruN"/>
+        <segue reference="Jsa-lN-dkb"/>
         <segue reference="CVT-le-fJc"/>
-        <segue reference="3HY-o3-6Ug"/>
+        <segue reference="G1x-Pz-kvC"/>
         <segue reference="loy-Vf-FFk"/>
-        <segue reference="B91-OZ-Y69"/>
-        <segue reference="AZ2-im-E7d"/>
+        <segue reference="EAu-GY-VPf"/>
+        <segue reference="IID-mm-JAJ"/>
         <segue reference="IvN-uk-txY"/>
-        <segue reference="WMM-oJ-Zxl"/>
+        <segue reference="9DT-Is-mKJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Abdominals" width="48" height="48"/>

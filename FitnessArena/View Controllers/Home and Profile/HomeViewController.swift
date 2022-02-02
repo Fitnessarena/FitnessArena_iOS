@@ -33,8 +33,8 @@ class HomeViewController: UIViewController {
     @IBAction func nutritionButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "nutritionScreenSegue", sender: nil)
     }
-    @IBAction func sleepTrackerButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "sleepNutritionScreenSegue", sender: nil)
+    @IBAction func favouritesButtonTapped(_ sender: Any) {
+        self.push(vc: FavouritesViewController.identifier())
     }
     @IBAction func customButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "customScreenSegue", sender: nil)

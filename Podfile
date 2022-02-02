@@ -15,4 +15,7 @@ pod 'Firebase/Database'
 
 #ADMOB
 pod 'Google-Mobile-Ads-SDK'
+
+# Object Mapping
+pod 'ObjectMapper'
 end
