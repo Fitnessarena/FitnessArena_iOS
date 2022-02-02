@@ -36,8 +36,17 @@ class ForgotPasswordViewController: UIViewController {
                 return
             }
             
-            let alert = Utilities.createAlertController(title: "Hurray", message: "A password reset email has been sent!")
+            let alert = UIAlertController(title: "Hurray", message: "Resent link sent to your email id.", preferredStyle: UIAlertController.Style.alert)
+            
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
+                // do something like...
+                self.popController(vc: nil)
+                
+            }))
+            // show the alert
             self.present(alert, animated: true, completion: nil)
+            
         }
  
     }
