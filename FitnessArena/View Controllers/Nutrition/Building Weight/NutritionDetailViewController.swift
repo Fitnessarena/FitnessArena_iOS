@@ -35,7 +35,7 @@ class NutritionDetailViewController: UIViewController {
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeSegue", sender: nil)
+        self.popToRootVC()
     }
     
 

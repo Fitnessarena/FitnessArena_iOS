@@ -31,14 +31,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window?.rootViewController = nav
                 self.window?.makeKeyAndVisible()
             } else {
-                
                 let nav: LoginNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginNavigationController") as! LoginNavigationController
                 let obj = LoginViewController.identifier()
                 nav.setViewControllers([obj], animated: false)
                 nav.isNavigationBarHidden = true
                 self.window?.rootViewController = nav
                 self.window?.makeKeyAndVisible()
-                
             }
         } else {
             let nav: LoginNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginNavigationController") as! LoginNavigationController

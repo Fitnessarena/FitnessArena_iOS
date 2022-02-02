@@ -7,7 +7,7 @@
 
 import UIKit
 
-class weightsViewController: UIViewController {
+class WeightsViewController: UIViewController {
 
     @IBOutlet weak var buttonTxt: UIButton!
     @IBOutlet weak var backLabel: UIButton!

@@ -32,7 +32,7 @@ class ChestDetailViewController: UIViewController {
         imageView.image = images
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeSegue", sender: nil)
+        self.popToRootVC()
     }
     @IBAction func backButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "backSegue", sender: nil)

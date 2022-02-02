@@ -35,6 +35,6 @@ class LegsDetailViewController: UIViewController {
         self.performSegue(withIdentifier: "backSegue", sender: nil)
     }
     @IBAction func homeButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeSegue", sender: nil)
+        self.popToRootVC()
     }
 }

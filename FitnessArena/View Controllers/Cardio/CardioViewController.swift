@@ -109,7 +109,7 @@ class CardioViewController: UIViewController {
     }
 
     @IBAction func cardioBackTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeSegue", sender: nil)
+        self.popToRootVC()
     }
 }
 
