@@ -83,14 +83,17 @@ class SignUpViewController: UIViewController {
                         "email" : email,
                         "mobile" : mobile
                     ])
-                    // Transition to the home screen
                     
-                    //PREVIOUS CODE TO GO TO HOME
-//                    defaults.set(true, forKey: "isUserSignedIn")
-//                    self.performSegue(withIdentifier: "UserSignedUpSegue", sender: nil)
+                    let alert = UIAlertController(title: "Hurray", message: "Signed-up successfully.", preferredStyle: UIAlertController.Style.alert)
                     
-                    //NEW CODE - GO BACK TO LOGIN PAGE
-                    self.popController(vc: nil)
+                    // add the actions (buttons)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
+                        // do something like...
+                        self.popController(vc: nil)
+                        
+                    }))
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 } else {
                     self.present(Utilities.createAlertController(title: "Cannot Sign Up", message: "Please check entered Fields"), animated: true, completion: nil)
                 }

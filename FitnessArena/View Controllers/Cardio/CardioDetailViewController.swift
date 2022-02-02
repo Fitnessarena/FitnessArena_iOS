@@ -14,11 +14,10 @@ class CardioDetailViewController: UIViewController {
     @IBOutlet weak var detailList: UITextView!
     @IBOutlet weak var backLabel: UIButton!
     @IBOutlet weak var homeLabel: UIButton!
-    
-    
-    
+        
     var name = ""
     var details = ""
+    var category = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

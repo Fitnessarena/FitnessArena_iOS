@@ -25,13 +25,19 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func cardioButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "cardioScreenSegue", sender: nil)
+        let vc = CardioViewController.identifier()
+        vc.category = "Cardio"
+        self.push(vc: vc)
     }
     @IBAction func weightsButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "weightsScreenSegue", sender: nil)
+        let vc = WeightsViewController.identifier()
+        vc.category = "Weights"
+        self.push(vc: vc)
     }
     @IBAction func nutritionButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "nutritionScreenSegue", sender: nil)
+        let vc = CardioViewController.identifier()
+        vc.category = "Nutrition"
+        self.push(vc: vc)
     }
     @IBAction func favouritesButtonTapped(_ sender: Any) {
         self.push(vc: FavouritesViewController.identifier())
@@ -40,7 +46,8 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "customScreenSegue", sender: nil)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "ProfileSegue", sender: nil)
+        let vc = ProfileViewController.identifier()
+        self.push(vc: vc)
     }
     
 }

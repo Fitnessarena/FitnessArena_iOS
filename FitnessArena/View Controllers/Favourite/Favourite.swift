@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-//import ObjectMapper
+import ObjectMapper
 
 class Favourite: NSObject, Mappable, NSCopying, NSCoding {
     

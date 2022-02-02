@@ -13,8 +13,6 @@ import FirebaseDatabase
 
 class ProfileViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var backLabel: UIButton!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -30,8 +28,10 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.backLabel.setTitle("", for: .normal)
         self.getUserProfile()
-        
-        
+    }
+    
+    class func identifier() -> ProfileViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
     }
     
     func getUserProfile() {
@@ -56,6 +56,7 @@ class ProfileViewController: UIViewController {
         })
         
     }
+    
     func validateFields() -> String? {
         
         // Check that all fields are filled in

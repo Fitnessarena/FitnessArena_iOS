@@ -17,6 +17,7 @@ class WeightsViewController: UIViewController {
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var absBtn: UIButton!
     
+    var category = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,10 @@ class WeightsViewController: UIViewController {
         absBtn.layer.cornerRadius = 25.0
         
         // Do any additional setup after loading the view.
+    }
+    
+    class func identifier() -> WeightsViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WeightsViewController") as! WeightsViewController
     }
     
     @IBAction func weightsBackBtnTapped(_ sender: Any) {

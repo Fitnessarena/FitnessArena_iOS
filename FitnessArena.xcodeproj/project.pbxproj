@@ -60,6 +60,8 @@
 		BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47427AA13380014F5DC /* HomeNavigationController.swift */; };
 		BA35A47827AA6A3B0014F5DC /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */; };
 		BA35A47A27AA71CC0014F5DC /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47927AA71CC0014F5DC /* Favourite.swift */; };
+		BA35A47D27AA81BA0014F5DC /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47C27AA81BA0014F5DC /* FavouriteTableViewCell.swift */; };
+		BA35A47F27AA880F0014F5DC /* FavouritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */; };
 		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,8 @@
 		BA35A47427AA13380014F5DC /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		BA35A47927AA71CC0014F5DC /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		BA35A47C27AA81BA0014F5DC /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDetailViewController.swift; sourceTree = "<group>"; };
 		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +210,7 @@
 		41BDBC5E27680A2300E23F78 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA35A47B27AA81A20014F5DC /* Favourite */,
 				BA35A47627AA1EED0014F5DC /* Extensions */,
 				BA35A47127AA12DC0014F5DC /* NavigationControllers */,
 				41BDBCA52768660F00E23F78 /* Home and Profile */,
@@ -313,8 +318,6 @@
 				41BDBC6327680A5200E23F78 /* ForgotPasswordViewController.swift */,
 				41BDBC6527680A5A00E23F78 /* HomeViewController.swift */,
 				41BDBC6727680A6200E23F78 /* ProfileViewController.swift */,
-				BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */,
-				BA35A47927AA71CC0014F5DC /* Favourite.swift */,
 			);
 			path = "Home and Profile";
 			sourceTree = "<group>";
@@ -343,6 +346,17 @@
 				BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA35A47B27AA81A20014F5DC /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				BA35A47927AA71CC0014F5DC /* Favourite.swift */,
+				BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */,
+				BA35A47C27AA81BA0014F5DC /* FavouriteTableViewCell.swift */,
+				BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */,
+			);
+			path = Favourite;
 			sourceTree = "<group>";
 		};
 		DD9A767ADF5166E331DFE3C6 /* Frameworks */ = {
@@ -512,9 +526,11 @@
 				415D30E62768FC81001AA95E /* CardioTableViewCell.swift in Sources */,
 				415D30F6276962B6001AA95E /* BackViewController.swift in Sources */,
 				32890EFF2797432100B76B2B /* lunchBMViewController.swift in Sources */,
+				BA35A47D27AA81BA0014F5DC /* FavouriteTableViewCell.swift in Sources */,
 				32890EF32797426E00B76B2B /* LunchWLViewController.swift in Sources */,
 				32890EE927970C5C00B76B2B /* WeightLossViewController.swift in Sources */,
 				32890EF9279742B200B76B2B /* IntermittentFastingViewController.swift in Sources */,
+				BA35A47F27AA880F0014F5DC /* FavouritesDetailViewController.swift in Sources */,
 				415D30F027696295001AA95E /* ChestViewController.swift in Sources */,
 				415D30EC2769165A001AA95E /* NutritionDetailViewController.swift in Sources */,
 				32890EEB279712FA00B76B2B /* BuildingMuscleViewController.swift in Sources */,

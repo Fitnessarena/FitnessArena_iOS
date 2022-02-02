@@ -10,6 +10,7 @@ import UIKit
 class CardioViewController: UIViewController {
     
     @IBOutlet weak var backTapped: UIButton!
+    
     var name = ["Cycling","Elliptical","Jogging","Jump rope", "Rowing", "Step machine", "Swimming", "Tennis", "Treadmill"]
     
     var detailsname = ["""
@@ -89,8 +90,12 @@ class CardioViewController: UIViewController {
 
                         Increasing the incline actually requires more muscle activation than running on a level terrain. You build more than just your leg muscles – your core stabilizer muscles also get worked out. An increase in incline also results in improved bone density, increased cardiovascular fitness, and stamina.
                     """]
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cardioButton: UIButton!
+    
+    var category = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.backTapped.setTitle("", for: .normal)
@@ -99,11 +104,16 @@ class CardioViewController: UIViewController {
 
     }
     
+    class func identifier() -> CardioViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardioViewController") as! CardioViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CardioDetails") as? CardioDetailViewController{
             vc.name = self.name[indexPath.row]
             vc.details = self.detailsname[indexPath.row]
-            self.navigationController?.pushViewController(vc, animated: true)
+            vc.category = self.category
+            self.push(vc: vc)
         }
 
     }
