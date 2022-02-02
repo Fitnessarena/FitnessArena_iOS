@@ -20,6 +20,9 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    class func identifier() -> HomeViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+    }
     
     @IBAction func cardioButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "cardioScreenSegue", sender: nil)

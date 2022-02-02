@@ -10,6 +10,14 @@ import UIKit
 
 extension UIViewController {
     
+    func giveAlertToUser(message: String){
+        let  alertController = UIAlertController(title: "FitnessArena", message: message, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     func push(vc: UIViewController) {
         self.navigationController?.pushViewController(vc, animated: true)
     }

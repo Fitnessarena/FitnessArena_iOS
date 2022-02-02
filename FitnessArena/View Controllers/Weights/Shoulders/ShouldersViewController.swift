@@ -777,13 +777,17 @@ Hold for a few seconds, then return to the starting position.
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ShoulderDetail") as? ShouldersDetailViewController{
-            vc.name = self.data[currenttableView][indexPath.row]
-           vc.details = self.details[currenttableView][indexPath.row]
-            vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            if self.data[currenttableView][indexPath.row] != "No Results Found" {
+                vc.name = self.data[currenttableView][indexPath.row]
+               vc.details = self.details[currenttableView][indexPath.row]
+                vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                self.giveAlertToUser(message: "Details page not available")
+                print("No Results found")
+            }
         }
-
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -58,6 +58,8 @@
 		551EE4E2B57CD7B4403151CE /* Pods_FitnessArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */; };
 		BA14F6A327A854F200858758 /* ArmsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14F6A127A854F200858758 /* ArmsDetailViewController.swift */; };
 		BA14F6A427A854F200858758 /* ArmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14F6A227A854F200858758 /* ArmsViewController.swift */; };
+		BA35A47327AA13210014F5DC /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47227AA13210014F5DC /* LoginNavigationController.swift */; };
+		BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47427AA13380014F5DC /* HomeNavigationController.swift */; };
 		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,8 @@
 		AFBFA123D61C03CB71ECC6FF /* Pods-FitnessArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessArena.debug.xcconfig"; path = "Target Support Files/Pods-FitnessArena/Pods-FitnessArena.debug.xcconfig"; sourceTree = "<group>"; };
 		BA14F6A127A854F200858758 /* ArmsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsDetailViewController.swift; sourceTree = "<group>"; };
 		BA14F6A227A854F200858758 /* ArmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsViewController.swift; sourceTree = "<group>"; };
+		BA35A47227AA13210014F5DC /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		BA35A47427AA13380014F5DC /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,7 @@
 		41BDBC5E27680A2300E23F78 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA35A47127AA12DC0014F5DC /* NavigationControllers */,
 				41BDBCA52768660F00E23F78 /* Home and Profile */,
 				41BDBC6F276865C300E23F78 /* Cardio */,
 				41BDBC76276865CE00E23F78 /* Weights */,
@@ -321,6 +326,15 @@
 				44BB24AA7373D5BCECBF73CD /* Pods-FitnessArena.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA35A47127AA12DC0014F5DC /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA35A47227AA13210014F5DC /* LoginNavigationController.swift */,
+				BA35A47427AA13380014F5DC /* HomeNavigationController.swift */,
+			);
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 		DD9A767ADF5166E331DFE3C6 /* Frameworks */ = {
@@ -454,6 +468,7 @@
 				32890EF52797427900B76B2B /* pmSnackWLViewController.swift in Sources */,
 				41BDBC6027680A3C00E23F78 /* LoginViewController.swift in Sources */,
 				32890EE72796FE9000B76B2B /* NutriViewController.swift in Sources */,
+				BA35A47327AA13210014F5DC /* LoginNavigationController.swift in Sources */,
 				415D30E82768FC96001AA95E /* CardioDetailViewController.swift in Sources */,
 				41BDBC6427680A5200E23F78 /* ForgotPasswordViewController.swift in Sources */,
 				415D30E02768F528001AA95E /* NutritionViewController.swift in Sources */,
@@ -477,6 +492,7 @@
 				41BDBC6827680A6200E23F78 /* ProfileViewController.swift in Sources */,
 				41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */,
 				BA14F6A327A854F200858758 /* ArmsDetailViewController.swift in Sources */,
+				BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */,
 				BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */,
 				415D30DE2768F508001AA95E /* weightsViewController.swift in Sources */,
 				41BDBC4D2768084000E23F78 /* SceneDelegate.swift in Sources */,

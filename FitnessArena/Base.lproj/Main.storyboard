@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Home View Controller-->
         <scene sceneID="3p1-ZH-i4s">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="xYc-s4-CsQ" customClass="HomeViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="xYc-s4-CsQ" customClass="HomeViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="040-pD-aBP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R14-G8-jN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717" y="84"/>
+            <point key="canvasLocation" x="2754" y="84"/>
         </scene>
         <!--Weights View Controller-->
         <scene sceneID="SwN-Hg-mKB">
@@ -913,11 +913,11 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="WIO-ZF-QM7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Lh-Um-7C8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7S-P3-VFY">
-                                <rect key="frame" x="20" y="94" width="374" height="40"/>
+                                <rect key="frame" x="20" y="50" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Gz-Hw-Hp9"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="9Cc-yl-SU1"/>
@@ -947,11 +947,11 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="0Yq-WB-rBE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQ7-a1-PEJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sso-EN-Qf1">
-                                <rect key="frame" x="20" y="107" width="374" height="40"/>
+                                <rect key="frame" x="20" y="63" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aEI-ta-Ngc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="hAa-ZE-c7O"/>
@@ -2761,10 +2761,10 @@
             </objects>
             <point key="canvasLocation" x="5486.9565217391309" y="752.67857142857144"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="OQA-4x-ZEV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P24-bo-5Wv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="P24-bo-5Wv" customClass="LoginNavigationController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3p8-QF-eJf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2779,10 +2779,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home Navigation Controller-->
         <scene sceneID="mTx-mh-74j">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" navigationBarHidden="YES" id="xRg-gQ-w6L" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" navigationBarHidden="YES" id="xRg-gQ-w6L" customClass="HomeNavigationController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xxZ-QF-5Vw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Rz-uq-SvP">
@@ -4667,18 +4667,18 @@
     <inferredMetricsTieBreakers>
         <segue reference="SNI-uA-3rt"/>
         <segue reference="Bt8-RK-OkS"/>
-        <segue reference="90w-h1-ljl"/>
-        <segue reference="7v1-CQ-3Cg"/>
+        <segue reference="EtU-gm-xaz"/>
+        <segue reference="Wkc-l8-duf"/>
         <segue reference="LSc-aM-Eg9"/>
-        <segue reference="MAQ-AJ-ruN"/>
-        <segue reference="Jsa-lN-dkb"/>
+        <segue reference="kwJ-Jk-xN7"/>
+        <segue reference="tIR-Vh-B5c"/>
         <segue reference="CVT-le-fJc"/>
         <segue reference="DCk-94-bFB"/>
         <segue reference="loy-Vf-FFk"/>
-        <segue reference="EAu-GY-VPf"/>
-        <segue reference="IID-mm-JAJ"/>
+        <segue reference="B91-OZ-Y69"/>
+        <segue reference="AZ2-im-E7d"/>
         <segue reference="IvN-uk-txY"/>
-        <segue reference="KLY-q4-wWn"/>
+        <segue reference="WMM-oJ-Zxl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Abdominals" width="48" height="48"/>
