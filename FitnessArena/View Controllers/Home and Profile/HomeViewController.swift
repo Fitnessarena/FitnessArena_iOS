@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         self.push(vc: vc)
     }
     @IBAction func nutritionButtonTapped(_ sender: Any) {
-        let vc = CardioViewController.identifier()
+        let vc = NutritionViewController.identifier()
         vc.category = "Nutrition"
         self.push(vc: vc)
     }

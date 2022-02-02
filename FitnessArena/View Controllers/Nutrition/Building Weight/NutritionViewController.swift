@@ -100,6 +100,10 @@ class NutritionViewController: UIViewController {
         //tableView.coordinateSpace = 10
     }
     
+    class func identifier() -> NutritionViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NutritionViewController") as! NutritionViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "NutritionDetails") as? NutritionDetailViewController{
             vc.nutritionName = self.name[indexPath.row]
