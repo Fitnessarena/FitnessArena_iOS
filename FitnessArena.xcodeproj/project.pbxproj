@@ -206,6 +206,7 @@
 		41BDBC5E27680A2300E23F78 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA35A47627AA1EED0014F5DC /* Extensions */,
 				BA35A47127AA12DC0014F5DC /* NavigationControllers */,
 				41BDBCA52768660F00E23F78 /* Home and Profile */,
 				41BDBC6F276865C300E23F78 /* Cardio */,
@@ -213,7 +214,6 @@
 				41BDBC9E276865F400E23F78 /* Nutrition */,
 				415D30E12768F55A001AA95E /* CustomViewController.swift */,
 				415D30E32768F568001AA95E /* SleepTrackerViewController.swift */,
-				BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -335,6 +335,14 @@
 				BA35A47427AA13380014F5DC /* HomeNavigationController.swift */,
 			);
 			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		BA35A47627AA1EED0014F5DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DD9A767ADF5166E331DFE3C6 /* Frameworks */ = {

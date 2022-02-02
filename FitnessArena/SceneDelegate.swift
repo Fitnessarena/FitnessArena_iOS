@@ -5,6 +5,7 @@
 //  Created by Akshay on 2021-12-13.
 //
 
+import Foundation
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -20,8 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func setRootViewController() {
         
-        
-        if defaults.value(forKey: "isUserSignedIn") as! Bool == true {
+        if defaults.valueExists(forKey: "isUserSignedIn") {
+            if defaults.value(forKey: "isUserSignedIn") as! Bool == true {
                 // Move to HomeVC
                 let nav: HomeNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController") as! HomeNavigationController
                 let obj = HomeViewController.identifier()
@@ -39,7 +40,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window?.makeKeyAndVisible()
                 
             }
+        } else {
+            let nav: LoginNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginNavigationController") as! LoginNavigationController
+            let obj = LoginViewController.identifier()
+            nav.setViewControllers([obj], animated: false)
+            nav.isNavigationBarHidden = true
+            self.window?.rootViewController = nav
+            self.window?.makeKeyAndVisible()
         }
+    }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
@@ -71,3 +80,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension UserDefaults {
+
+    func valueExists(forKey key: String) -> Bool {
+        return object(forKey: key) != nil
+    }
+
+}
