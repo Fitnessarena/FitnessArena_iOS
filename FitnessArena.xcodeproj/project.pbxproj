@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32798B7127AA1D1400B0D5E6 /* ArmsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32798B6F27AA1D1400B0D5E6 /* ArmsDetailViewController.swift */; };
+		32798B7227AA1D1400B0D5E6 /* ArmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32798B7027AA1D1400B0D5E6 /* ArmsViewController.swift */; };
 		32890EE72796FE9000B76B2B /* NutriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EE62796FE9000B76B2B /* NutriViewController.swift */; };
 		32890EE927970C5C00B76B2B /* WeightLossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EE827970C5C00B76B2B /* WeightLossViewController.swift */; };
 		32890EEB279712FA00B76B2B /* BuildingMuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EEA279712FA00B76B2B /* BuildingMuscleViewController.swift */; };
@@ -56,14 +58,14 @@
 		41BDBC6C2768126500E23F78 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBC6B2768126500E23F78 /* Utilities.swift */; };
 		41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBCAA2768694400E23F78 /* CardioViewController.swift */; };
 		551EE4E2B57CD7B4403151CE /* Pods_FitnessArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */; };
-		BA14F6A327A854F200858758 /* ArmsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14F6A127A854F200858758 /* ArmsDetailViewController.swift */; };
-		BA14F6A427A854F200858758 /* ArmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14F6A227A854F200858758 /* ArmsViewController.swift */; };
 		BA35A47327AA13210014F5DC /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47227AA13210014F5DC /* LoginNavigationController.swift */; };
 		BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47427AA13380014F5DC /* HomeNavigationController.swift */; };
 		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32798B6F27AA1D1400B0D5E6 /* ArmsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsDetailViewController.swift; sourceTree = "<group>"; };
+		32798B7027AA1D1400B0D5E6 /* ArmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsViewController.swift; sourceTree = "<group>"; };
 		32890EE62796FE9000B76B2B /* NutriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriViewController.swift; sourceTree = "<group>"; };
 		32890EE827970C5C00B76B2B /* WeightLossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLossViewController.swift; sourceTree = "<group>"; };
 		32890EEA279712FA00B76B2B /* BuildingMuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMuscleViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +119,6 @@
 		44BB24AA7373D5BCECBF73CD /* Pods-FitnessArena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessArena.release.xcconfig"; path = "Target Support Files/Pods-FitnessArena/Pods-FitnessArena.release.xcconfig"; sourceTree = "<group>"; };
 		9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessArena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBFA123D61C03CB71ECC6FF /* Pods-FitnessArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessArena.debug.xcconfig"; path = "Target Support Files/Pods-FitnessArena/Pods-FitnessArena.debug.xcconfig"; sourceTree = "<group>"; };
-		BA14F6A127A854F200858758 /* ArmsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsDetailViewController.swift; sourceTree = "<group>"; };
-		BA14F6A227A854F200858758 /* ArmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsViewController.swift; sourceTree = "<group>"; };
 		BA35A47227AA13210014F5DC /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		BA35A47427AA13380014F5DC /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -290,8 +290,8 @@
 		41BDBC99276865D500E23F78 /* Arms */ = {
 			isa = PBXGroup;
 			children = (
-				BA14F6A127A854F200858758 /* ArmsDetailViewController.swift */,
-				BA14F6A227A854F200858758 /* ArmsViewController.swift */,
+				32798B6F27AA1D1400B0D5E6 /* ArmsDetailViewController.swift */,
+				32798B7027AA1D1400B0D5E6 /* ArmsViewController.swift */,
 			);
 			name = Arms;
 			path = ../../../../Projects/Portfolio/FitnessArena/FitnessArena/View/Weights/Arms;
@@ -463,6 +463,8 @@
 			files = (
 				32C1FC91279C40A6008A6541 /* PostWorkoutViewController.swift in Sources */,
 				32890EF12797426200B76B2B /* amSnackWLViewController.swift in Sources */,
+				32798B7127AA1D1400B0D5E6 /* ArmsDetailViewController.swift in Sources */,
+				32798B7227AA1D1400B0D5E6 /* ArmsViewController.swift in Sources */,
 				415D31022769646C001AA95E /* BackDetailViewController.swift in Sources */,
 				415D30E42768F568001AA95E /* SleepTrackerViewController.swift in Sources */,
 				32890EF52797427900B76B2B /* pmSnackWLViewController.swift in Sources */,
@@ -476,7 +478,6 @@
 				415D30F8276962C7001AA95E /* AbsViewController.swift in Sources */,
 				415D310027696461001AA95E /* ShouldersDetailViewController.swift in Sources */,
 				32C1FC93279C40B1008A6541 /* PreBedViewController.swift in Sources */,
-				BA14F6A427A854F200858758 /* ArmsViewController.swift in Sources */,
 				32890EFD2797430800B76B2B /* amSnackBMViewController.swift in Sources */,
 				415D310427696478001AA95E /* AbsDetailViewController.swift in Sources */,
 				415D30F4276962AC001AA95E /* ShouldersViewController.swift in Sources */,
@@ -491,7 +492,6 @@
 				32890EFB279742FE00B76B2B /* BreakfastBMViewController.swift in Sources */,
 				41BDBC6827680A6200E23F78 /* ProfileViewController.swift in Sources */,
 				41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */,
-				BA14F6A327A854F200858758 /* ArmsDetailViewController.swift in Sources */,
 				BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */,
 				BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */,
 				415D30DE2768F508001AA95E /* weightsViewController.swift in Sources */,
