@@ -53,43 +53,63 @@ class BuildingMuscleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    class func identifier() -> BuildingMuscleViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BuildingMuscleViewController") as! BuildingMuscleViewController
+    }
   
     @IBAction func backBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
     @IBAction func bfBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "bfSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.Breakfast
+        self.push(vc: vc)
     }
     @IBAction func amSnackTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "amSnackSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.AMSnack
+        self.push(vc: vc)
     }
     @IBAction func lunchBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "lunchSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.Lunch
+        self.push(vc: vc)
     }
     
     @IBAction func pmSnackBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "pmSnackSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.PMSnack
+        self.push(vc: vc)
     }
     
     @IBAction func dinnerBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "dinnerSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.Dinner
+        self.push(vc: vc)
     }
     
     @IBAction func proteinBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "proteinSegue", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.Protein
+        self.push(vc: vc)
     }
     
     @IBAction func preWorkoutBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "preWorkout", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.PreWorkout
+        self.push(vc: vc)
     }
     
     @IBAction func postWorkoutBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "postWorkout", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.PostWorkout
+        self.push(vc: vc)
     }
     
     @IBAction func preBedSnackBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "preBed", sender: nil)
+        let vc = BreakfastBMViewController.identifier()
+        vc.foodType = BMFoodType.PreBedSnack
+        self.push(vc: vc)
     }
     
 }

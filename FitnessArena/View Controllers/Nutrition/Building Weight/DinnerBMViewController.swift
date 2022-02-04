@@ -24,7 +24,7 @@ class DinnerBMViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func backBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }
 extension DinnerBMViewController: UITableViewDelegate, UITableViewDataSource {

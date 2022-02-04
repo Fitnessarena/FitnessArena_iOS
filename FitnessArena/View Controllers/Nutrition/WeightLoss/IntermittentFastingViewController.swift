@@ -45,7 +45,11 @@ That said, those sensitive to drops in their blood sugar levels, such as some pe
         // Do any additional setup after loading the view.
     }
     
+    class func identifier() -> IntermittentFastingViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermittentFastingViewController") as! IntermittentFastingViewController
+    }
+    
     @IBAction func backBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }

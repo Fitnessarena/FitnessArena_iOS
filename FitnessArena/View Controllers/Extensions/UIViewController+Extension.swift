@@ -10,6 +10,26 @@ import UIKit
 
 extension UIViewController {
     
+    enum WLFoodType {
+        case Breakfast
+        case AMSnack
+        case Lunch
+        case PMSnack
+        case Dinner
+    }
+    
+    enum BMFoodType {
+        case Breakfast
+        case AMSnack
+        case Lunch
+        case PMSnack
+        case Dinner
+        case Protein
+        case PreWorkout
+        case PostWorkout
+        case PreBedSnack
+    }
+    
     func giveAlertToUser(message: String){
         let  alertController = UIAlertController(title: "FitnessArena", message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
@@ -22,7 +42,11 @@ extension UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func popController(vc: AnyClass?) {
+    func popVC() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func popToSpecificController(vc: AnyClass?) {
         guard let vcClass = vc else {
             self.navigationController?.popViewController(animated: true)
             return

@@ -53,7 +53,7 @@ class FavouritesDetailViewController: UIViewController {
             // add the actions (buttons)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
                 // do something like...
-                self.popController(vc: nil)
+                self.popVC()
                 
             }))
             // show the alert
@@ -62,7 +62,7 @@ class FavouritesDetailViewController: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.popController(vc: nil)
+        self.popVC()
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {

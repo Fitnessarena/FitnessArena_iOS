@@ -17,6 +17,9 @@ class NutritionDetailViewController: UIViewController {
     var nutritionName = ""
     var nutritiondetails = ""
     
+    var arrName : [String] = []
+    var arrDetails : [String] = []
+    var index = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +27,19 @@ class NutritionDetailViewController: UIViewController {
         self.backLabel.setTitle("", for: .normal)
         self.homelabel.setTitle("", for: .normal)
 
-        nutritionLabel.text = nutritionName
+        self.nutritionLabel.text = self.arrName[index]
+        self.nutritionDetails.text = self.arrDetails[index]
+        
         nutritionLabel.font = nutritionLabel.font.withSize(38)
-        nutritionDetails.text = nutritiondetails
         nutritionDetails.font = nutritionDetails.font?.withSize(16)
     }
     
+    class func identifier() -> NutritionDetailViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NutritionDetailViewController") as! NutritionDetailViewController
+    }
+    
     @IBAction func nutritionBackTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "nutritionBackSegue", sender: nil)
+        self.popVC()
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {

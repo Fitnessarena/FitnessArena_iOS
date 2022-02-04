@@ -113,6 +113,6 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.popController(vc: nil)
+        self.popVC()
     }
 }

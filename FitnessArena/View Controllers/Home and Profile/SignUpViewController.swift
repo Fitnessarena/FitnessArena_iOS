@@ -89,7 +89,7 @@ class SignUpViewController: UIViewController {
                     // add the actions (buttons)
                     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
                         // do something like...
-                        self.popController(vc: nil)
+                        self.popVC()
                         
                     }))
                     // show the alert
