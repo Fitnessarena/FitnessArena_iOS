@@ -26,6 +26,10 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    class func identifier() -> SignUpViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+    }
     func validateFields() -> String? {
         
         // Check that all fields are filled in

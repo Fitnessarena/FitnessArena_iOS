@@ -92,7 +92,8 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func SignUpTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "UserSignedUpSegue", sender: nil)
+        let vc = SignUpViewController.identifier()
+        self.push(vc: vc)
     }
     
 }

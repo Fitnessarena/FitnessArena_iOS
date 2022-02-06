@@ -44,7 +44,7 @@ class WeightsViewController: UIViewController {
     }
     
     @IBAction func weightsBackBtnTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "weightBackSegue", sender: nil)
+        self.popVC()
     }
     
     @IBAction func armsButtonTapped(_ sender: Any) {

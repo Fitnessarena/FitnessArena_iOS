@@ -32,7 +32,7 @@ class NutriViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
     
     @IBAction func weightLossBtnTapped(_ sender: Any) {
