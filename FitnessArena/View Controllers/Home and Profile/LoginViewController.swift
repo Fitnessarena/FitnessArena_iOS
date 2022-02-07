@@ -70,7 +70,9 @@ class LoginViewController: UIViewController {
                         let userIds = value?["id"] as? String ?? ""
                         defaults.set(true, forKey: "isUserSignedIn")
                         defaults.set(userIds, forKey: "loggedInUserID")
-                        self.performSegue(withIdentifier: "UserLoggedInSegue", sender: nil)
+                        
+                        let vc = HomeViewController.identifier()
+                        self.push(vc: vc)
                     }) { error in
                         // Couldn't sign in
                         self.present(Utilities.createAlertController(title: "Cannot login", message: "Please check your Internet Connection !"), animated: true, completion: nil)

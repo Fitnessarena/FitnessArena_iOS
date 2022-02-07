@@ -107,6 +107,9 @@ class ProfileViewController: UIViewController {
             let defaults = UserDefaults.standard
             defaults.set(false, forKey: "isUserSignedIn")
             self.dismiss(animated: true, completion: nil)
+            
+            let vc = LoginViewController.identifier()
+            self.push(vc: vc)
         } catch let signOutError {
             self.present(Utilities.createAlertController(title: "Error", message: signOutError.localizedDescription), animated: true, completion: nil)
         }
