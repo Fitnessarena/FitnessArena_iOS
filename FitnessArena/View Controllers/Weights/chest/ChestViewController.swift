@@ -10,6 +10,8 @@ import UIKit
 class ChestViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    var category = ""
+    var subCategory = ""
     
     var data = [
         
@@ -690,6 +692,7 @@ Repeat.
     var currenttableView: Int!
     
     @IBOutlet weak var backbtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -697,15 +700,19 @@ Repeat.
         currenttableView = 0
     }
 
+    class func identifier() -> ChestViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChestViewController") as! ChestViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "ChestDetails") as? ChestDetailViewController{
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
             vc.name = self.data[currenttableView][indexPath.row]
             vc.details = self.details[currenttableView][indexPath.row]
-            vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+            vc.images = self.pictures[currenttableView][indexPath.row]
+            vc.category = self.category
+            vc.subCategory = self.subCategory
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -725,6 +732,6 @@ Repeat.
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }

@@ -12,6 +12,8 @@ class ArmsViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var category = ""
+    var subCategory = ""
+    
     var data = [
         
             ["Angled prone curl","Angled prone reverse curl","Arnold press","Cable shrug","Concentration dumbbell curl","Dumbbell biceps curl","Dumbbell reverse curl","Dumbbell row kickback","Dumbbell split jerk", "Dumbbell upright row", "Dumbbell wrist twist","Hammer curl","Incline dumbbell curl","Incline hammer curl","Incline reverse curl","Lying one-arm extension","Lying triceps extension","Prone curl","Prone hammer curl","Prone reverse curl","Seated triceps extension","Shrug","Standing concentration curl","Standing single-arm triceps extension","Standing triceps extension","Swiss-ball kickback","Swiss-ball preacher curl","Swiss-ball seated curl","Triceps kickback","Zottman curl"],
@@ -1287,6 +1289,7 @@ Repeat.
             vc.details = self.details[currenttableView][indexPath.row]
             vc.images = self.pictures[currenttableView][indexPath.row]
             vc.category = self.category
+            vc.subCategory = self.subCategory
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

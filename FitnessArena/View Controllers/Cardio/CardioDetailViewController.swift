@@ -32,11 +32,11 @@ class CardioDetailViewController: UIViewController {
     }
     
     @IBAction func cardioDetailBackButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "homeButtonSegue", sender: nil)
+        self.popToRootVC()
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
     
 

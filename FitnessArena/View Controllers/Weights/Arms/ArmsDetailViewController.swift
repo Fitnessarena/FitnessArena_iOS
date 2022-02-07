@@ -23,6 +23,8 @@ class ArmsDetailViewController: UIViewController {
     var images = ""
     
     var category = ""
+    var subCategory = ""
+    
     var favourite = Favourite()
     var arrFavourites : [Favourite] = []
     let ref = Database.database().reference()
@@ -50,12 +52,13 @@ class ArmsDetailViewController: UIViewController {
     func addFavourite() {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         let timestamp = Int(NSDate().timeIntervalSince1970)
-        self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(timestamp)").setValue([
+        self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(self.category)").child("\(timestamp)").setValue([
             "id": "\(timestamp)",
             "title" : self.name,
             "desc": self.details,
             "imageName": self.images,
-            "category": self.category
+            "category": self.category,
+            "subCategory": self.subCategory
         ])
         
         self.giveAlertToUser(message: "Successfully added to favourites")
@@ -68,7 +71,7 @@ class ArmsDetailViewController: UIViewController {
         
         if let id = self.favourite.id {
             let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
-            self.ref.child("users").child("\(userID ?? "")").child("favourites").child(id).removeValue()
+            self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(self.category)").child(id).removeValue()
             let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
             
             // add the actions (buttons)
@@ -87,7 +90,7 @@ class ArmsDetailViewController: UIViewController {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
         if userID != nil {
-            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("favourites")
+            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(self.category)")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 

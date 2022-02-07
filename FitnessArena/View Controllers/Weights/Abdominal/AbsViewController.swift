@@ -11,6 +11,9 @@ class AbsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var tableView: UITableView!
     
+    var category = ""
+    var subCategory = ""
+    
     var data = [
         
         ["Cycle crunch","Dumbbell bench twist","Dumbbell leg lift","Dumbbell side bend","Dumbbell toe touch","Dumbbell torso twist","Dumbbell woodchopper","Golf squat","Swiss-ball torso twist","Twisting shoulder press","Walking lunge twist","Weighted chop","Weighted crunch"],
@@ -1722,11 +1725,18 @@ seconds, then release.
         self.backBtn.setTitle("", for: .normal)
         currenttableView = 0
     }
+
+    class func identifier() -> AbsViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AbsViewController") as! AbsViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "AbsDetails") as? AbsDetailViewController{
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
             vc.name = self.data[currenttableView][indexPath.row]
-           vc.details = self.details[currenttableView][indexPath.row]
-            vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+            vc.details = self.details[currenttableView][indexPath.row]
+            vc.images = self.pictures[currenttableView][indexPath.row]
+            vc.category = self.category
+            vc.subCategory = self.subCategory
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -1746,7 +1756,8 @@ seconds, then release.
         currenttableView = (sender as AnyObject).selectedSegmentIndex
         tableView.reloadData()
     }
+    
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }

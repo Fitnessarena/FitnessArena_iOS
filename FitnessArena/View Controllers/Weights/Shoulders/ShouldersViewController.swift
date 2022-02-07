@@ -11,6 +11,8 @@ class ShouldersViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBOutlet weak var tableView: UITableView!
+    var category = ""
+    var subCategory = ""
     
     var data = [
         
@@ -775,18 +777,25 @@ Hold for a few seconds, then return to the starting position.
         self.backBtn.setTitle("", for: .normal)
         currenttableView = 0
     }
+    
+    class func identifier() -> ShouldersViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShouldersViewController") as! ShouldersViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "ShoulderDetail") as? ShouldersDetailViewController{
-            
-            if self.data[currenttableView][indexPath.row] != "No Results Found" {
+        
+        if self.data[currenttableView][indexPath.row] != "No Results Found" {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
                 vc.name = self.data[currenttableView][indexPath.row]
-               vc.details = self.details[currenttableView][indexPath.row]
-                vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+                vc.details = self.details[currenttableView][indexPath.row]
+                vc.images = self.pictures[currenttableView][indexPath.row]
+                vc.category = self.category
+                vc.subCategory = self.subCategory
                 self.navigationController?.pushViewController(vc, animated: true)
-            } else {
-                self.giveAlertToUser(message: "Details page not available")
-                print("No Results found")
             }
+        } else {
+            self.giveAlertToUser(message: "Details page not available")
+            print("No Results found")
         }
     }
     
@@ -807,7 +816,7 @@ Hold for a few seconds, then return to the starting position.
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
     
 }

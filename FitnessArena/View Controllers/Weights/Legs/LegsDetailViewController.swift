@@ -31,9 +31,11 @@ class LegsDetailViewController: UIViewController {
         detailList.font = detailList.font?.withSize(16)
         imageView.image = images
     }
+    
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
+    
     @IBAction func homeButton(_ sender: Any) {
         self.popToRootVC()
     }

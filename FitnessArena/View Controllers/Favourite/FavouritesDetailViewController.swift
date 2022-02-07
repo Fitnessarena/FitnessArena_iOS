@@ -46,7 +46,7 @@ class FavouritesDetailViewController: UIViewController {
             
             let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
             
-            self.ref.child("users").child("\(userID ?? "")").child("favourites").child(id).removeValue()
+            self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(self.favourite.category ?? "")").child(id).removeValue()
             
             let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
             

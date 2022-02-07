@@ -49,22 +49,39 @@ class WeightsViewController: UIViewController {
     
     @IBAction func armsButtonTapped(_ sender: Any) {
         let vc = ArmsViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Arms"
         self.push(vc: vc)
     }
     @IBAction func chestButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "chestSegue", sender: nil)
+        let vc = ChestViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Chest"
+        self.push(vc: vc)
     }
     @IBAction func legsButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "legsSegue", sender: nil)
+        let vc = LegsViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Legs"
+        self.push(vc: vc)
     }
     @IBAction func shouldersButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "shouldersSegue", sender: nil)
+        let vc = ShouldersViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Shoulders"
+        self.push(vc: vc)
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        let vc = BackViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Back"
+        self.push(vc: vc)
     }
     @IBAction func absButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "absSegue", sender: nil)
+        let vc = AbsViewController.identifier()
+        vc.category = self.category
+        vc.subCategory = "Abdominal"
+        self.push(vc: vc)
     }
     
 }

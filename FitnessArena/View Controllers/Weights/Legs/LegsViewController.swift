@@ -12,6 +12,9 @@ class LegsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
+    var category = ""
+    var subCategory = ""
+    
     var data = [
         
         ["Alternating seated calf raise","Assisted dumbbell lunge","Beginner squat","Dumbbell calf jump","Dumbbell front squat","Dumbbell lunge","Dumbbell reverse lunge","Dumbbell romanian deadlift","Dumbbell single-leg deadlift","Goblet squat","Golf squat","Lunging step up","Offset squat","Power clean","Side lunge","Standing dumbbell calf raise","Sumo squat","Walking dumbbell lunge","Walking lunge twist"],
@@ -1247,15 +1250,19 @@ leg. Repeat.
         currenttableView = 0
     }
 
+    class func identifier() -> LegsViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LegsViewController") as! LegsViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "LegDetails") as? LegsDetailViewController{
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
             vc.name = self.data[currenttableView][indexPath.row]
-           vc.details = self.details[currenttableView][indexPath.row]
-            vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+            vc.details = self.details[currenttableView][indexPath.row]
+            vc.images = self.pictures[currenttableView][indexPath.row]
+            vc.category = self.category
+            vc.subCategory = self.subCategory
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -1275,6 +1282,6 @@ leg. Repeat.
     }
     
     @IBAction func backButtontapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }

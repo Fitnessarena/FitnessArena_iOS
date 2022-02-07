@@ -17,17 +17,21 @@ class Favourite: NSObject, Mappable, NSCopying, NSCoding {
     var title: String?
     var desc: String?
     var imageName: String?
+    var category: String?
+    var subCategory: String?
     
     
-    init(id: String?, title: String?, desc: String?, imageName: String?) {
+    init(id: String?, title: String?, desc: String?, imageName: String?,category: String?, subCategory: String?) {
         self.id = id
         self.title = title
         self.desc = desc
         self.imageName = imageName
+        self.category = category
+        self.subCategory = subCategory
     }
     
     func copy(with zone: NSZone? = nil) -> Any {
-        return Favourite(id: id, title: title, desc: desc, imageName: imageName)
+        return Favourite(id: id, title: title, desc: desc, imageName: imageName,category: category, subCategory: subCategory)
     }
     
     override init() {
@@ -35,6 +39,8 @@ class Favourite: NSObject, Mappable, NSCopying, NSCoding {
         self.title = nil
         self.desc = nil
         self.imageName = nil
+        self.category = nil
+        self.subCategory = nil
     }
     
     // MARK: ObjectMapper Initalizers
@@ -55,6 +61,8 @@ class Favourite: NSObject, Mappable, NSCopying, NSCoding {
         title <- map["title"]
         desc <- map["desc"]
         imageName <- map["imageName"]
+        category <- map["category"]
+        subCategory <- map["subCategory"]
     }
     
     // MARK: NSCoding Protocol

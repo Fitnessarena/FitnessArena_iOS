@@ -12,6 +12,9 @@ class BackViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
+    var category = ""
+    var subCategory = ""
+    
     var data = [
         
         ["Dumbbell bent-over row","Dumbbell deadlift","Dumbbell row kickback","Dumbbell upright row","Incline y raise","One-arm row","Seated bent over row","Seated reverse fly","Swiss-ball close row","Swiss-ball pullover","Weighted chop"],
@@ -622,11 +625,18 @@ Use your back and biceps to pull the suitcase up to your chest. Try to keep the 
         self.backBtn.setTitle("", for: .normal)
         currenttableView = 0
     }
+    
+    class func identifier() -> BackViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BackViewController") as! BackViewController
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "BackDetails") as? BackDetailViewController{
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
             vc.name = self.data[currenttableView][indexPath.row]
-           vc.details = self.details[currenttableView][indexPath.row]
-            vc.images = UIImage(named: pictures[currenttableView][indexPath.row])!
+            vc.details = self.details[currenttableView][indexPath.row]
+            vc.images = self.pictures[currenttableView][indexPath.row]
+            vc.category = self.category
+            vc.subCategory = self.subCategory
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -647,6 +657,6 @@ Use your back and biceps to pull the suitcase up to your chest. Try to keep the 
         tableView.reloadData()
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "backSegue", sender: nil)
+        self.popVC()
     }
 }
