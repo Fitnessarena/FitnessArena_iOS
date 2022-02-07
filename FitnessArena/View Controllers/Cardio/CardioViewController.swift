@@ -95,6 +95,7 @@ class CardioViewController: UIViewController {
     @IBOutlet weak var cardioButton: UIButton!
     
     var category = ""
+    var subCategory = "Cardio"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,13 +110,20 @@ class CardioViewController: UIViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CardioDetails") as? CardioDetailViewController{
+//        if let vc = storyboard?.instantiateViewController(withIdentifier: "CardioDetails") as? CardioDetailViewController{
+//            vc.name = self.name[indexPath.row]
+//            vc.details = self.detailsname[indexPath.row]
+//            vc.category = self.category
+//            self.push(vc: vc)
+//        }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArmsDetailViewController") as? ArmsDetailViewController{
             vc.name = self.name[indexPath.row]
             vc.details = self.detailsname[indexPath.row]
+            vc.images = self.name[indexPath.row]
             vc.category = self.category
-            self.push(vc: vc)
+            vc.subCategory = self.subCategory
+            self.navigationController?.pushViewController(vc, animated: true)
         }
-
     }
 
     @IBAction func cardioBackTapped(_ sender: Any) {

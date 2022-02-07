@@ -11,23 +11,11 @@
 		32890EE927970C5C00B76B2B /* WeightLossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EE827970C5C00B76B2B /* WeightLossViewController.swift */; };
 		32890EEB279712FA00B76B2B /* BuildingMuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EEA279712FA00B76B2B /* BuildingMuscleViewController.swift */; };
 		32890EED27972C1800B76B2B /* BreakfastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EEC27972C1800B76B2B /* BreakfastViewController.swift */; };
-		32890EF12797426200B76B2B /* amSnackWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EF02797426200B76B2B /* amSnackWLViewController.swift */; };
-		32890EF32797426E00B76B2B /* LunchWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EF22797426E00B76B2B /* LunchWLViewController.swift */; };
-		32890EF52797427900B76B2B /* pmSnackWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EF42797427900B76B2B /* pmSnackWLViewController.swift */; };
-		32890EF72797428600B76B2B /* DinnerWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EF62797428600B76B2B /* DinnerWLViewController.swift */; };
 		32890EF9279742B200B76B2B /* IntermittentFastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EF8279742B200B76B2B /* IntermittentFastingViewController.swift */; };
 		32890EFB279742FE00B76B2B /* BreakfastBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EFA279742FE00B76B2B /* BreakfastBMViewController.swift */; };
-		32890EFD2797430800B76B2B /* amSnackBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EFC2797430800B76B2B /* amSnackBMViewController.swift */; };
-		32890EFF2797432100B76B2B /* lunchBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890EFE2797432100B76B2B /* lunchBMViewController.swift */; };
-		32890F012797432B00B76B2B /* pmSnackBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890F002797432B00B76B2B /* pmSnackBMViewController.swift */; };
-		32890F032797433400B76B2B /* DinnerBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890F022797433400B76B2B /* DinnerBMViewController.swift */; };
-		32C1FC8F279C4098008A6541 /* PreWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1FC8E279C4098008A6541 /* PreWorkViewController.swift */; };
-		32C1FC91279C40A6008A6541 /* PostWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1FC90279C40A6008A6541 /* PostWorkoutViewController.swift */; };
-		32C1FC93279C40B1008A6541 /* PreBedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1FC92279C40B1008A6541 /* PreBedViewController.swift */; };
 		415D30DE2768F508001AA95E /* weightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30DD2768F508001AA95E /* weightsViewController.swift */; };
 		415D30E02768F528001AA95E /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30DF2768F528001AA95E /* NutritionViewController.swift */; };
 		415D30E62768FC81001AA95E /* CardioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30E52768FC81001AA95E /* CardioTableViewCell.swift */; };
-		415D30E82768FC96001AA95E /* CardioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30E72768FC96001AA95E /* CardioDetailViewController.swift */; };
 		415D30EA27691638001AA95E /* NutritionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30E927691638001AA95E /* NutritionTableViewCell.swift */; };
 		415D30EC2769165A001AA95E /* NutritionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30EB2769165A001AA95E /* NutritionDetailViewController.swift */; };
 		415D30F027696295001AA95E /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30EF27696295001AA95E /* ChestViewController.swift */; };
@@ -35,11 +23,6 @@
 		415D30F4276962AC001AA95E /* ShouldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30F3276962AC001AA95E /* ShouldersViewController.swift */; };
 		415D30F6276962B6001AA95E /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30F5276962B6001AA95E /* BackViewController.swift */; };
 		415D30F8276962C7001AA95E /* AbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30F7276962C7001AA95E /* AbsViewController.swift */; };
-		415D30FC27696449001AA95E /* ChestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30FB27696449001AA95E /* ChestDetailViewController.swift */; };
-		415D30FE27696455001AA95E /* LegsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30FD27696455001AA95E /* LegsDetailViewController.swift */; };
-		415D310027696461001AA95E /* ShouldersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D30FF27696461001AA95E /* ShouldersDetailViewController.swift */; };
-		415D31022769646C001AA95E /* BackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D31012769646C001AA95E /* BackDetailViewController.swift */; };
-		415D310427696478001AA95E /* AbsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D310327696478001AA95E /* AbsDetailViewController.swift */; };
 		41BDBC4B2768084000E23F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBC4A2768084000E23F78 /* AppDelegate.swift */; };
 		41BDBC4D2768084000E23F78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBC4C2768084000E23F78 /* SceneDelegate.swift */; };
 		41BDBC522768084000E23F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBC502768084000E23F78 /* Main.storyboard */; };
@@ -70,23 +53,11 @@
 		32890EE827970C5C00B76B2B /* WeightLossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLossViewController.swift; sourceTree = "<group>"; };
 		32890EEA279712FA00B76B2B /* BuildingMuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMuscleViewController.swift; sourceTree = "<group>"; };
 		32890EEC27972C1800B76B2B /* BreakfastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastViewController.swift; sourceTree = "<group>"; };
-		32890EF02797426200B76B2B /* amSnackWLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amSnackWLViewController.swift; sourceTree = "<group>"; };
-		32890EF22797426E00B76B2B /* LunchWLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchWLViewController.swift; sourceTree = "<group>"; };
-		32890EF42797427900B76B2B /* pmSnackWLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmSnackWLViewController.swift; sourceTree = "<group>"; };
-		32890EF62797428600B76B2B /* DinnerWLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerWLViewController.swift; sourceTree = "<group>"; };
 		32890EF8279742B200B76B2B /* IntermittentFastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermittentFastingViewController.swift; sourceTree = "<group>"; };
 		32890EFA279742FE00B76B2B /* BreakfastBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastBMViewController.swift; sourceTree = "<group>"; };
-		32890EFC2797430800B76B2B /* amSnackBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amSnackBMViewController.swift; sourceTree = "<group>"; };
-		32890EFE2797432100B76B2B /* lunchBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lunchBMViewController.swift; sourceTree = "<group>"; };
-		32890F002797432B00B76B2B /* pmSnackBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmSnackBMViewController.swift; sourceTree = "<group>"; };
-		32890F022797433400B76B2B /* DinnerBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerBMViewController.swift; sourceTree = "<group>"; };
-		32C1FC8E279C4098008A6541 /* PreWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreWorkViewController.swift; sourceTree = "<group>"; };
-		32C1FC90279C40A6008A6541 /* PostWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWorkoutViewController.swift; sourceTree = "<group>"; };
-		32C1FC92279C40B1008A6541 /* PreBedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreBedViewController.swift; sourceTree = "<group>"; };
 		415D30DD2768F508001AA95E /* weightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightsViewController.swift; sourceTree = "<group>"; };
 		415D30DF2768F528001AA95E /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
 		415D30E52768FC81001AA95E /* CardioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioTableViewCell.swift; sourceTree = "<group>"; };
-		415D30E72768FC96001AA95E /* CardioDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioDetailViewController.swift; sourceTree = "<group>"; };
 		415D30E927691638001AA95E /* NutritionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionTableViewCell.swift; sourceTree = "<group>"; };
 		415D30EB2769165A001AA95E /* NutritionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDetailViewController.swift; sourceTree = "<group>"; };
 		415D30EF27696295001AA95E /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
@@ -94,11 +65,6 @@
 		415D30F3276962AC001AA95E /* ShouldersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldersViewController.swift; sourceTree = "<group>"; };
 		415D30F5276962B6001AA95E /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
 		415D30F7276962C7001AA95E /* AbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsViewController.swift; sourceTree = "<group>"; };
-		415D30FB27696449001AA95E /* ChestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestDetailViewController.swift; sourceTree = "<group>"; };
-		415D30FD27696455001AA95E /* LegsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegsDetailViewController.swift; sourceTree = "<group>"; };
-		415D30FF27696461001AA95E /* ShouldersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldersDetailViewController.swift; sourceTree = "<group>"; };
-		415D31012769646C001AA95E /* BackDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDetailViewController.swift; sourceTree = "<group>"; };
-		415D310327696478001AA95E /* AbsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsDetailViewController.swift; sourceTree = "<group>"; };
 		41BDBC472768084000E23F78 /* FitnessArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessArena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BDBC4A2768084000E23F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41BDBC4C2768084000E23F78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,10 +111,6 @@
 			children = (
 				32890EE827970C5C00B76B2B /* WeightLossViewController.swift */,
 				32890EEC27972C1800B76B2B /* BreakfastViewController.swift */,
-				32890EF02797426200B76B2B /* amSnackWLViewController.swift */,
-				32890EF22797426E00B76B2B /* LunchWLViewController.swift */,
-				32890EF42797427900B76B2B /* pmSnackWLViewController.swift */,
-				32890EF62797428600B76B2B /* DinnerWLViewController.swift */,
 				32890EF8279742B200B76B2B /* IntermittentFastingViewController.swift */,
 			);
 			path = WeightLoss;
@@ -159,16 +121,9 @@
 			children = (
 				32890EEA279712FA00B76B2B /* BuildingMuscleViewController.swift */,
 				32890EFA279742FE00B76B2B /* BreakfastBMViewController.swift */,
-				32890EFC2797430800B76B2B /* amSnackBMViewController.swift */,
-				32890EFE2797432100B76B2B /* lunchBMViewController.swift */,
-				32890F002797432B00B76B2B /* pmSnackBMViewController.swift */,
-				32890F022797433400B76B2B /* DinnerBMViewController.swift */,
 				415D30DF2768F528001AA95E /* NutritionViewController.swift */,
 				415D30E927691638001AA95E /* NutritionTableViewCell.swift */,
 				415D30EB2769165A001AA95E /* NutritionDetailViewController.swift */,
-				32C1FC8E279C4098008A6541 /* PreWorkViewController.swift */,
-				32C1FC90279C40A6008A6541 /* PostWorkoutViewController.swift */,
-				32C1FC92279C40B1008A6541 /* PreBedViewController.swift */,
 			);
 			path = "Building Weight";
 			sourceTree = "<group>";
@@ -226,7 +181,6 @@
 			children = (
 				41BDBCAA2768694400E23F78 /* CardioViewController.swift */,
 				415D30E52768FC81001AA95E /* CardioTableViewCell.swift */,
-				415D30E72768FC96001AA95E /* CardioDetailViewController.swift */,
 			);
 			path = Cardio;
 			sourceTree = "<group>";
@@ -249,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				415D30F5276962B6001AA95E /* BackViewController.swift */,
-				415D31012769646C001AA95E /* BackDetailViewController.swift */,
 			);
 			path = Back;
 			sourceTree = "<group>";
@@ -258,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				415D30F7276962C7001AA95E /* AbsViewController.swift */,
-				415D310327696478001AA95E /* AbsDetailViewController.swift */,
 			);
 			path = Abdominal;
 			sourceTree = "<group>";
@@ -267,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				415D30F1276962A0001AA95E /* LegsViewController.swift */,
-				415D30FD27696455001AA95E /* LegsDetailViewController.swift */,
 			);
 			path = Legs;
 			sourceTree = "<group>";
@@ -276,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				415D30EF27696295001AA95E /* ChestViewController.swift */,
-				415D30FB27696449001AA95E /* ChestDetailViewController.swift */,
 			);
 			path = chest;
 			sourceTree = "<group>";
@@ -285,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				415D30F3276962AC001AA95E /* ShouldersViewController.swift */,
-				415D30FF27696461001AA95E /* ShouldersDetailViewController.swift */,
 			);
 			path = Shoulders;
 			sourceTree = "<group>";
@@ -486,29 +435,16 @@
 				BA35A47A27AA71CC0014F5DC /* Favourite.swift in Sources */,
 				BA1A308127AAE14900A5C7A3 /* ArmsDetailViewController.swift in Sources */,
 				BA1A308227AAE14900A5C7A3 /* ArmsViewController.swift in Sources */,
-				32C1FC91279C40A6008A6541 /* PostWorkoutViewController.swift in Sources */,
-				32890EF12797426200B76B2B /* amSnackWLViewController.swift in Sources */,
-				415D31022769646C001AA95E /* BackDetailViewController.swift in Sources */,
-				32890EF52797427900B76B2B /* pmSnackWLViewController.swift in Sources */,
 				41BDBC6027680A3C00E23F78 /* LoginViewController.swift in Sources */,
 				32890EE72796FE9000B76B2B /* NutriViewController.swift in Sources */,
 				BA35A47327AA13210014F5DC /* LoginNavigationController.swift in Sources */,
-				415D30E82768FC96001AA95E /* CardioDetailViewController.swift in Sources */,
 				41BDBC6427680A5200E23F78 /* ForgotPasswordViewController.swift in Sources */,
 				415D30E02768F528001AA95E /* NutritionViewController.swift in Sources */,
-				32890F032797433400B76B2B /* DinnerBMViewController.swift in Sources */,
 				415D30F8276962C7001AA95E /* AbsViewController.swift in Sources */,
-				415D310027696461001AA95E /* ShouldersDetailViewController.swift in Sources */,
-				32C1FC93279C40B1008A6541 /* PreBedViewController.swift in Sources */,
-				32890EFD2797430800B76B2B /* amSnackBMViewController.swift in Sources */,
-				415D310427696478001AA95E /* AbsDetailViewController.swift in Sources */,
 				415D30F4276962AC001AA95E /* ShouldersViewController.swift in Sources */,
 				415D30F2276962A0001AA95E /* LegsViewController.swift in Sources */,
-				415D30FE27696455001AA95E /* LegsDetailViewController.swift in Sources */,
-				415D30FC27696449001AA95E /* ChestDetailViewController.swift in Sources */,
 				415D30EA27691638001AA95E /* NutritionTableViewCell.swift in Sources */,
 				41BDBC4B2768084000E23F78 /* AppDelegate.swift in Sources */,
-				32C1FC8F279C4098008A6541 /* PreWorkViewController.swift in Sources */,
 				41BDBC6227680A4500E23F78 /* SignUpViewController.swift in Sources */,
 				32890EFB279742FE00B76B2B /* BreakfastBMViewController.swift in Sources */,
 				41BDBC6827680A6200E23F78 /* ProfileViewController.swift in Sources */,
@@ -520,13 +456,9 @@
 				41BDBC6C2768126500E23F78 /* Utilities.swift in Sources */,
 				41BDBC6627680A5A00E23F78 /* HomeViewController.swift in Sources */,
 				32890EED27972C1800B76B2B /* BreakfastViewController.swift in Sources */,
-				32890F012797432B00B76B2B /* pmSnackBMViewController.swift in Sources */,
-				32890EF72797428600B76B2B /* DinnerWLViewController.swift in Sources */,
 				415D30E62768FC81001AA95E /* CardioTableViewCell.swift in Sources */,
 				415D30F6276962B6001AA95E /* BackViewController.swift in Sources */,
-				32890EFF2797432100B76B2B /* lunchBMViewController.swift in Sources */,
 				BA35A47D27AA81BA0014F5DC /* FavouriteTableViewCell.swift in Sources */,
-				32890EF32797426E00B76B2B /* LunchWLViewController.swift in Sources */,
 				32890EE927970C5C00B76B2B /* WeightLossViewController.swift in Sources */,
 				32890EF9279742B200B76B2B /* IntermittentFastingViewController.swift in Sources */,
 				BA35A47F27AA880F0014F5DC /* FavouritesDetailViewController.swift in Sources */,

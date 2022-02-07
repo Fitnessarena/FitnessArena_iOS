@@ -51,8 +51,8 @@ class BreakfastBMViewController: UIViewController {
             self.imgFoodType.image = UIImage(named: "dinner")
             self.arrName = ["Roasted turkey breast","Cooked brown rice","Cucumber salad"]
         case .Protein:
-            self.lblTitle.text = "Dinner"
-            self.imgFoodType.image = UIImage(named: "dinner")
+            self.lblTitle.text = "Protein"
+            self.imgFoodType.image = UIImage(named: "protein-1")
             self.arrName = ["Protein","Carbohydrates","Vitamins","Fats", "Minerals", "Water"]
             self.arrDetails = ["""
                        • Lean meats – beef, lamb, veal, pork, kangaroo
