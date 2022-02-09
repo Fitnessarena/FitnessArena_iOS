@@ -49,30 +49,35 @@ class WeightLossViewController: UIViewController {
     @IBAction func bfBtnTaped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Breakfast
+        vc.subCategory = "Breakfast"
         self.push(vc: vc)
     }
     
     @IBAction func amSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.AMSnack
+        vc.subCategory = "AMSnack"
         self.push(vc: vc)
     }
     
     @IBAction func lunchBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Lunch
+        vc.subCategory = "Lunch"
         self.push(vc: vc)
     }
     
     @IBAction func pmSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.PMSnack
+        vc.subCategory = "PMSnack"
         self.push(vc: vc)
     }
     
     @IBAction func dineerBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Dinner
+        vc.subCategory = "Dinner"
         self.push(vc: vc)
     }
     

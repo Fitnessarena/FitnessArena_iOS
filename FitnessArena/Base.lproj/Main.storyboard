@@ -123,7 +123,6 @@
                     <connections>
                         <outlet property="PasswordTextField" destination="voF-li-IIe" id="CFo-qr-4yz"/>
                         <outlet property="emailTextField" destination="uoc-FF-oos" id="BFv-B4-8Nz"/>
-                        <segue destination="QoJ-DM-TnF" kind="show" identifier="UserSignedUpSegue" id="K8W-fh-guU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -797,10 +796,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbf-m8-fo7">
-                                <rect key="frame" x="20" y="44" width="74" height="60"/>
+                                <rect key="frame" x="0.0" y="40" width="74" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="chU-2m-1zb"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="odp-7o-7y3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="odp-7o-7y3"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
@@ -849,20 +847,21 @@
                             <constraint firstItem="gTj-Ve-5dN" firstAttribute="trailing" secondItem="nsY-AA-OgQ" secondAttribute="trailing" id="9BL-58-kPl"/>
                             <constraint firstItem="nsY-AA-OgQ" firstAttribute="leading" secondItem="wEe-af-gdL" secondAttribute="leading" id="Bml-fM-0VB"/>
                             <constraint firstItem="nsY-AA-OgQ" firstAttribute="top" secondItem="xDx-Zy-buU" secondAttribute="bottom" constant="100" id="CKM-6A-ppf"/>
+                            <constraint firstItem="Kbf-m8-fo7" firstAttribute="top" secondItem="fdh-n6-iT3" secondAttribute="top" constant="40" id="NFT-p5-gUy"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="trailing" secondItem="4yE-nD-vgH" secondAttribute="trailing" id="O8T-EY-nIm"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="top" secondItem="fdh-n6-iT3" secondAttribute="top" id="Oy2-3V-5nn"/>
                             <constraint firstItem="gTj-Ve-5dN" firstAttribute="top" secondItem="nsY-AA-OgQ" secondAttribute="bottom" constant="100" id="PWV-fF-GCS"/>
                             <constraint firstItem="4yE-nD-vgH" firstAttribute="bottom" secondItem="xDx-Zy-buU" secondAttribute="bottom" constant="650" id="T4U-Ed-ntn"/>
                             <constraint firstItem="wEe-af-gdL" firstAttribute="leading" secondItem="fdh-n6-iT3" secondAttribute="leadingMargin" id="aaq-96-t7C"/>
+                            <constraint firstItem="wEe-af-gdL" firstAttribute="top" secondItem="Kbf-m8-fo7" secondAttribute="bottom" id="bf1-vr-Nn7"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" id="fsN-Ve-auZ"/>
                             <constraint firstAttribute="bottom" secondItem="1HG-is-3wX" secondAttribute="bottom" id="gOS-se-daV"/>
                             <constraint firstItem="wEe-af-gdL" firstAttribute="trailing" secondItem="fdh-n6-iT3" secondAttribute="trailingMargin" id="h9P-Kn-jtf"/>
-                            <constraint firstItem="4yE-nD-vgH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kbf-m8-fo7" secondAttribute="trailing" symbolic="YES" id="hdr-bb-9x4"/>
-                            <constraint firstItem="Kbf-m8-fo7" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" constant="20" id="isV-ck-nlw"/>
-                            <constraint firstItem="wEe-af-gdL" firstAttribute="top" secondItem="Kbf-m8-fo7" secondAttribute="bottom" constant="3" id="sv4-ON-AhX"/>
+                            <constraint firstItem="Kbf-m8-fo7" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" id="ka5-R9-yFP"/>
                             <constraint firstItem="xDx-Zy-buU" firstAttribute="top" secondItem="wEe-af-gdL" secondAttribute="bottom" constant="5" id="t3D-pV-9xx"/>
                             <constraint firstItem="xDx-Zy-buU" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" constant="183" id="t60-zg-dik"/>
                             <constraint firstItem="gTj-Ve-5dN" firstAttribute="leading" secondItem="nsY-AA-OgQ" secondAttribute="leading" id="yUg-2m-dRq"/>
+                            <constraint firstItem="4yE-nD-vgH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kbf-m8-fo7" secondAttribute="trailing" symbolic="YES" id="zuY-LV-jk3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Fi-QB-1tw"/>
@@ -1413,7 +1412,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="LuI-7r-GKh">
             <objects>
-                <viewController id="QoJ-DM-TnF" customClass="SignUpViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="QoJ-DM-TnF" customClass="SignUpViewController" customModule="FitnessArena" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bGw-Pj-ZkD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1422,7 +1421,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3PD-OY-nZS">
-                                <rect key="frame" x="20" y="138" width="374" height="428"/>
+                                <rect key="frame" x="20" y="94" width="374" height="428"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSG-IM-ByB">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
