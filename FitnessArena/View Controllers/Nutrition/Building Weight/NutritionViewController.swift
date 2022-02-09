@@ -12,6 +12,7 @@ class NutritionViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var category = ""
+    var subCategory = ""
     
     var name = ["Protein","Carbohydrates","Vitamins","Fats", "Minerals", "Water"]
     

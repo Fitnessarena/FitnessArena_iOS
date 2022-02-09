@@ -17,6 +17,8 @@ class WeightLossViewController: UIViewController {
     @IBOutlet weak var DinnerBtn: UIButton!
     @IBOutlet weak var ifBtn: UIButton!
     
+    var category = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.backBtn.setTitle("", for: .normal)
@@ -49,6 +51,7 @@ class WeightLossViewController: UIViewController {
     @IBAction func bfBtnTaped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Breakfast
+        vc.category = self.category
         vc.subCategory = "Breakfast"
         self.push(vc: vc)
     }
@@ -56,6 +59,7 @@ class WeightLossViewController: UIViewController {
     @IBAction func amSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.AMSnack
+        vc.category = self.category
         vc.subCategory = "AMSnack"
         self.push(vc: vc)
     }
@@ -63,6 +67,7 @@ class WeightLossViewController: UIViewController {
     @IBAction func lunchBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Lunch
+        vc.category = self.category
         vc.subCategory = "Lunch"
         self.push(vc: vc)
     }
@@ -70,6 +75,7 @@ class WeightLossViewController: UIViewController {
     @IBAction func pmSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.PMSnack
+        vc.category = self.category
         vc.subCategory = "PMSnack"
         self.push(vc: vc)
     }
@@ -77,6 +83,7 @@ class WeightLossViewController: UIViewController {
     @IBAction func dineerBtnTapped(_ sender: Any) {
         let vc = BreakfastViewController.identifier()
         vc.foodType = WLFoodType.Dinner
+        vc.category = self.category
         vc.subCategory = "Dinner"
         self.push(vc: vc)
     }

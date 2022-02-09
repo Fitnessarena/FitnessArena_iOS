@@ -37,13 +37,13 @@ class NutriViewController: UIViewController {
     
     @IBAction func weightLossBtnTapped(_ sender: Any) {
         let vc = WeightLossViewController.identifier()
+        vc.category = self.category
         self.push(vc: vc)
-        //self.performSegue(withIdentifier: "weightLoss", sender: nil)
     }
     
     @IBAction func buildingMuscleBtnTapped(_ sender: Any) {
         let vc = BuildingMuscleViewController.identifier()
+        vc.category = self.category
         self.push(vc: vc)
-        //self.performSegue(withIdentifier: "buildingMuscle", sender: nil)
     }
 }

@@ -20,8 +20,7 @@ class BuildingMuscleViewController: UIViewController {
     @IBOutlet weak var postWorkout: UIButton!
     @IBOutlet weak var preBedSnack: UIButton!
     
-    
-    
+    var category = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,52 +62,61 @@ class BuildingMuscleViewController: UIViewController {
     @IBAction func bfBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.Breakfast
+        vc.category = self.category
         self.push(vc: vc)
     }
     @IBAction func amSnackTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.AMSnack
+        vc.category = self.category
         self.push(vc: vc)
     }
     @IBAction func lunchBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.Lunch
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func pmSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.PMSnack
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func dinnerBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.Dinner
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func proteinBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.Protein
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func preWorkoutBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.PreWorkout
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func postWorkoutBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.PostWorkout
+        vc.category = self.category
         self.push(vc: vc)
     }
     
     @IBAction func preBedSnackBtnTapped(_ sender: Any) {
         let vc = BreakfastBMViewController.identifier()
         vc.foodType = BMFoodType.PreBedSnack
+        vc.category = self.category
         self.push(vc: vc)
     }
     
