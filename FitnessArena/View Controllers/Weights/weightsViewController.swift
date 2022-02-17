@@ -21,6 +21,13 @@ class WeightsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         buttonTxt.titleLabel?.font = UIFont(name: "...", size: 38 )
         chestBtn.titleLabel?.font = UIFont(name: "...", size: 38)
         legsBtn.titleLabel?.font = UIFont(name: "...", size: 38)
@@ -35,8 +42,6 @@ class WeightsViewController: UIViewController {
         shouldersBtn.layer.cornerRadius = 25.0
         backBtn.layer.cornerRadius = 25.0
         absBtn.layer.cornerRadius = 25.0
-        
-        // Do any additional setup after loading the view.
     }
     
     class func identifier() -> WeightsViewController {

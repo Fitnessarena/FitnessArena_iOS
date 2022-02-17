@@ -1310,7 +1310,7 @@ Repeat.
         tableView.reloadData()
     }
     
-    @IBAction func bacToHomeTapped(_ sender: Any) {
-        self.popToRootVC()
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.popVC()
     }
 }
