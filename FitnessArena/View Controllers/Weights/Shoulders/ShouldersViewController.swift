@@ -13,6 +13,7 @@ class ShouldersViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     var category = ""
     var subCategory = ""
+    var isFromCustomsController : Bool = false
     
     var data = [
         
@@ -791,6 +792,7 @@ Hold for a few seconds, then return to the starting position.
                 vc.images = self.pictures[currenttableView][indexPath.row]
                 vc.category = self.category
                 vc.subCategory = self.subCategory
+                vc.isFromCustomsController = self.isFromCustomsController
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         } else {

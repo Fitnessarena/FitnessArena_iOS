@@ -12,6 +12,7 @@ class ChestViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     var category = ""
     var subCategory = ""
+    var isFromCustomsController : Bool = false
     
     var data = [
         
@@ -711,6 +712,7 @@ Repeat.
             vc.images = self.pictures[currenttableView][indexPath.row]
             vc.category = self.category
             vc.subCategory = self.subCategory
+            vc.isFromCustomsController = self.isFromCustomsController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

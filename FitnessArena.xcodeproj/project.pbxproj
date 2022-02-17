@@ -46,6 +46,8 @@
 		BA35A47D27AA81BA0014F5DC /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47C27AA81BA0014F5DC /* FavouriteTableViewCell.swift */; };
 		BA35A47F27AA880F0014F5DC /* FavouritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */; };
 		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
+		BA8BBE4327BE1A1D00BE9083 /* CustomControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */; };
+		BA8BBE4527BE478B00BE9083 /* AddCustomWeightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		BA35A47C27AA81BA0014F5DC /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDetailViewController.swift; sourceTree = "<group>"; };
 		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControllers.swift; sourceTree = "<group>"; };
+		BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWeightsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		41BDBC5E27680A2300E23F78 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA8BBE4127BE19EC00BE9083 /* CustomControllers */,
 				BA35A47B27AA81A20014F5DC /* Favourite */,
 				BA35A47627AA1EED0014F5DC /* Extensions */,
 				BA35A47127AA12DC0014F5DC /* NavigationControllers */,
@@ -305,6 +310,15 @@
 				BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */,
 			);
 			path = Favourite;
+			sourceTree = "<group>";
+		};
+		BA8BBE4127BE19EC00BE9083 /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */,
+				BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */,
+			);
+			path = CustomControllers;
 			sourceTree = "<group>";
 		};
 		DD9A767ADF5166E331DFE3C6 /* Frameworks */ = {
@@ -448,6 +462,7 @@
 				41BDBC6227680A4500E23F78 /* SignUpViewController.swift in Sources */,
 				32890EFB279742FE00B76B2B /* BreakfastBMViewController.swift in Sources */,
 				41BDBC6827680A6200E23F78 /* ProfileViewController.swift in Sources */,
+				BA8BBE4527BE478B00BE9083 /* AddCustomWeightsViewController.swift in Sources */,
 				41BDBCAB2768694400E23F78 /* CardioViewController.swift in Sources */,
 				BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */,
 				BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */,
@@ -465,6 +480,7 @@
 				415D30F027696295001AA95E /* ChestViewController.swift in Sources */,
 				415D30EC2769165A001AA95E /* NutritionDetailViewController.swift in Sources */,
 				32890EEB279712FA00B76B2B /* BuildingMuscleViewController.swift in Sources */,
+				BA8BBE4327BE1A1D00BE9083 /* CustomControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

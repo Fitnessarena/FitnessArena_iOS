@@ -22,6 +22,7 @@ class BreakfastViewController: UIViewController {
     var details: [String] = []
     var images: [String] = []
     
+    var isFromCustomsController : Bool = false
 
     @IBOutlet weak var backBtn: UIButton!
     
@@ -159,6 +160,7 @@ extension BreakfastViewController: UITableViewDelegate, UITableViewDataSource {
             vc.images = self.images[indexPath.row]
             vc.category = self.category
             vc.subCategory = self.subCategory
+            vc.isFromCustomsController = self.isFromCustomsController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

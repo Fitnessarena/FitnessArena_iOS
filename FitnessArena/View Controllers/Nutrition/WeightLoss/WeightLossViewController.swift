@@ -40,6 +40,24 @@ class WeightLossViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        breakfastBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
+        amSnack.titleLabel?.font = UIFont(name: "...", size: 38 )
+        lunchBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
+        pmSnack.titleLabel?.font = UIFont(name: "...", size: 38 )
+        DinnerBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
+        ifBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
+        
+        
+        breakfastBtn.layer.cornerRadius = 20.0
+        amSnack.layer.cornerRadius = 20.0
+        lunchBtn.layer.cornerRadius = 20.0
+        pmSnack.layer.cornerRadius = 20.0
+        DinnerBtn.layer.cornerRadius = 20.0
+        ifBtn.layer.cornerRadius = 20.0
+    }
+    
     class func identifier() -> WeightLossViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WeightLossViewController") as! WeightLossViewController
     }

@@ -11,6 +11,8 @@ class ArmsViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     
+    var isFromCustomsController : Bool = false
+    
     var category = ""
     var subCategory = ""
     
@@ -1290,6 +1292,7 @@ Repeat.
             vc.images = self.pictures[currenttableView][indexPath.row]
             vc.category = self.category
             vc.subCategory = self.subCategory
+            vc.isFromCustomsController = self.isFromCustomsController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

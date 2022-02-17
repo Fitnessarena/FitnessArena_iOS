@@ -14,6 +14,7 @@ class BackViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var category = ""
     var subCategory = ""
+    var isFromCustomsController : Bool = false
     
     var data = [
         
@@ -637,6 +638,7 @@ Use your back and biceps to pull the suitcase up to your chest. Try to keep the 
             vc.images = self.pictures[currenttableView][indexPath.row]
             vc.category = self.category
             vc.subCategory = self.subCategory
+            vc.isFromCustomsController = self.isFromCustomsController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

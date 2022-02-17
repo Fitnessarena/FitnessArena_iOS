@@ -14,6 +14,7 @@ class LegsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var category = ""
     var subCategory = ""
+    var isFromCustomsController : Bool = false
     
     var data = [
         
@@ -1261,6 +1262,7 @@ leg. Repeat.
             vc.images = self.pictures[currenttableView][indexPath.row]
             vc.category = self.category
             vc.subCategory = self.subCategory
+            vc.isFromCustomsController = self.isFromCustomsController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

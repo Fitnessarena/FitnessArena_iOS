@@ -74,7 +74,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func customButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "customScreenSegue", sender: nil)
+        self.push(vc: CustomControllers.identifier())
     }
     
     @IBAction func profileButtonTapped(_ sender: Any) {

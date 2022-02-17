@@ -19,10 +19,10 @@ class WeightsViewController: UIViewController {
     
     var category = ""
     
+    var isFromCustomsController : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
         // Do any additional setup after loading the view.
     }
     
@@ -36,12 +36,19 @@ class WeightsViewController: UIViewController {
         absBtn.titleLabel?.font = UIFont(name: "...", size: 38)
         self.backButton.setTitle("", for: .normal)
         
-        buttonTxt.layer.cornerRadius = 25.0
-        chestBtn.layer.cornerRadius = 25.0
-        legsBtn.layer.cornerRadius = 25.0
-        shouldersBtn.layer.cornerRadius = 25.0
-        backBtn.layer.cornerRadius = 25.0
-        absBtn.layer.cornerRadius = 25.0
+        buttonTxt.frame.size.height = 50
+        chestBtn.frame.size.height = 50
+        legsBtn.frame.size.height = 50
+        shouldersBtn.frame.size.height = 50
+        backBtn.frame.size.height = 50
+        absBtn.frame.size.height = 50
+        
+        buttonTxt.layer.cornerRadius = buttonTxt.frame.height / 2
+        chestBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+        legsBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+        shouldersBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+        backBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+        absBtn.layer.cornerRadius = buttonTxt.frame.height / 2
     }
     
     class func identifier() -> WeightsViewController {
@@ -56,36 +63,42 @@ class WeightsViewController: UIViewController {
         let vc = ArmsViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Arms"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     @IBAction func chestButtonTapped(_ sender: Any) {
         let vc = ChestViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Chest"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     @IBAction func legsButtonTapped(_ sender: Any) {
         let vc = LegsViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Legs"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     @IBAction func shouldersButtonTapped(_ sender: Any) {
         let vc = ShouldersViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Shoulders"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     @IBAction func backButtonTapped(_ sender: Any) {
         let vc = BackViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Back"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     @IBAction func absButtonTapped(_ sender: Any) {
         let vc = AbsViewController.identifier()
         vc.category = self.category
         vc.subCategory = "Abdominal"
+        vc.isFromCustomsController = self.isFromCustomsController
         self.push(vc: vc)
     }
     
