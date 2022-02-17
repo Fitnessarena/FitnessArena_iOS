@@ -11,7 +11,7 @@ class NutritionDetailViewController: UIViewController {
 
     @IBOutlet weak var nutritionLabel: UILabel!
     @IBOutlet weak var nutritionDetails: UITextView!
-    @IBOutlet weak var backLabel: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var homelabel: UIButton!
     
     var nutritionName = ""
@@ -24,7 +24,7 @@ class NutritionDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.backLabel.setTitle("", for: .normal)
+        self.backButton.setTitle("", for: .normal)
         self.homelabel.setTitle("", for: .normal)
 
         self.nutritionLabel.text = self.arrName[index]

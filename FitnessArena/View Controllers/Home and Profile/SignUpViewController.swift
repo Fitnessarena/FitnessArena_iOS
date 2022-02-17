@@ -18,11 +18,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.backButton.setTitle("", for: .normal)
         // Do any additional setup after loading the view.
         
     }
@@ -30,6 +33,7 @@ class SignUpViewController: UIViewController {
     class func identifier() -> SignUpViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
     }
+    
     func validateFields() -> String? {
         
         // Check that all fields are filled in
@@ -55,7 +59,9 @@ class SignUpViewController: UIViewController {
         return nil
     }
     
-    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.popVC()
+    }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
         // Validate the fields

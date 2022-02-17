@@ -12,11 +12,15 @@ class ForgotPasswordViewController: UIViewController {
     
     var email = ""
     
+    @IBOutlet weak var backButton: UIButton!
+    
     @IBOutlet weak var emailTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.backButton.setTitle("", for: .normal)
+        
         if self.email != "" {
             self.emailTextField.text = email
         }
@@ -24,6 +28,10 @@ class ForgotPasswordViewController: UIViewController {
     
     class func identifier() -> ForgotPasswordViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
+    }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.popVC()
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {

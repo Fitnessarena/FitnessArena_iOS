@@ -10,7 +10,7 @@ import UIKit
 class WeightsViewController: UIViewController {
 
     @IBOutlet weak var buttonTxt: UIButton!
-    @IBOutlet weak var backLabel: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var chestBtn: UIButton!
     @IBOutlet weak var legsBtn: UIButton!
     @IBOutlet weak var shouldersBtn: UIButton!
@@ -27,7 +27,7 @@ class WeightsViewController: UIViewController {
         shouldersBtn.titleLabel?.font = UIFont(name: "...", size: 38)
         backBtn.titleLabel?.font = UIFont(name: "...", size: 38)
         absBtn.titleLabel?.font = UIFont(name: "...", size: 38)
-        self.backLabel.setTitle("", for: .normal)
+        self.backButton.setTitle("", for: .normal)
         
         buttonTxt.layer.cornerRadius = 25.0
         chestBtn.layer.cornerRadius = 25.0

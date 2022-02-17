@@ -91,10 +91,10 @@ class NutritionViewController: UIViewController {
 • Women: 2.7 liters/day
 """]
     
-    @IBOutlet weak var backLabel: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.backLabel.setTitle("", for: .normal)
+        self.backButton.setTitle("", for: .normal)
         tableView.delegate = self
         tableView.dataSource = self
         //tableView.separatorStyle = .none

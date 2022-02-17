@@ -13,7 +13,7 @@ import FirebaseDatabase
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var backLabel: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.backLabel.setTitle("", for: .normal)
+        self.backButton.setTitle("", for: .normal)
         self.getUserProfile()
     }
     
