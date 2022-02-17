@@ -80,7 +80,7 @@ class AddCustomWeightsViewController: UIViewController {
             "category": self.favourite.category!,
             "subCategory": self.favourite.subCategory!,
             "weights": self.weightsText.text!,
-            "repititions": self.repititionsText.text!
+            "repititions": self.repititionsText.text!,
             
         ])
         
@@ -117,12 +117,6 @@ class AddCustomWeightsViewController: UIViewController {
 }
 
 extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "FavouritesDetailViewController") as? FavouritesDetailViewController{
-//            vc.favourite = self.arrFavourites[indexPath.row]
-//            self.push(vc: vc)
-//        }
-    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -137,6 +131,17 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddCustomWeightsTableViewCell") as! AddCustomWeightsTableViewCell
         cell.lblText?.text = "\(self.arrCustoms[indexPath.row].weights ?? "") * \(self.arrCustoms[indexPath.row].repititions ?? "")"
+        
+        
+        let a = Double(self.arrCustoms[indexPath.row].id ?? "") ?? 0.0
+        let myDate = NSDate(timeIntervalSince1970: a)
+        print(myDate)
+    
+        let format = DateFormatter()
+        format.dateFormat = "MMM-dd-yyyy 'at' HH:mm"
+        let timestamp = format.string(from: myDate as Date)
+        
+        cell.lblDateTime?.text = timestamp
         return cell
     }
 }

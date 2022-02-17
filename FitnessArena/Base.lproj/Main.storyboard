@@ -2576,19 +2576,33 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL1-ih-2bO">
                                                     <rect key="frame" x="10" y="10" width="354" height="60"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-jE-Lp8">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-BT-xg4">
                                                             <rect key="frame" x="8" y="8" width="338" height="44"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label Label Label Label Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-jE-Lp8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="237.5" height="44"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-me-MFf">
+                                                                    <rect key="frame" x="245.5" y="0.0" width="92.5" height="44"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="qFo-Fc-n4G"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="J2x-jE-Lp8" firstAttribute="top" secondItem="kL1-ih-2bO" secondAttribute="top" constant="8" id="1Df-fw-KEF"/>
-                                                        <constraint firstAttribute="bottom" secondItem="J2x-jE-Lp8" secondAttribute="bottom" constant="8" id="9JJ-Ht-YZU"/>
-                                                        <constraint firstItem="J2x-jE-Lp8" firstAttribute="leading" secondItem="kL1-ih-2bO" secondAttribute="leading" constant="8" id="Bjy-my-5Mv"/>
-                                                        <constraint firstAttribute="trailing" secondItem="J2x-jE-Lp8" secondAttribute="trailing" constant="8" id="VnU-Uu-O66"/>
+                                                        <constraint firstItem="w8h-BT-xg4" firstAttribute="top" secondItem="kL1-ih-2bO" secondAttribute="top" constant="8" id="45O-7j-DuE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="w8h-BT-xg4" secondAttribute="trailing" constant="8" id="ATL-Jo-KYM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="w8h-BT-xg4" secondAttribute="bottom" constant="8" id="BhA-UM-fPr"/>
+                                                        <constraint firstItem="w8h-BT-xg4" firstAttribute="leading" secondItem="kL1-ih-2bO" secondAttribute="leading" constant="8" id="LKW-6K-0MG"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -2600,7 +2614,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblText" destination="J2x-jE-Lp8" id="W01-kN-UlI"/>
+                                            <outlet property="lblDateTime" destination="QHF-me-MFf" id="8uL-iZ-BpG"/>
+                                            <outlet property="lblText" destination="J2x-jE-Lp8" id="hwk-96-emI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

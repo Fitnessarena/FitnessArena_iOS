@@ -11,6 +11,7 @@ class AddCustomWeightsTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var lblDateTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
