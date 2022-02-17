@@ -48,6 +48,8 @@
 		BA76146627A84E6700FC12ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */; };
 		BA8BBE4327BE1A1D00BE9083 /* CustomControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */; };
 		BA8BBE4527BE478B00BE9083 /* AddCustomWeightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */; };
+		BA8BBE4727BE547600BE9083 /* Customs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4627BE547500BE9083 /* Customs.swift */; };
+		BA8BBE4927BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		BA76146527A84E6700FC12ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControllers.swift; sourceTree = "<group>"; };
 		BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWeightsViewController.swift; sourceTree = "<group>"; };
+		BA8BBE4627BE547500BE9083 /* Customs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customs.swift; sourceTree = "<group>"; };
+		BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWeightsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,8 +319,10 @@
 		BA8BBE4127BE19EC00BE9083 /* CustomControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA8BBE4627BE547500BE9083 /* Customs.swift */,
 				BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */,
 				BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */,
+				BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */,
 			);
 			path = CustomControllers;
 			sourceTree = "<group>";
@@ -477,10 +483,12 @@
 				32890EE927970C5C00B76B2B /* WeightLossViewController.swift in Sources */,
 				32890EF9279742B200B76B2B /* IntermittentFastingViewController.swift in Sources */,
 				BA35A47F27AA880F0014F5DC /* FavouritesDetailViewController.swift in Sources */,
+				BA8BBE4927BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift in Sources */,
 				415D30F027696295001AA95E /* ChestViewController.swift in Sources */,
 				415D30EC2769165A001AA95E /* NutritionDetailViewController.swift in Sources */,
 				32890EEB279712FA00B76B2B /* BuildingMuscleViewController.swift in Sources */,
 				BA8BBE4327BE1A1D00BE9083 /* CustomControllers.swift in Sources */,
+				BA8BBE4727BE547600BE9083 /* Customs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

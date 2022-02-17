@@ -95,9 +95,6 @@ class CustomControllers: UIViewController {
         default:
             break
         }
-        
-        
-        
     }
     
     @IBAction func segmentedButtonAction(_ sender: UISegmentedControl) {
@@ -105,16 +102,14 @@ class CustomControllers: UIViewController {
         self.calApi()
     }
     
-    
-    
 }
 
 extension CustomControllers : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "FavouritesDetailViewController") as? FavouritesDetailViewController{
-//            vc.favourite = self.arrFavourites[indexPath.row]
-//            self.push(vc: vc)
-//        }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "AddCustomWeightsViewController") as? AddCustomWeightsViewController {
+            vc.favourite = self.arrFavourites[indexPath.row]
+            self.push(vc: vc)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
