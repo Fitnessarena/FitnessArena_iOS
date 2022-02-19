@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,11 +20,19 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.emailTextField.delegate = self
+        self.PasswordTextField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
     class func identifier() -> LoginViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       self.view.endEditing(true)
+        return false
     }
     
     func validateFields() -> String? {

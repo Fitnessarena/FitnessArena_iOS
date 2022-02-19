@@ -38,20 +38,187 @@ class BreakfastViewController: UIViewController {
             self.lblTitle.text = "Breakfast"
             self.subCategory = "Breakfast"
             self.imgFoodType.image = UIImage(named: "BF")
-            self.name = ["Organic Protein Powder","Wild Salmon","Eggs", "Almond Butter", "Ground Turkey","All Nature Peanut Butter","Black Beans","Chicken Breast","Nitrate-Free Canadian Bacon","Avocados"]
+            self.name = ["Spinach & Egg Scramble with Raspberries","Berry-Almond Smoothie Bowl","Sriracha, Egg & Avocado Overnight Oats", "Raspberry-Peach-Mango Smoothie Bowl", "Oatmeal Almond Protein Pancakes"]
            
-            self.details = ["Protein, 2 scoops: 34–48 g The American Society of Nutrition states that having a breakfast that is high in protein will not only benefit muscle health and support weight loss, but will also leave you feeling satiated and help with glucose regulation. Protein powder is the most versatile and nutrient-dense source of the musclebuilder nutrient, earning it a top spot on our list. Use it to make a high-protein smoothie, add it to oatmeal to amp up the protein count, use it to make a homemade nutrition bar, mix it into pancake mix—the options are truly endless. Want to grab a tub? Luckily, we tested 10 protein powders and found the best one!",
-                            "Protein, per 3 oz: 17 g The healthy dose of protein and omega-3 healthy fats found in salmon will keep you satisfied and energized all morning long. I love smoked salmon and smashed avocado on wholegrain toast, or reheating leftovers of grilled salmon and vegetables for a quick, superfoods-packed start to the day. Just make sure you avoid the farmed variety if weight loss is your goal. For more weight loss tips, don't miss these best-ever ways to boost your metabolism.",
-                            "Eggs are an excellent source of protein and other healthy nutrients including fat-burning choline. Choline, also found in lean meats, seafood, and collard greens attack the gene mechanism that triggers your body to store fat around your liver.",
-                            "Protein, per 2 tablespoons: 7–8 g Almond butter is high in protein, fiber, antioxidants, and monounsaturated fats. Studies have also shown that people who eat nuts are less likely to become overweight than those who avoid them, likely because it helps you feel fuller, longer. To reap the benefits at breakfast, McKittrick suggests spreading some nut butter on wholegrain toast or adding a tablespoon to oatmeal or smoothies.", "Protein, per 4 oz: 22 g If you want to amp up your morning dose of protein, consider adding ground turkey (along with some onions, bell peppers, and mushrooms) to your eggs. The combination is quite tasty and somewhat unexpected, making it a perfect choice for fatigued taste buds. Bonus: The meat is a prime source of DHA omega 3 fatty acids, which have been shown to improve brain function and mood and prevent fat cells from growing, according to a study published by Frontiers in Aging Neuroscience.",
-                            "Protein, per 2 tablespoons: 7–8 g While processed peanut butter is filled with sugar and waist-widening oils, the real stuff is made with just two ingredients: peanuts and salt. This legume is filled with heart-healthy monounsaturated fats and genistein, a compound that downregulates fat genes. Nutritionist and personal trainer Kristin Reisinger, MS, RD, CSSD,  suggests using the healthy fat in an a.m. smoothie. Take 1 cup of unsweetened almond milk and blend it with 1 scoop of your favorite protein powder, 1/2 banana, and 1 tablespoon of peanut butter. This drink is a simple way to start the day with a perfect balance of healthy fats, protein, and carbohydrates to replenish glycogen stores and promote muscle growth, without an overabundance of calories for those seeking weight loss.",
-                            "Protein, per ½ cup: 7 g Packed with soluble fiber—a powerful belly fat fighter—beans will not only fill you up for hours but also help slim you down. Wake Forest Baptist Medical Center researchers found that for every 10-gram increase in soluble fiber consumed daily, study participants' belly fat reduced by 3.7 percent over five years. To eat the magical fruit for breakfast, make a Southwestern-inspired omelet filled with black beans, salsa, and non-dairy cheese.",
-                            "Protein, per 4 oz: 19 g Chicken may not be your average breakfast food, but maybe it should be. Some mornings, yogurt or eggs just won't cut it. To spice up my breakfast, I'll pull out some leftover dinner, which often contains plenty of fiber-rich veggies and hunger-slashing lean protein. This perfect combination of nutrients keeps me full and energized for hours. And for a list of the purest proteins, don't miss these best proteins for weight loss!",
-                            "Protein, 3 strips: 18 g Many brands of bacon contain sodium nitrate and nitrite to keep the meat free from harmful bacteria. Under certain conditions, sodium nitrite and nitrate react with amino acids to form cancer-causing chemicals called nitrosamines. And sodium nitrate has been shown to interfere with the body's natural ability to process sugar. According to the Mayo Clinic, sodium nitrate has been proven to increase the risk of heart disease as well. However, if you stick with the right variety, bacon can be a healthy, slimming part of your morning meal. Go with Canadian.",
-                            "Sugar, per 1⁄4 fruit: 0.33 g Fiber, per 1⁄4 fruit: 3.5 g Avocados—one of the best weight-loss foods on the planet—contain nearly 20 vitamins and minerals in every serving, says McKittrick, including oleic fatty acids, which have been shown to reduce abdominal fat. Avocados are also a good source of fiber and fat. Use the green fruit to make avocado toast or bake an egg in half of an avocado."]
+            self.details = ["""
+                            This quick egg scramble with hearty bread is one of the best breakfasts for weight loss. It combines weight-loss power foods, eggs and raspberries, with filling whole-grain toast and nutrient-packed spinach. The protein and fiber help fill you up and the whole meal clocks in at just under 300 calories.
+                            
+                            Ingredients:
+                            
+                            1 teaspoon canola oil
+                            1 ½ cups baby spinach (1 1/2 ounces)
+                            2 large eggs, lightly beaten
+                            Pinch of kosher salt
+                            Pinch of ground pepper
+                            1 slice whole-grain bread, toasted
+                            ½ cup fresh raspberries
+                            
+                            Directions:
+                            
+                            Step 1:
+                            Heat oil in a small nonstick skillet over medium-high heat. Add spinach and cook until wilted, stirring often, 1 to 2 minutes. Transfer the spinach to a plate. Wipe the pan clean, place over medium heat and add eggs. Cook, stirring once or twice to ensure even cooking, until just set, 1 to 2 minutes. Stir in the spinach, salt and pepper. Serve the scramble with toast and raspberries.
+                            
+                            Nutrition Facts:
+                            
+                            Serving Size:
+                            2 eggs, 1 slice bread & 1/2 cup raspberries
+                            
+                            Per Serving:
+                            296 calories; protein 17.8g; carbohydrates 20.9g; dietary fiber 7g; sugars 4.8g; fat 15.7g; saturated fat 3.7g; cholesterol 372mg; vitamin a iu 3312.6IU; vitamin c 28.1mg; folate 79.4mcg; calcium 138.8mg; iron 4.2mg; magnesium 76.1mg; potassium 292.6mg; sodium 394.2mg; thiamin 0.1mg.
+                            
+                            Exchanges:
+                            2 medium-fat protein, 1 fat, 1/2 fruit, 1/2 starch, 1/2 vegetable
+                            """,
+                            
+                            """
+                            A little frozen banana gives creamy texture to this satisfying smoothie bowl.
+                            
+                            Ingredients:
+                            
+                            ⅔ cup frozen raspberries
+                            ½ cup frozen sliced banana
+                            ½ cup plain unsweetened almond milk
+                            5 tablespoons sliced almonds, divided
+                            ¼ teaspoon ground cinnamon
+                            ⅛ teaspoon ground cardamom
+                            ⅛ teaspoon vanilla extract
+                            ¼ cup blueberries
+                            1 tablespoon unsweetened coconut flakes
+                            
+                            Directions:
+                            
+                            Step 1
+                            Blend raspberries, banana, almond milk, 3 tablespoons almonds, cinnamon, cardamom and vanilla in a blender until very smooth.
+
+                            Step 2
+                            Pour the smoothie into a bowl and top with blueberries, the remaining 2 tablespoons almonds and coconut.
+                            
+                            Nutrition Facts:
+                            
+                            Serving Size:
+                            1 1/3 cups
+                            
+                            Per Serving:
+                            360 calories; protein 9.2g; carbohydrates 45.6g; dietary fiber 14g; sugars 21.4g; fat 19g; saturated fat 3.3g; vitamin a iu 357.7IU; vitamin c 35.6mg; folate 52mcg; calcium 341mg; iron 2.5mg; magnesium 129mg; potassium 736.2mg; sodium 89.4mg.
+                            
+                            Exchanges:
+                            2 1/2 fruit, 3 1/2 fat
+                            """,
+                            
+                            
+                            
+                            """
+If you love avocado toast, give this savory overnight oats recipe a try. The oats soak overnight for easy "cooking." In the morning, just top with a fried egg, avocado and Sriracha for a satisfying healthy breakfast.
+
+Ingredients:
+
+½ cup rolled oats (see Tip)
+¾ cup water
+1 tablespoon onion
+¼ avocado, sliced
+2 cherry tomatoes, chopped
+1 large egg, fried
+1 teaspoon Sriracha
+
+Directions:
+
+Step 1
+Combine oats and water in a small bowl or jar. Cover and refrigerate overnight.
+
+Step 2
+Stir in onion and microwave in 30-second intervals, stirring occasionally, until heated through. Arrange in a bowl with avocado and tomatoes. Top with the egg and Sriracha.
+
+Nutrition Facts:
+
+Serving Size:
+1 jar
+
+Per Serving:
+317 calories; protein 12.7g; carbohydrates 34.9g; dietary fiber 7.9g; sugars 3.8g; fat 15.2g; saturated fat 3.2g; cholesterol 186mg; vitamin a iu 626.8IU; vitamin c 10.4mg; folate 90.7mcg; calcium 65.1mg; iron 2.7mg; magnesium 67.1mg; potassium 559.7mg; sodium 141.9mg.
+
+Exchanges:
+2 starch, 1 1/2 fat, 1 medium-fat protein, 1/2 vegetable
+""",
+                            
+                            """
+This healthy smoothie recipe is a gateway to the smoothie-bowl craze. Use whatever fruit, nuts and seeds you like best to make it your own. Be sure to use frozen fruit in Step 1 to yield a creamy, frosty base for the toppings.
+
+Ingredients:
+
+1 cup frozen mango chunks
+¾ cup nonfat plain Greek yogurt
+¼ cup reduced-fat milk
+1 teaspoon vanilla extract
+¼ ripe peach, sliced
+⅓ cup raspberries
+1 tablespoon sliced almonds, toasted if desired
+1 tablespoon unsweetened coconut flakes, toasted if desired
+1 teaspoon chia seeds
+
+Directions:
+
+Step 1
+Combine mango, yogurt, milk and vanilla in a blender. Puree until smooth.
+
+Step 2
+Pour the smoothie into a bowl and top with peach slices, raspberries, almonds, coconut and chia seeds to taste.
+
+Nutrition Facts:
+
+Serving Size:
+about 2 cups
+
+Per Serving:
+352 calories; protein 23.4g; carbohydrates 46.4g; dietary fiber 8.2g; sugars 36.4g; fat 9.3g; saturated fat 3.7g; cholesterol 13.3mg; vitamin a iu 2045.7IU; vitamin c 73.5mg; folate 100.2mcg; calcium 327.5mg; iron 1.4mg; magnesium 81.9mg; potassium 796.3mg; sodium 93.7mg; thiamin 0.2mg.
+
+Exchanges:
+2 fruit, 1 fat-free milk, 1 1/2 fat
+""",
+                            
+                            """
+Depending on the type of protein powder you pick, you might need to reduce the amount of liquid in this protein pancake recipe. Whey-protein pancakes need less liquid than those made with soy, hemp or pea protein. Serve with yogurt and a DIY fruit sauce (warmed frozen berries with a pinch of sugar).
+
+Ingredients:
+
+½ cup unflavored protein powder
+½ cup almond meal
+½ cup oat flour (see Tip)
+1 tablespoon sugar
+1 teaspoon ground cinnamon
+1 teaspoon baking powder
+¼ teaspoon baking soda
+¼ teaspoon salt
+2 large eggs
+¾ cup buttermilk
+2 tablespoons canola oil
+2 teaspoons vanilla extract
+
+Directions:
+
+Step 1
+Combine protein powder, almond meal, oat flour, sugar, cinnamon, baking powder, baking soda and salt in a blender; pulse until fully mixed. Add eggs, buttermilk (reduce to 1/2 cup if using whey protein), oil and vanilla; pulse, stopping to scrape down the sides as needed, until combined. Let stand for 15 minutes.
+
+Step 2
+Coat a large nonstick skillet or griddle with cooking spray; heat over medium-high heat.
+
+Step 3
+Make about 3 pancakes at a time, using 1/4 cup batter per pancake; reduce the heat to medium. Cook until the edges are dry, 1 to 3 minutes. Flip and cook until golden brown on the other side, 1 to 3 minutes more. Repeat with the remaining batter, using more cooking spray and reducing the heat as needed. Serve warm.
+
+Nutrition Facts:
+
+Serving Size:
+2 (3-inch) pancakes
+
+Per Serving:
+334 calories; protein 19.7g; carbohydrates 22.9g; dietary fiber 3.9g; sugars 6.2g; fat 18.6g; saturated fat 2.3g; cholesterol 94.8mg; vitamin a iu 158.5IU; vitamin c 0.5mg; folate 14.1mcg; calcium 261.1mg; iron 10mg; magnesium 56.1mg; potassium 220.4mg; sodium 595.9mg; thiamin 1.4mg; added sugar 3g.
+
+Exchanges:
+1 starch, 1 1/2 lean meat, 1/2 medium-fat meat, 3 fat
+
+"""]
             self.images =
                 
-                ["Organic Protein Powder","Wild Salmon","Eggs", "Almond Butter", "Ground Turkey","All Nature Peanut Butter","Black Beans","Chicken Breast","Nitrate-Free Canadian Bacon","Avocados"]
+            ["Spinach & Egg Scramble with Raspberries","Berry-Almond Smoothie Bowl","Sriracha, Egg & Avocado Overnight Oats", "Raspberry-Peach-Mango Smoothie Bowl", "Oatmeal Almond Protein Pancakes"]
         
             
         case .AMSnack:
