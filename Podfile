@@ -17,4 +17,7 @@ pod 'Firebase/Database'
 pod 'ObjectMapper'
 
 pod 'Google-Mobile-Ads-SDK'
+
+pod 'IQKeyboardManagerSwift', '6.5.9'
+
 end

@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 import CoreData
 import GoogleMobileAds
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 20.0
+        
         return true
     }
 

@@ -60,6 +60,7 @@ class AddCustomWeightsViewController: UIViewController {
                             self.arrCustoms.append(customs)
                         }
                     }
+                    self.arrCustoms = self.arrCustoms.reversed()
                     self.tableView.reloadData()
                 } else {
                     self.tableView.reloadData()
@@ -138,7 +139,7 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
         print(myDate)
     
         let format = DateFormatter()
-        format.dateFormat = "MMM-dd-yyyy 'at' HH:mm"
+        format.dateFormat = "MMM-dd-yyyy 'at' HH:mm a"
         let timestamp = format.string(from: myDate as Date)
         
         cell.lblDateTime?.text = timestamp
