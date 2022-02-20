@@ -89,8 +89,7 @@ class CustomControllers: UIViewController {
             vc.isFromCustomsController = true
             self.push(vc: vc)
         case 1:
-            let vc = NutritionViewController.identifier()
-            vc.category = "Nutrition"
+            let vc = AddCustomNutritionViewController.identifier()
             self.push(vc: vc)
         default:
             break
