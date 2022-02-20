@@ -8,16 +8,21 @@
 import UIKit
 import Firebase
 import ObjectMapper
+import IQKeyboardManagerSwift
+import IQDropDownTextField
 
 class AddCustomNutritionViewController: UIViewController {
 
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var weightsText: UITextField!
-    @IBOutlet weak var repititionsText: UITextField!
+    @IBOutlet weak var FoodNameText: UITextField!
+    @IBOutlet weak var CaloriesText: UITextField!
+    @IBOutlet weak var CategoryText: IQDropDownTextField!
     
     @IBOutlet weak var submitButton: UIButton!
+    
+    var arrCategory = ["Breakfast", "A.M Snack", "Lunch", "P.M. Snack", "Dinner"]
     
     let ref = Database.database().reference()
     
@@ -28,6 +33,9 @@ class AddCustomNutritionViewController: UIViewController {
         super.viewDidLoad()
 
         self.backBtn.setTitle("", for: .normal)
+        
+        CategoryText.isOptionalDropDown = false
+        CategoryText.itemList = self.arrCategory
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,15 +89,16 @@ class AddCustomNutritionViewController: UIViewController {
             "imageName": self.favourite.imageName!,
             "category": self.favourite.category!,
             "subCategory": self.favourite.subCategory!,
-            "weights": self.weightsText.text!,
-            "repititions": self.repititionsText.text!,
+            "foodName": self.FoodNameText.text!,
+            "foodCalorie": self.CaloriesText.text!,
+            "foodCategory": self.CategoryText.selectedItem!,
             
         ])
         
         self.giveAlertToUser(message: "Successfully added to customs.")
         self.getCustomNutritions()
-        self.weightsText.text = ""
-        self.repititionsText.text = ""
+        self.FoodNameText.text = ""
+        self.CaloriesText.text = ""
     }
     
     func removeCustomWeights(indexId: Int) {
@@ -110,9 +119,9 @@ class AddCustomNutritionViewController: UIViewController {
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
-        if self.weightsText.text?.trimmingCharacters(in: .whitespaces) != "" && self.repititionsText.text?.trimmingCharacters(in: .whitespaces) != "" {
-            self.addToCustomWeights()
-        }
+//        if self.weightsText.text?.trimmingCharacters(in: .whitespaces) != "" && self.repititionsText.text?.trimmingCharacters(in: .whitespaces) != "" {
+//            self.addToCustomWeights()
+//        }
         
     }
     

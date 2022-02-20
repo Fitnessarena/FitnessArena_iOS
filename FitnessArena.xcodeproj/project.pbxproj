@@ -40,6 +40,7 @@
 		BA1A308127AAE14900A5C7A3 /* ArmsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1A307F27AAE14900A5C7A3 /* ArmsDetailViewController.swift */; };
 		BA1A308227AAE14900A5C7A3 /* ArmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1A308027AAE14900A5C7A3 /* ArmsViewController.swift */; };
 		BA211CE327C20E00005A1281 /* AddCustomNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA211CE227C20E00005A1281 /* AddCustomNutritionViewController.swift */; };
+		BA211CE727C213F5005A1281 /* AddCustomNutritionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA211CE627C213F5005A1281 /* AddCustomNutritionTableViewCell.swift */; };
 		BA35A47327AA13210014F5DC /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47227AA13210014F5DC /* LoginNavigationController.swift */; };
 		BA35A47527AA13380014F5DC /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47427AA13380014F5DC /* HomeNavigationController.swift */; };
 		BA35A47827AA6A3B0014F5DC /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */; };
@@ -91,6 +92,7 @@
 		BA1A307F27AAE14900A5C7A3 /* ArmsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsDetailViewController.swift; sourceTree = "<group>"; };
 		BA1A308027AAE14900A5C7A3 /* ArmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmsViewController.swift; sourceTree = "<group>"; };
 		BA211CE227C20E00005A1281 /* AddCustomNutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomNutritionViewController.swift; sourceTree = "<group>"; };
+		BA211CE627C213F5005A1281 /* AddCustomNutritionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomNutritionTableViewCell.swift; sourceTree = "<group>"; };
 		BA35A47227AA13210014F5DC /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		BA35A47427AA13380014F5DC /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		BA35A47727AA6A3B0014F5DC /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +292,24 @@
 			path = Arms;
 			sourceTree = "<group>";
 		};
+		BA211CE427C213A6005A1281 /* AddCustomWeights */ = {
+			isa = PBXGroup;
+			children = (
+				BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */,
+				BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */,
+			);
+			path = AddCustomWeights;
+			sourceTree = "<group>";
+		};
+		BA211CE527C213B8005A1281 /* AddCustomNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				BA211CE227C20E00005A1281 /* AddCustomNutritionViewController.swift */,
+				BA211CE627C213F5005A1281 /* AddCustomNutritionTableViewCell.swift */,
+			);
+			path = AddCustomNutrition;
+			sourceTree = "<group>";
+		};
 		BA35A47127AA12DC0014F5DC /* NavigationControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,9 +343,8 @@
 			children = (
 				BA8BBE4627BE547500BE9083 /* Customs.swift */,
 				BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */,
-				BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */,
-				BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */,
-				BA211CE227C20E00005A1281 /* AddCustomNutritionViewController.swift */,
+				BA211CE427C213A6005A1281 /* AddCustomWeights */,
+				BA211CE527C213B8005A1281 /* AddCustomNutrition */,
 			);
 			path = CustomControllers;
 			sourceTree = "<group>";
@@ -457,6 +476,7 @@
 				BA35A47827AA6A3B0014F5DC /* FavouritesViewController.swift in Sources */,
 				BA35A47A27AA71CC0014F5DC /* Favourite.swift in Sources */,
 				BA1A308127AAE14900A5C7A3 /* ArmsDetailViewController.swift in Sources */,
+				BA211CE727C213F5005A1281 /* AddCustomNutritionTableViewCell.swift in Sources */,
 				BA1A308227AAE14900A5C7A3 /* ArmsViewController.swift in Sources */,
 				41BDBC6027680A3C00E23F78 /* LoginViewController.swift in Sources */,
 				BA211CE327C20E00005A1281 /* AddCustomNutritionViewController.swift in Sources */,

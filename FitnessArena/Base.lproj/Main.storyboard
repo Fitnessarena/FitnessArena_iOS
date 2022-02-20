@@ -730,10 +730,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="tHx-N3-x1N">
-                                <rect key="frame" x="64" y="300" width="286" height="228"/>
+                                <rect key="frame" x="32" y="300" width="350" height="228"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsY-AA-OgQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="64"/>
                                         <color key="backgroundColor" red="0.6588235294117647" green="0.29019607843137252" blue="0.29803921568627451" alpha="0.80048894557823125" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="PcF-p9-zRa"/>
@@ -749,7 +749,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-Ve-5dN">
-                                        <rect key="frame" x="0.0" y="164" width="286" height="64"/>
+                                        <rect key="frame" x="0.0" y="164" width="350" height="64"/>
                                         <color key="backgroundColor" red="0.6588235294117647" green="0.29019607843137252" blue="0.29803921568627451" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -772,12 +772,12 @@
                             <constraint firstItem="4yE-nD-vgH" firstAttribute="trailing" secondItem="Ax1-yE-gBY" secondAttribute="trailing" id="LRV-6q-F2F"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="trailing" secondItem="4yE-nD-vgH" secondAttribute="trailing" id="O8T-EY-nIm"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="top" secondItem="fdh-n6-iT3" secondAttribute="top" id="Oy2-3V-5nn"/>
-                            <constraint firstItem="4yE-nD-vgH" firstAttribute="trailing" secondItem="tHx-N3-x1N" secondAttribute="trailing" constant="64" id="Q9O-bu-CyR"/>
+                            <constraint firstItem="4yE-nD-vgH" firstAttribute="trailing" secondItem="tHx-N3-x1N" secondAttribute="trailing" constant="32" id="Q9O-bu-CyR"/>
                             <constraint firstItem="tHx-N3-x1N" firstAttribute="top" secondItem="xDx-Zy-buU" secondAttribute="bottom" constant="64" id="byH-mV-OFu"/>
                             <constraint firstItem="1HG-is-3wX" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" id="fsN-Ve-auZ"/>
                             <constraint firstAttribute="bottom" secondItem="1HG-is-3wX" secondAttribute="bottom" id="gOS-se-daV"/>
                             <constraint firstItem="Ax1-yE-gBY" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" id="l1v-XZ-l7p"/>
-                            <constraint firstItem="tHx-N3-x1N" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" constant="64" id="lgf-K7-dSA"/>
+                            <constraint firstItem="tHx-N3-x1N" firstAttribute="leading" secondItem="4yE-nD-vgH" secondAttribute="leading" constant="32" id="lgf-K7-dSA"/>
                             <constraint firstItem="xDx-Zy-buU" firstAttribute="centerX" secondItem="fdh-n6-iT3" secondAttribute="centerX" id="p7J-0D-RIv"/>
                         </constraints>
                     </view>
@@ -2704,7 +2704,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -2720,7 +2720,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X8x-C3-90G">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X8x-C3-90G" customClass="IQDropDownTextField">
                                                 <rect key="frame" x="193" y="0.0" width="173" height="56"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2752,7 +2752,7 @@
                                 <rect key="frame" x="20" y="382" width="374" height="480"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCustomWeightsTableViewCell" rowHeight="80" id="gsq-wl-IiN" customClass="AddCustomWeightsTableViewCell" customModule="FitnessArena" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCustomNutritionTableViewCell" rowHeight="80" id="gsq-wl-IiN" customClass="AddCustomNutritionTableViewCell" customModule="FitnessArena" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gsq-wl-IiN" id="yRK-J1-AYu">
@@ -2825,7 +2825,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblDateTime" destination="dsr-qf-TWD" id="amf-sP-jiC"/>
+                                            <outlet property="lblCalories" destination="rTT-qH-1jw" id="b9M-Dg-gaO"/>
+                                            <outlet property="lblDateTime" destination="dsr-qf-TWD" id="bOT-I2-9g7"/>
+                                            <outlet property="lblFoodCategory" destination="1We-bl-gva" id="cR5-BT-VYQ"/>
+                                            <outlet property="lblFoodName" destination="HFR-ui-DyF" id="8vn-mo-2jO"/>
                                             <outlet property="lblText" destination="1We-bl-gva" id="Bmo-ck-5B7"/>
                                         </connections>
                                     </tableViewCell>
@@ -2852,6 +2855,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CategoryText" destination="X8x-C3-90G" id="WBb-nx-hiO"/>
                         <outlet property="backBtn" destination="DHJ-0w-uMv" id="6WV-n9-lhq"/>
                         <outlet property="submitButton" destination="h9U-cD-NgQ" id="hoQ-KY-RmS"/>
                         <outlet property="tableView" destination="WnE-hl-nt9" id="ZGT-uH-tC9"/>
