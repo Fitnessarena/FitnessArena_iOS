@@ -174,7 +174,7 @@
                                 <rect key="frame" x="0.0" y="108" width="414" height="754"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2J-F0-Avq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="771"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="803"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo appicon" translatesAutoresizingMaskIntoConstraints="NO" id="S2j-e8-l28">
                                                 <rect key="frame" x="107" y="40" width="200" height="200"/>
@@ -271,7 +271,7 @@
                                             <constraint firstItem="OWH-jJ-nXo" firstAttribute="top" secondItem="n26-wk-kHO" secondAttribute="bottom" constant="40" id="jQo-Xa-2On"/>
                                             <constraint firstItem="n26-wk-kHO" firstAttribute="top" secondItem="S2j-e8-l28" secondAttribute="bottom" constant="40" id="lX6-pr-W3v"/>
                                             <constraint firstItem="aqc-yP-4y5" firstAttribute="centerX" secondItem="q2J-F0-Avq" secondAttribute="centerX" id="mfP-rU-bzd"/>
-                                            <constraint firstAttribute="bottom" secondItem="aqc-yP-4y5" secondAttribute="bottom" constant="40" id="y2T-0m-aBv"/>
+                                            <constraint firstAttribute="bottom" secondItem="aqc-yP-4y5" secondAttribute="bottom" constant="72" id="y2T-0m-aBv"/>
                                             <constraint firstItem="n26-wk-kHO" firstAttribute="leading" secondItem="q2J-F0-Avq" secondAttribute="leading" constant="30" id="yF9-3d-aD2"/>
                                         </constraints>
                                     </view>
