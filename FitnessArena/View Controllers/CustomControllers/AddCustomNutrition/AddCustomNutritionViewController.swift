@@ -103,21 +103,18 @@ class AddCustomNutritionViewController: UIViewController {
         self.CaloriesText.text = ""
     }
     
-    func removeCustomNutrition(indexId: Int) {
+    func removeCustomNutrition(indexId: String?) {
+        let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(indexId ?? "")").removeValue()
+        let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
         
-        if self.favourite.id != nil {
-            let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
-            self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(self.arrCustoms[indexId].id ?? "")").removeValue()
-            let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
-            
-            // add the actions (buttons)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
-                // do something like...
-                self.getCustomNutritions()
-            }))
-            // show the alert
-            self.present(alert, animated: true, completion: nil)
-        }
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
+            // do something like...
+            self.getCustomNutritions()
+        }))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
@@ -133,7 +130,7 @@ extension AddCustomNutritionViewController : UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.removeCustomNutrition(indexId: indexPath.row)
+            self.removeCustomNutrition(indexId: self.arrCustoms[indexPath.row].id)
         }
     }
     
