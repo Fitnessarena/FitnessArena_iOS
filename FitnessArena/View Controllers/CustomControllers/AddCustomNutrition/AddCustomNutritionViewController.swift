@@ -32,19 +32,27 @@ class AddCustomNutritionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.registerTableViewCells()
+        
         self.backBtn.setTitle("", for: .normal)
         
         CategoryText.isOptionalDropDown = false
         CategoryText.itemList = self.arrCategory
+        CategoryText.selectedItem = self.arrCategory[0]
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //self.getCustomNutritions()
+        self.getCustomNutritions()
     }
     
     class func identifier() -> AddCustomNutritionViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddCustomNutritionViewController") as! AddCustomNutritionViewController
+    }
+    
+    func registerTableViewCells() {
+        let addCustomNutritionTableViewCell = UINib(nibName: "AddCustomNutritionTableViewCell", bundle: nil)
+        self.tableView.register(addCustomNutritionTableViewCell, forCellReuseIdentifier: "AddCustomNutritionTableViewCell")
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -56,7 +64,7 @@ class AddCustomNutritionViewController: UIViewController {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
         if userID != nil {
-            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(self.favourite.id ?? "")").child("arrData")
+            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
@@ -79,20 +87,14 @@ class AddCustomNutritionViewController: UIViewController {
         self.tableView.reloadData()
     }
     
-    func addToCustomWeights() {
+    func addToCustomNutrition() {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         let timestamp = Int(NSDate().timeIntervalSince1970)
-        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(timestamp)").setValue([
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(timestamp)").setValue([
             "id": "\(timestamp)",
-            "title" : self.favourite.title!,
-            "desc": self.favourite.desc!,
-            "imageName": self.favourite.imageName!,
-            "category": self.favourite.category!,
-            "subCategory": self.favourite.subCategory!,
             "foodName": self.FoodNameText.text!,
-            "foodCalorie": self.CaloriesText.text!,
+            "foodCalories": self.CaloriesText.text!,
             "foodCategory": self.CategoryText.selectedItem!,
-            
         ])
         
         self.giveAlertToUser(message: "Successfully added to customs.")
@@ -101,11 +103,11 @@ class AddCustomNutritionViewController: UIViewController {
         self.CaloriesText.text = ""
     }
     
-    func removeCustomWeights(indexId: Int) {
+    func removeCustomNutrition(indexId: Int) {
         
         if self.favourite.id != nil {
             let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
-            self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(self.arrCustoms[indexId].id ?? "")").removeValue()
+            self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(self.arrCustoms[indexId].id ?? "")").removeValue()
             let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
             
             // add the actions (buttons)
@@ -119,9 +121,9 @@ class AddCustomNutritionViewController: UIViewController {
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
-//        if self.weightsText.text?.trimmingCharacters(in: .whitespaces) != "" && self.repititionsText.text?.trimmingCharacters(in: .whitespaces) != "" {
-//            self.addToCustomWeights()
-//        }
+        if self.CategoryText.selectedItem?.count != 0 && self.CaloriesText.text?.trimmingCharacters(in: .whitespaces) != "" && self.FoodNameText.text?.trimmingCharacters(in: .whitespaces) != "" {
+            self.addToCustomNutrition()
+        }
         
     }
     
@@ -131,7 +133,7 @@ extension AddCustomNutritionViewController : UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.removeCustomWeights(indexId: indexPath.row)
+            self.removeCustomNutrition(indexId: indexPath.row)
         }
     }
     
@@ -140,9 +142,10 @@ extension AddCustomNutritionViewController : UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AddCustomWeightsTableViewCell") as! AddCustomWeightsTableViewCell
-        cell.lblText?.text = "\(self.arrCustoms[indexPath.row].weights ?? "") * \(self.arrCustoms[indexPath.row].repititions ?? "")"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AddCustomNutritionTableViewCell") as! AddCustomNutritionTableViewCell
+        cell.lblFoodName?.text = self.arrCustoms[indexPath.row].foodName
+        cell.lblCalories.text = "Calories: \(self.arrCustoms[indexPath.row].foodCalories ?? "0")"
+        cell.lblFoodCategory.text = self.arrCustoms[indexPath.row].foodCategory
         
         let a = Double(self.arrCustoms[indexPath.row].id ?? "") ?? 0.0
         let myDate = NSDate(timeIntervalSince1970: a)

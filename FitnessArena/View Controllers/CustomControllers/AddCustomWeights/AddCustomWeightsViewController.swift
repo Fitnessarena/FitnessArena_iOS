@@ -26,6 +26,8 @@ class AddCustomWeightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.registerTableViewCells()
+        
         self.backBtn.setTitle("", for: .normal)
     }
     
@@ -40,6 +42,11 @@ class AddCustomWeightsViewController: UIViewController {
     
     @IBAction func backButtonTapped(_ sender: Any) {
         self.popVC()
+    }
+    
+    func registerTableViewCells() {
+        let addCustomWeightsTableViewCell = UINib(nibName: "AddCustomWeightsTableViewCell", bundle: nil)
+        self.tableView.register(addCustomWeightsTableViewCell, forCellReuseIdentifier: "AddCustomWeightsTableViewCell")
     }
     
     func getCustomWeights() {

@@ -22,8 +22,11 @@ class Customs: NSObject, Mappable, NSCopying, NSCoding {
     var weights: String?
     var repititions: String?
     var dateTime: String?
+    var foodCategory: String?
+    var foodCalories: String?
+    var foodName: String?
     
-    init(id: String?, title: String?, desc: String?, imageName: String?,category: String?, subCategory: String?, weights: String?, repititions: String?, dateTime: String?) {
+    init(id: String?, title: String?, desc: String?, imageName: String?,category: String?, subCategory: String?, weights: String?, repititions: String?, dateTime: String?, foodCategory: String?, foodCalories: String?, foodName: String?) {
         self.id = id
         self.title = title
         self.desc = desc
@@ -33,10 +36,13 @@ class Customs: NSObject, Mappable, NSCopying, NSCoding {
         self.weights = weights
         self.repititions = repititions
         self.dateTime = dateTime
+        self.foodCategory = foodCategory
+        self.foodCalories = foodCalories
+        self.foodName = foodName
     }
     
     func copy(with zone: NSZone? = nil) -> Any {
-        return Customs(id: id, title: title, desc: desc, imageName: imageName,category: category, subCategory: subCategory, weights: weights, repititions: repititions, dateTime: dateTime)
+        return Customs(id: id, title: title, desc: desc, imageName: imageName,category: category, subCategory: subCategory, weights: weights, repititions: repititions, dateTime: dateTime, foodCategory: foodCategory, foodCalories: foodCalories, foodName: foodName)
     }
     
     override init() {
@@ -49,6 +55,9 @@ class Customs: NSObject, Mappable, NSCopying, NSCoding {
         self.weights = nil
         self.repititions = nil
         self.dateTime = nil
+        self.foodCategory = nil
+        self.foodCalories = nil
+        self.foodName = nil
     }
     
     // MARK: ObjectMapper Initalizers
@@ -74,6 +83,9 @@ class Customs: NSObject, Mappable, NSCopying, NSCoding {
         weights <- map["weights"]
         repititions <- map["repititions"]
         dateTime <- map["dateTime"]
+        foodName <- map["foodName"]
+        foodCalories <- map["foodCalories"]
+        foodCategory <- map["foodCategory"]
     }
     
     // MARK: NSCoding Protocol

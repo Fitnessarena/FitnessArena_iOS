@@ -22,6 +22,7 @@ class FavouritesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.registerTableViewCells()
         self.backBtn.setTitle("", for: .normal)
     }
     
@@ -33,6 +34,11 @@ class FavouritesViewController: UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FavouritesViewController") as! FavouritesViewController
     }
 
+    func registerTableViewCells() {
+        let favouriteTableViewCell = UINib(nibName: "FavouriteTableViewCell", bundle: nil)
+        self.tableView.register(favouriteTableViewCell, forCellReuseIdentifier: "FavouriteTableViewCell")
+    }
+    
     func getFavourites(val: String) {
         self.arrFavourites.removeAll()
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")

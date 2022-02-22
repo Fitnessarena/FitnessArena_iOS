@@ -127,7 +127,7 @@ class CardioViewController: UIViewController {
     }
 
     @IBAction func cardioBackTapped(_ sender: Any) {
-        self.popToRootVC()
+        self.popVC()
     }
 }
 
