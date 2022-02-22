@@ -43,7 +43,7 @@ class NutritionDetailViewController: UIViewController {
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
-        self.popToRootVC()
+        self.popToSpecificController(vc: HomeViewController.self)
     }
     
 
