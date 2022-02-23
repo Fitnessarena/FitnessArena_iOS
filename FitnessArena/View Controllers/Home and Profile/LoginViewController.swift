@@ -20,8 +20,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.emailTextField.delegate = self
-        self.PasswordTextField.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -30,10 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-       self.view.endEditing(true)
-        return false
-    }
+
     
     func validateFields() -> String? {
         

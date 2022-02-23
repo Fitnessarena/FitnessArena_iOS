@@ -37,227 +37,823 @@ class BreakfastBMViewController: UIViewController {
             self.lblTitle.text = "Breakfast"
             self.subCategory = "Breakfast"
             self.imgFoodType.image = UIImage(named: "BF")
-            self.arrName = ["Wholegrain Avocado Toast with Sunny-Side Up","Cheese Omlette with Kale and Mushroom Filling","Creamy Oatmeal Porridge with Banana and Peanut Butter","Mixed Veg Whole Wheat Paratha","Homemade Sweet potato Hash Brown","Tasty Greek Yoghurt Museli Parfait","Spicy Tofu Scramble","Easy Peanut Butter and Jelly Sandwich"]
-            self.arrDetails = ["If you are fond of eggs and avocado, we have a delicious treat that combines two of your favorite items. The wholewheat avocado toast is super quick to make and keeps you satisfied for a long time. Avocados are calorie-dense foods and rich in healthy fats. Adding a fried egg makes matters more interesting, along with pumping in additional calories.",
-                               "Nothing can beat an Omelette when it comes to starting the day on a perfect note. To amp up the nutrition factor and taste a regular omelette, you can add some cheese, kale, and mushroom. The result is a gooey, fluffy omelette that takes less than 10 minutes to prepare. Along with helping you gain weight, the high-protein dish also improves muscle mass.",
-                               "Start your day on a ‘sweet’ note with this creamy oats porridge. Not only is it quick to make, but also tastes incredibly delicious. With a generous portion of bananas and peanut butter, the porridge fills you with energy and even scores high in the nutrition aspect. The porridge packs around 370 calories per serving, making it one of the best morning breakfast ideas for weight gain",
-                               "Parantha lovers, rejoice! Your favorite vegetable Paratha, is one of the best Indian breakfast options for weight gain. So, with little preparation and some practice, you can enjoy wholesome paranthas for lunch at home. Replace white flour with whole wheat and include some ghee for that extra love and nutrition. Try to add a healthy blend of vegetables like carrots, onions, cauliflower etc., to get your daily dose of nutrients.",
-                               "Sweet potatoes add a healthy twist to traditional English Potato hashbrowns. These delicious treats make your weight gain breakfast chart more interesting and nutritious too. The crispy exterior complements the soft interiors make you want to binge on them every day. The best part? This high-carb breakfast recipe is super easy to make and pack a lot of nutrition!",
-                               "If you are tired of cooking elaborate meals for breakfast, then here is an easy and healthy breakfast idea that can help you gain weight. The Greek Yoghurt Muesli parfait has all the necessary ingredients to jump start your day. This is a probiotic-rich breakfast that is also high in dietary fiber, vitamins and minerals.",
-                               "If you are looking for a protein-rich, vegan breakfast option for weight gain, then try making this tofu scramble. The recipe includes generous amounts of spices and green chilli to suit the Indian palate. You can have this dish along with bread, chapati, parantha or even on its own. Tofu scramble is also an excellent post-workout meal to pump up those muscles.",
-                               "Peanut butter and jelly sandwich is an easy weight gain breakfast idea for skinny and underweight individuals. It needs to elaborate cooking methods or preparation. The high-calorie breakfast delivers a good amount of nutrition from peanut butter and fruit compote or low-sugar jam."]
-            self.arrImages = ["Wholegrain Avocado Toast with Sunny-Side Up","Cheese Omlette with Kale and Mushroom Filling","Creamy Oatmeal Porridge with Banana and Peanut Butter","Mixed Veg Whole Wheat Paratha","Homemade Sweet potato Hash Brown","Tasty Greek Yoghurt Museli Parfait","Spicy Tofu Scramble","Easy Peanut Butter and Jelly Sandwich"]
+            
+            self.arrName = ["Avocado-Egg Toast","White Bean & Avocado Toast","Pecan Butter & Pear Toast","Ricotta-Berry Crepes","Cashew Butter & Clementine Toast"]
+            
+            self.arrDetails = ["""
+            Try it once and we think you'll agree: Topping avocado toast with an egg is a near-perfect breakfast.
+            
+            Ingredients:
+            
+            ¼ avocado
+            ¼ teaspoon ground pepper
+            ⅛ teaspoon garlic powder
+            1 slice whole-wheat bread, toasted
+            1 large egg, fried
+            1 teaspoon Sriracha (Optional)
+            1 tablespoon scallion, sliced (Optional)
+            
+            Directions
+            
+            Step 1
+            Combine avocado, pepper and garlic powder in a small bowl and gently mash.
+
+            Step 2
+            Top toast with the avocado mixture and fried egg. Garnish with Sriracha and scallion, if desired.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 toast
+            
+            Per Serving:
+            271 calories; protein 11.5g; carbohydrates 18.1g; dietary fiber 5.4g; sugars 2g; fat 17.7g; saturated fat 3.5g; cholesterol 186mg; vitamin a iu 347.5IU; vitamin c 5mg; folate 77.5mcg; calcium 69.4mg; iron 2mg; magnesium 46.6mg; potassium 406.5mg; sodium 216.2mg.
+            """,
+                               
+                               """
+            Mashed avocado and white beans make for a fiber-rich and creamy topping, the perfect partner for a crispy slice of toast. Try it for a quick breakfast or snack.
+            
+            Ingredients:
+            
+            1 slice whole-wheat bread, toasted
+            ¼ avocado, mashed
+            ½ cup canned white beans, rinsed and drained
+            Kosher salt to taste
+            Ground pepper to taste
+            1 pinch Crushed red pepper
+            
+            Directions
+            
+            Step 1
+            Top toast with mashed avocado and white beans. Season with a pinch each of salt, pepper and crushed red pepper.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 slice
+            
+            Per Serving:
+            230 calories; protein 11.5g; carbohydrates 34.7g; dietary fiber 11.3g; sugars 3g; fat 8.8g; saturated fat 1.3g; vitamin a iu 74.2IU; vitamin c 5.1mg; folate 158.2mcg; calcium 93.4mg; iron 2.3mg; magnesium 35.1mg; potassium 655.4mg; sodium 458.6mg; thiamin 0.1mg; added sugar 2g.
+            
+            Exchanges:
+            2 starch, 1 1/2 fat, 1 lean protein
+            """,
+                               
+                               """
+                               For a quick breakfast or snack, try this three-ingredient toast. Pecan butter adds a nutty flavor, which gets balanced by the natural sweetness of the pear.
+                               
+                               Ingredients
+                               Ingredient Checklist
+                               1 tablespoon pecan butter
+                               1 slice whole-grain bread, toasted
+                               ½ small pear, thinly sliced
+                               
+                               Directions
+                               
+                               Step 1
+                               Spread pecan butter on toast and top with pear slices.
+                               
+                               Nutrition Facts
+                               
+                               Serving Size:
+                               1 toast
+                               
+                               Per Serving:
+                               209 calories; fat 11g; sodium 100mg; carbohydrates 25g; dietary fiber 6g; protein 5g; niacin equivalents 1mg; saturated fat 1g; vitamin a iu 19IU; potassium 146mg.
+                               """,
+                               
+                               """
+            Make a big batch of these easy 3-ingredient crepes to stash in your freezer so you always have a healthy breakfast on hand. A dollop of ricotta adds protein to a store-bought crepe, while the berries give a burst of sweetness and a little fiber.
+            
+            Ingredients:
+            
+            1 whole-wheat crepe
+            2 tablespoons low-fat ricotta cheese
+            ¼ cup berries
+            1 tablespoon Honey
+            
+            Directions
+            
+            Step 1
+            Spread crepe with ricotta. Top with berries. Fold up, wrap in foil and freeze for up to 1 month.
+
+            Step 2
+            To heat and eat: Unwrap and microwave in 1-minute intervals until warmed through. Drizzle with honey, if desired.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 crepe
+            
+            Per Serving:
+            187 calories; protein 10g; carbohydrates 22g; dietary fiber 2g; sugars 4g; fat 7g; saturated fat 3g; cholesterol 104mg; vitamin a iu 294.1IU; vitamin c 4.5mg; folate 47.1mcg; calcium 130.4mg; iron 2.5mg; magnesium 12.2mg; potassium 152mg; sodium 172mg.
+            """,
+                               
+                               """
+            This three-ingredient toast uses a fresh clementine and cashew butter for a twist on the classic PB & J. Enjoy this toast for a quick breakfast or snack.
+            
+            Ingredients:
+            
+            1 tablespoon cashew butter
+            1 slice whole-grain bread, toasted
+            1 clementine, peeled and segmented
+            
+            Directions
+            
+            Step 1
+            Spread cashew butter on toast and top with clementine segments.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 toast
+            
+            Per Serving:
+            201 calories; fat 10g; sodium 147mg; carbohydrates 25g; dietary fiber 4g; protein 6g; sugars 10g; niacin equivalents 2mg; saturated fat 2g; potassium 262mg.
+            """]
+            
+            self.arrImages = ["Avocado-Egg Toast","White Bean & Avocado Toast","Pecan Butter & Pear Toast","Ricotta-Berry Crepes","Cashew Butter & Clementine Toast"]
             
         case .AMSnack:
             self.lblTitle.text = "A.M. Snack"
             self.subCategory = "AMSnack"
             self.imgFoodType.image = UIImage(named: "amSnack")
-            self.arrName = ["Jerky","Fillet smoked pork tenderloin","Canned tuna","Protein bars","Hard-boiled eggs","Greek yogurt","Cottage cheese","Weight gain smoothies","Dark chocolate","Tortilla chips"]
+            
+            self.arrName = ["Sweet and Salty Roasted Nuts","Ricotta & Yogurt Parfait","Tuna Salad Crackers","Waffle with Nut Butter, Banana & Chocolate Chips","Coconut Blueberry Smoothie"]
+            
             self.arrDetails = ["""
-                               Jerky is the high-protein snack with the most calories in our ranking, mainly because it has plenty of fats as well. However, be careful that jerky has a lot of sodium, so you don’t want to eat 100 g of it a day, even if that amount has a good share of iron as well.
-                               •    Calories: 410 calories / 100 g
-                               •    Macronutrients: 33 g of proteins, 11 g of carbs, and 26 g of fats
-                               •    Micronutrients (% daily value): 92% sodium, 30% iron
-                               •    How to add more calories to this snack? As jerky is a high-calorie snack that’s rich in proteins and fats, you want to complete your snack with more carbs, so have a slice of whole wheat bread or an English muffin alongside your meat.
+                               Spicy seasonings add a bit of zing to roasted nuts for an appetizer that's perfect for any occasion.
+
+Ingredients:
+
+1 egg white
+1 tablespoon water
+4 cups raw whole cashews, whole almonds, walnut halves, and/or pecan halves
+3 tablespoons packed brown sugar or brown sugar substitute equivalent to 3 tablespoons brown sugar (see Tip)
+1 tablespoon ground cumin
+2 teaspoons chili powder
+1 teaspoon garlic salt
+⅛ teaspoon cayenne pepper
+
+Directions
+
+Step 1
+Preheat oven to 300 degrees F. In a medium bowl, combine egg white and water; beat with a fork until frothy. Add nuts; toss to coat. Let stand for 5 minutes.
+
+Step 2
+Meanwhile, in a large plastic bag, combine brown sugar, cumin, chili powder, garlic salt, and cayenne pepper. Add nuts; shake well to coat. Spread nuts evenly in a 15x10x1-inch baking pan.
+
+Step 3
+Bake for 35 to 40 minutes or until nuts are toasted and coating is dry, stirring twice. Transfer to a large sheet of foil. Cool completely. Store in an airtight container at room temperature for up to 5 days, or freeze for up to 3 months.
+
+Nutrition Facts
+
+Serving Size:
+1/4 cup
+
+Per Serving:
+206 calories; protein 7g; carbohydrates 13g; sugars 4g; fat 16g; saturated fat 3g; sodium 72mg.
 """,
                                """
-A few slices of smoked pork tenderloin come in handy when you need to prepare a high-protein snack that also has plenty of calories.
-                               •    Calories: 134 calories / 100 g
-                               •    Macronutrients: 25 g of proteins and 26 g of fats
-                               •    How to add more calories to this snack? Combine your fillet pork tenderloin with butter and whole wheat bread to prepare a high-calorie sandwich that makes for a protein-filled snack.
+Reminiscent of a lemon cheesecake, this healthy breakfast recipe is easy to throw together in the morning. Or stir together the filling in a jar the night before and top with the fruit, nuts and seeds when you get to work.
+
+Ingredients:
+
+¾ cup nonfat vanilla Greek yogurt
+¼ cup part-skim ricotta
+½ teaspoon lemon zest
+¼ cup raspberries
+1 tablespoon slivered almonds
+1 teaspoon chia seeds
+
+Directions
+
+Step 1
+Combine yogurt, ricotta and lemon zest in a bowl. Top with raspberries, almonds and chia seeds.
+
+Nutrition Facts
+
+Serving Size:
+about 1 1/4 cups
+
+Per Serving:
+272 calories; protein 21.7g; carbohydrates 25.1g; dietary fiber 5.1g; sugars 14.2g; fat 9.6g; saturated fat 3.4g; cholesterol 23.9mg; vitamin a iu 250.8IU; vitamin c 9.4mg; folate 19.3mcg; calcium 384.7mg; iron 1mg; magnesium 46.2mg; potassium 397.7mg; sodium 119.1mg; thiamin 0.1mg; added sugar 6g.
+
+Exchanges:
+1/2 fruit, 1 fat-free milk, 1 medium-fat meat, 1 fat
 """,
                                """
-            Canned tuna doesn’t have over 100 calories but it is a protein-packed snack that helps you build muscle, so it’s definitely a useful and healthy food to add to your diet.
-            •    Calories: 85 calories / 100 g
-            •    Macronutrients: 19 g of protein and 1 g of fats.
-            •    Micronutrients (% daily value): 16% sodium, 7% potassium, 5.4% iron
-            •    How to add more calories to this snack? Make a tuna and avocado salad to bring some healthy fats to your snack. Add some whole wheat bread, crackers, or pretzels into the mix to maximize your calorie intake.
-            Tuna is also good if you have an upset stomach, as it counts among the 50 most easily digestible foods you can include in your diet.
+            A fun twist on a tuna salad sandwich. This Tuna Salad & Crackers recipe uses wheat crackers instead of bread!
+            
+            Ingredients:
+            
+            6 wheat crackers
+            1 2.6-ounce pouch low-sodium light tuna
+            1 tablespoon reduced-fat olive oil mayonnaise
+            ½ cup red pepper strips
+            ½ cup cucumber slices
+            1 single-serve sun-dried-tomato hummus dip
+            
+            Directions
+            
+            Step 1
+            Mix tuna and mayonnaise. Spread on crackers. Serve with peppers, cucumbers, and hummus.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            6 crackers, prepared tuna pouch, 1/2 cup peppers, 1/2 cup cucumber, 1 single-serve hummus dip
+            
+            Per Serving:
+            297 calories; protein 27g; carbohydrates 26g; dietary fiber 4g; sugars 5g; fat 9g; cholesterol 35mg; sodium 467mg.
             """,
                                """
-            Snacking on protein bars is one of the easiest ways to fill up with energy before or after workouts. Besides, this high-protein snack has plenty of calcium, iron, and a bit of vitamin D.
-            •    Calories: 82 calories / 1 bar (53 g)
-            •    Macronutrients: 20 g of protein, 21 g of carbs, and 5.2 g of fat
-            •    Micronutrients (% daily value): 24% calcium, 23% iron, 8% vitamin D
-            •    How to add more calories to this snack? For a greater protein and calorie intake, having Greek yogurt or some cottage cheese alongside your bar is a very nutritious idea.
+            Top a whole-grain freezer waffle with nut butter, banana slices and chocolate chips for a decadent-tasting and healthy breakfast or snack you can whip up when you're short on time. This high-protein, high-fiber breakfast may be ready before your coffee is finished brewing.
+            
+            Ingredients:
+            
+            1 frozen whole-grain cinnamon waffle, such as Kashi
+            1 tablespoon almond butter or other nut butter
+            ¼ banana, sliced
+            1 teaspoon mini chocolate chips
+            
+            Directions
+            
+            Step 1
+            Toast waffle according to package directions. Spread with nut butter and top with sliced banana and chocolate chips. Serve warm.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 waffle
+            
+            Per Serving:
+            222 calories; protein 5.3g; carbohydrates 25g; dietary fiber 4.1g; sugars 8.6g; fat 12.6g; saturated fat 1.7g; vitamin a iu 19IU; vitamin c 2.6mg; folate 14.9mcg; calcium 110.2mg; iron 1.3mg; magnesium 56.8mg; potassium 238.4mg; sodium 37mg; added sugar 4g.
+            
+            Exchanges:
+            2 1/2 fat, 1 starch, 1/2 fruit
             """,
                                """
-            Eggs are one of the most nutritious foods, and thus they make for a healthy snack packed with proteins and fats.
-            Besides, eggs can be cooked in various ways. For example, hard-boiled eggs have a decent amount of vitamin A, iron, potassium, and sodium.
-            •    Calories: 155 calories / 2 large eggs (100 g)
-            •    Macronutrients: 13 g of protein, 1 g of carbs, and 11 g of fat
-            •    Micronutrients (% daily value): 10.4% vitamin A, 6.6% iron, 5% sodium, and 4% potassium
-            •    How to add more calories to this snack? Hard-boiled eggs go well with a few slices of whole wheat bread or an English muffin. Alternatively, you can add boiled eggs to a salad along with some vegetables, croutons, and olive oil for a calorie boost.
-""",
-     """
-            Greek yogurt is a handy source of protein and calcium that will help you fill up your daily calorie needs.
-            •    Calories: 97 calories / 100 g of full fat Greek yogurt
-            •    Macronutrients: 9 g of protein, 4 g of carbs, and 5 g of fats
-            •    Micronutrients (% daily value): 8% calcium, 4% potassium
-            •    How to add more calories to this snack? It’s a good idea to combine Greek yogurt with high-carb bulking snacks, such as a slice of whole-grain bread, dried fruits, or a touch of honey.
-            Important tip: make sure to pay attention to the amount of fat that different Greek yogurts have. In stores, you will usually find zero fat, low fat, and full-fat variants. Choose according to your caloric needs and diet plan.
-            For example, if you want to gain weight and you generally struggle to eat enough fats during the day, you should go for the full-fat yogurt option. On the other hand, if you wish to lose weight, you will find that the zero fat or low-fat variant will make it easier for you to stay in a caloric deficit.
-""",
-                               """
-                               Even though cottage cheese doesn’t offer as much energy as other healthy high-calorie snacks on this list, it is a useful snack for bulking up because of its high protein content and affordable price.
-                               •    Calories: 82 calories / 100 g
-                               •    Macronutrients: 11 g of protein, 4 g of carbs, and 2 g of fats
-                               •    Micronutrients (% daily value): 6.4% calcium, 15% sodium
-                               •    How to add more calories to this snack? Cottage cheese tastes delicious with some grapes, apples, or canned fruits on the side. Also, try mixing cottage cheese with one or two tablespoons of honey to get a calorie surplus on this snack.
-            """,
-                               """
-            If you consider smoothies as being slurpable snacks, then weight gain smoothies clearly earned their title of the highest calorie snack. You can find smoothie recipes for weight gain ranging from 400 calories to almost 1300 on our list of high-calorie smoothies.
-            •    Calories: 1254 calories / 1 Green Seed Mix smoothie
-            •    Macronutrients: 35 g of protein, 147 g of carbs, and 73 g of fat
-            •    How to add more calories to this snack? It is unlikely that you will want to add more calories to a slurpable snack consisting of almost 1300 calories, but if you do, you can dip a protein bar in the smoothie for an increased protein intake.
-            Tip: since smoothies are oftentimes made with vegetables, make sure to use high-calorie vegetables when preparing one to obtain a slurpable snack with as many as possible calories
-""",
-                               """
-            Dark chocolate is hands down one of the most energizing carbs in our list of healthy high-calorie snacks. Chocolate with 70-85% cacao has plenty of carbs but also a lot of fats while featuring a decent amount of protein as well.
-            •    Calories: 598 calories / 100 g
-            •    Macronutrients: 8 g of protein, 46 g of carbs, and 43 g of fat
-            •    Micronutrients (% daily value): 46% iron, 12% potassium
-            •    How to add more calories to this snack? Dark chocolate goes well with other bulking snacks such as dried apricots, nuts, or cheese.
-""",
-                               """
-            Tortilla chips are a high-calorie snack that’s rich in carbs and fats, so you don’t want to eat too many of them.
-            Also, as tortilla chips are usually salted, they may put you in danger of exceeding the daily limit for sodium. Eat responsibly is the keyword phrase here.
-            •    Calories: 497 calories / 100 g
-            •    Macronutrients: 7 g of protein, 67 g of carbs, and 22 g of fats
-            •    Micronutrients (% daily value): 8% iron, 8% calcium, 14% sodium, 5% potassium
-            •    How to add more calories to this snack? A great idea for a bulking snack with even more calories is to dip tortilla chips in some avocado spread. As an alternative, you can dip the chips in peanut butter or Greek yogurt.
+            Give your blueberry smoothie a tropical update with the rich flavors of coconut milk and coconut cream. Freshly squeezed orange juice lends bright flavor to this healthy smoothie recipe, but if you're short on time, bottled will work just fine.
+
+Ingredients:
+
+¼ cup light coconut milk
+¼ cup orange juice
+2 tablespoons coconut cream
+1 cup frozen blueberries
+1 tablespoon maple syrup (Optional)
+
+Directions
+
+Step 1
+Add coconut milk, orange juice, coconut cream, blueberries and maple syrup (if using) to a blender. Blend until smooth.
+
+Nutrition Facts
+
+Serving Size:
+1 1/2 cups
+
+Per Serving:
+283 calories; protein 1.5g; carbohydrates 46.5g; dietary fiber 4.4g; sugars 37.9g; fat 11.3g; saturated fat 9.5g; vitamin a iu 195.3IU; vitamin c 34.9mg; folate 34.8mcg; calcium 20.7mg; iron 0.4mg; magnesium 21mg; potassium 246.1mg; sodium 25.9mg.
 """]
-            self.arrImages = []
+            
+            self.arrImages = ["Sweet and Salty Roasted Nuts","Ricotta & Yogurt Parfait","Tuna Salad Crackers","Waffle with Nut Butter, Banana & Chocolate Chips","Coconut Blueberry Smoothie"]
             
         case .Lunch:
             self.lblTitle.text = "Lunch"
             self.subCategory = "Lunch"
             self.imgFoodType.image = UIImage(named: "honey")
-            self.arrName = ["Pork meatballs","Whole wheat bread ","Ketchup"]
+            self.arrName = ["Kale & Quinoa Salad with Lemon Dressing","Eat-the-Rainbow Chopped Salad with Basil & Mozzarella","Green Salad with Edamame & Beets","Sweet Potato, Kale & Chicken Salad with Peanut Dressing","Green Papaya Salad"]
             self.arrDetails = ["""
-            260 calories
-            o    Amount: 5 meatballs (150 g)
-            o    Protein: 22 g
-            o    Carbs: 5 g
-            o    Fats: 17 g
+            This kale-quinoa salad pops with different flavors and textures. Massaging the kale helps break down its fibrous nature, while add-ins like toasted almonds, feta and cucumber add crunch and saltiness.
+
+Ingredients:
+
+1 bunch lacinato kale, stemmed and chopped
+6 tablespoons extra-virgin olive oil
+3 tablespoons lemon juice
+2 tablespoons chopped shallot
+1 teaspoon honey
+½ teaspoon salt
+¼ teaspoon ground pepper
+2 cups grape or cherry tomatoes, halved
+2 cups cooked quinoa
+1 English cucumber, thinly sliced
+1 medium red bell pepper, sliced
+1 medium yellow bell pepper, sliced
+1 (15 ounce) can unsalted chickpeas, rinsed
+¾ cup feta cheese, crumbled
+½ cup sliced almonds, toasted
+
+Directions
+
+Step 1
+Place kale in a large serving bowl. Whisk together oil, lemon juice, shallot, honey, salt and pepper in a small bowl. Pour 2 to 3 tablespoons of the dressing over the kale; lightly massage until slightly wilted, 1 to 2 minutes.
+
+Step 2
+Top the kale with tomatoes, quinoa, cucumber, peppers, chickpeas, feta and almonds. Drizzle with the remaining dressing and toss before serving.
+
+Nutrition Facts
+
+Serving Size:
+1 3/4 cups
+
+Per Serving:
+400 calories; fat 23g; cholesterol 5mg; sodium 406mg; carbohydrates 37g; dietary fiber 8g; protein 14g; sugars 6g; niacin equivalents 1mg; saturated fat 4g; vitamin a iu 3984IU; potassium 594mg.
 """,
             """
-            142 calories
-            o    Amount: 2 slices (56 g)
-            o    Protein: 7 g
-            o    Carbs: 24 g
-            o    Fats: 2 g
+          This fresh and colorful salad has all of the delicious flavors you love from the classic caprese salad, plus even more healthy veggies. Double this and top each portion with 3 ounces grilled or roasted chicken to take it from a simple side to a quick main dish.
+
+Ingredients:
+
+¼ cup white balsamic vinegar
+¼ cup extra-virgin olive oil
+½ teaspoon salt
+¼ teaspoon ground pepper
+2 large carrots, diced
+1 large yellow bell pepper, diced
+2 cups chopped kale
+1 ¼ cups chopped red cabbage
+1 cup quartered grape tomatoes
+1 cup mozzarella pearls
+½ cup thinly sliced fresh basil
+2 scallions, sliced
+
+Directions
+
+Step 1
+Whisk vinegar, oil, salt and pepper in a large bowl. Add carrots, bell pepper, kale, cabbage, tomatoes, mozzarella, basil and scallions. Toss to coat.
+
+Nutrition Facts
+
+Serving Size:
+1 cup
+
+Per Serving:
+140 calories; protein 5g; carbohydrates 7.8g; dietary fiber 1.5g; sugars 4g; fat 10.2g; saturated fat 2.8g; cholesterol 10.6mg; vitamin a iu 4044.7IU; vitamin c 58.5mg; folate 28.5mcg; calcium 146.3mg; iron 0.6mg; magnesium 18.6mg; potassium 256.5mg; sodium 276.2mg.
+
+Exchanges:
+1 1/2 fat, 1 vegetable, 1/2 medium-fat protein
 """,
             """
-22 calories
-            o    Amount: 20 g
-            o    Carbs: 5 g
-"""]
-            self.arrImages = ["Pork meatballs","Whole wheat bread ","Ketchup"]
+This big salad is a feast for the eyes and an everyday way to incorporate nutrient-rich beets and plant-based protein from edamame (green soybeans). If you're not a fan of cilantro, mix in freshly chopped basil or dill instead.
+
+Ingredients:
+
+2 cups mixed salad greens
+1 cup shelled edamame, thawed
+½ medium raw beet, peeled and shredded (about 1/2 cup)
+1 tablespoon plus 1 1/2 teaspoons red-wine vinegar
+1 tablespoon chopped fresh cilantro
+2 teaspoons extra-virgin olive oil
+Freshly ground pepper to taste
+
+Directions
+
+Step 1
+Arrange greens, edamame and beet on a large plate. Whisk vinegar, cilantro, oil, salt and pepper in a small bowl. Drizzle over the salad and enjoy.
+
+Nutrition Facts
+
+Serving Size:
+about 4 cups salad
+
+Per Serving:
+325 calories; protein 18.5g; carbohydrates 25.5g; dietary fiber 11.6g; sugars 5.6g; fat 15.7g; saturated fat 1.4g; vitamin a iu 3973.5IU; vitamin c 30.9mg; folate 172.5mcg; calcium 170.1mg; iron 5.2mg; magnesium 37.5mg; potassium 499.5mg; sodium 682.2mg; thiamin 0.1mg.
+
+Exchanges:
+2 1/2 lean protein, 2 fat, 1 1/2 vegetable, 1 carbohydrate
+""",
+            """
+            These hearty kale salads hold up well for 4 days, making them perfect for meal-prep lunches. To keep the ingredients from getting soggy, dress this salad and top it with peanuts just before serving. For a delicious vegan option, swap in roasted tofu for the chicken breast (see Associated Recipes).
+            
+            Ingredients:
+            
+            1 pound sweet potatoes (about 2 medium), scrubbed and cut into 1-inch cubes
+            1 ½ teaspoons extra-virgin olive oil
+            ¼ teaspoon kosher salt
+            ⅛ teaspoon ground pepper
+            1/2 cup Peanut Dressing (see Associated Recipes)
+            6 cups chopped curly kale
+            2 cups shredded cooked chicken breast (see Tip)
+            ¼ cup chopped unsalted peanuts
+            
+            Directions
+            
+            Step 1
+            Preheat oven to 425 degrees F. Line a rimmed baking sheet with foil; lightly coat with cooking spray. Set aside. Toss sweet potatoes with oil, salt and pepper in a large bowl.
+
+            Step 2
+            Arrange the sweet potatoes in a single layer on the prepared baking sheet. Roast, turning once, until tender and lightly browned and crispy on the outside, about 20 minutes. Set aside to cool before assembling bowls.
+
+            Step 3
+            Transfer 2 tablespoons peanut dressing into each of 4 small lidded containers; refrigerate for up to 4 days.
+
+            Step 4
+            Divide kale among 4 single-serving containers (about 1 1/2 cups each). Top each with one-fourth of the roasted sweet potatoes and 1/2 cup chicken. Seal the containers and refrigerate for up to 4 days.
+
+            Step 5
+            Just before serving, drizzle each salad with 1 portion of peanut dressing and toss well to coat. Top with 1 tablespoon chopped peanuts.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1 container
+            
+            Per Serving:
+            393 calories; protein 30.4g; carbohydrates 31.9g; dietary fiber 5.9g; sugars 8g; fat 15.4g; saturated fat 2.7g; cholesterol 59.5mg; vitamin a iu 18503.5IU; vitamin c 33.3mg; folate 58.6mcg; calcium 87.2mg; iron 2.3mg; magnesium 76.8mg; potassium 746.2mg; sodium 566.2mg; thiamin 0.2mg; added sugar 2g.
+            
+            Exchanges:
+            3 lean protein, 2 1/2 fat, 1 1/2 starch, 1/2 vegetable
+            """,
+            """
+            This Thai-inspired salad makes use of the papayas that grow throughout Hawaii. This version is tossed with tender, sweet pea shoots. Make an extra batch of the vinaigrette to keep on hand in the refrigerator--use it as a marinade for vegetables, a flavorful dressing for fresh melon or as a sauce to splash over grilled fish or chicken.
+            
+            Ingredients:
+            
+            ¼ teaspoon freshly grated lime zest
+            ¼ cup lime juice
+            2 tablespoons finely chopped palm sugar, or packed brown sugar (see Tip)
+            2 tablespoons fish sauce
+            Hawaiian chiles, or any fresh hot chiles, minced, to taste
+            3 cups matchstick-cut or julienned green papaya, (see Tip)
+            ½ cup very thinly sliced Maui or other sweet onion
+            ½ cup pea shoots, cut into 3-inch pieces, or bean sprouts
+            Freshly ground pepper, to taste
+            
+            Directions
+            
+            Step 1
+            Whisk lime zest, lime juice, sugar, fish sauce and chiles in a large bowl.
+
+            Step 2
+            Add papaya, onion and pea shoots (or sprouts) to the vinaigrette; toss to combine. Sprinkle with pepper just before serving.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            2/3 cup
+            
+            Per Serving:
+            55 calories; protein 1.4g; carbohydrates 13.3g; dietary fiber 1.3g; sugars 9.5g; fat 0.2g; saturated fat 0.1g; vitamin a iu 470.5IU; vitamin c 36.1mg; folate 26.6mcg; calcium 19.5mg; iron 0.3mg; magnesium 14.6mg; potassium 141.3mg; sodium 403mg; added sugar 4g.
+            
+            Exchanges:
+            1 fruit
+            """]
+            self.arrImages = ["Kale & Quinoa Salad with Lemon Dressing","Eat-the-Rainbow Chopped Salad with Basil & Mozzarella","Green Salad with Edamame & Beets","Sweet Potato, Kale & Chicken Salad with Peanut Dressing","Green Papaya Salad"]
             
         case .PMSnack:
             self.lblTitle.text = "P.M. Snack"
             self.subCategory = "PMSnack"
             self.imgFoodType.image = UIImage(named: "pmSnack")
-            self.arrName = ["Bananas","Fruit juice","Butter","Cheddar cheese","String cheese","Ice cream","Whole milk","Macadamia nuts","Pecans","Pine nuts"]
+            
+            self.arrName = ["Waffle with Cream Cheese, Plums & Granola","Really Green Smoothie","Cherry Smoothie","Chocolate-Banana Protein Smoothie","Cantaloupe Smoothie Bowl"]
+            
             self.arrDetails = ["""
-"Bananas make for a healthy high-calorie snack that is great for anyone looking to bulk up on a budget. Actually, bananas are some of the most nutritious fruits as they contain vitamin C, potassium, and plenty of energy due to their high-carb content.
-                               •    Calories: 105 calories / medium banana (118 g)
-                               •    Macronutrients: 1 g of protein and 27 g of carbs
-                               •    Micronutrients (% daily value):  17% vitamin C, 12% potassium
-                               •    How to add more calories to this snack? To obtain a bulking snack with even more calories, you can mix bananas with some high-fat snacks, like whole milk, walnuts, or ice cream, or you can mix them with a protein bar or some low-fat Greek yogurt for some additional muscle-building benefits.
+Top a toasted frozen waffle with cream cheese, plums and granola for a healthy breakfast in a pinch. Loaded with protein, fiber and whole grains, this recipe will keep you full and satisfied all morning.
+
+Ingredients:
+
+1 frozen whole-grain blueberry waffle, such as Kashi
+1 tablespoon cream cheese
+1 plum, sliced
+1 tablespoon granola
+
+Directions
+
+Step 1
+Toast waffle according to package directions. Transfer to a plate. Spread with cream cheese; top with plums and granola. Serve immediately.
+
+Nutrition Facts
+
+Serving Size:
+1 waffle
+
+Per Serving:
+188 calories; protein 4.4g; carbohydrates 24.9g; dietary fiber 4.8g; sugars 10.3g; fat 9.6g; saturated fat 3.5g; cholesterol 14.6mg; vitamin a iu 392IU; vitamin c 6.7mg; folate 11mcg; calcium 42.2mg; iron 1.1mg; magnesium 32.1mg; potassium 225.4mg; sodium 218.9mg; thiamin 0.1mg; added sugar 3g.
+
+Exchanges:
+1 1/2 starch, 1 fat, 1/2 fruit
 """,
                                """
-Fruit juice doesn’t have as many calories per 100 g as other bulking snacks but it makes up for it by being very easy to consume and affordable at the same time.
-                               Therefore, fruit juice makes for a handy high-calorie drink to include as a standalone liquid snack or in combination with other foods. For example, half a liter of 100% apple juice will load you up with 230 calories and fill up your necessary daily vitamin C intake.
-                               •    Calories: 46 calories / 100 g of apple juice
-                               •    Macronutrients: 11 g of carbs
-                               •    Micronutrients (% daily value):  64% vitamin C
-                               •    How to add more calories to this snack? Whether you prefer apple, orange, or grape juice, consider combining them with other healthy high-calorie snacks, preferably with the ones rich in protein or fats, to maximize your energy intake.
+The combination of kale and avocado makes this healthy smoothie recipe extra green. Chia seeds lend this creamy smoothie a heart-healthy punch of fiber and omega-3 fatty acids.
+
+Ingredients:
+
+1 large ripe banana
+1 cup packed baby kale or coarsely chopped mature kale
+1 cup unsweetened vanilla almond milk
+¼ ripe avocado
+1 tablespoon chia seeds
+2 teaspoons honey
+1 cup ice cubes
+
+Directions
+
+Step 1
+Combine banana, kale, almond milk, avocado, chia seeds and honey in a blender. Blend on high until creamy and smooth. Add ice and blend until smooth.
+
+Nutrition Facts
+
+Serving Size:
+2 1/3 cup
+
+Per Serving:
+343 calories; protein 5.9g; carbohydrates 54.7g; dietary fiber 12.1g; sugars 28.8g; fat 14.2g; saturated fat 1.6g; vitamin a iu 2264.5IU; vitamin c 36.3mg; folate 95.9mcg; calcium 309.6mg; iron 2.1mg; magnesium 112.2mg; potassium 1051.1mg; sodium 198.9mg.
+
+Exchanges:
+3 fat, 2 fruit, 1/2 other carbohydrate, 1/2 vegetable
 """,
                                """
-If you're looking for a snack to help you easily meet your daily fat intake, you can't go wrong with butter. Almost 80% of this dairy product's composition is fat.
-                               •    Calories: 717 calories / 100 g
-                               •    Macronutrients: 81 g of fats
-                               •    Micronutrients (% daily value):  50.8% vitamin A,
-                               •    How to add more calories to this snack? It's a great idea to spread butter on a slice of whole-wheat bread and add some slices of smoked pork tenderloin to make a nutritious high-calorie snack.
+The combination of oat milk, vanilla extract and sweet cherries makes this recipe taste like a cherry pie smoothie. Adding a bit of brown sugar boosts that nostalgia even more.
+
+Ingredients:
+
+½ cup oat milk
+1 tablespoon almond butter
+1 teaspoon cocoa powder
+½ teaspoon vanilla extract
+1 cup frozen dark sweet cherries
+1 tablespoon brown sugar (Optional)
+
+Directions
+
+Step 1
+Add oat milk, almond butter, cocoa, vanilla, cherries and sugar (if using) to a blender. Blend until smooth.
+
+Nutrition Facts
+
+Serving Size:
+1 1/2 cups
+
+Per Serving:
+232 calories; protein 5.7g; carbohydrates 31.5g; dietary fiber 5.8g; sugars 21g; fat 9.1g; saturated fat 1.2g; vitamin a iu 100.2IU; vitamin c 9mg; folate 9.1mcg; calcium 307.8mg; iron 1.5mg; magnesium 53.6mg; potassium 242mg; sodium 86.7mg; added sugar 2g.
 """,
                                """
-"Besides the fact it has plenty of fats, Cheddar cheese is also a source of protein, calcium, and vitamin A. The downside is that this type of cheese has pretty much sodium as well, so consume it responsibly.
-                               •    Calories: 409 calories / 100 g
-                               •    Macronutrients: 23 g of protein, 2 g of carbs, and 34 g of fats
-                               •    Micronutrients (% daily value):  54% calcium, 28% sodium, 25% vitamin A
-                               •    How to add more calories to this snack? Cheddar cheese goes well with dried or fresh fruits, whole wheat bread or crackers, honey, and jams.
+Red lentils give this smoothie a plant-based protein boost. To make this smoothie vegan, try using unsweetened coconut beverage or almond milk in place of the dairy milk.
+
+Ingredients:
+
+1 banana, frozen
+½ cup cooked red lentils
+½ cup nonfat milk
+2 teaspoons unsweetened cocoa powder
+1 teaspoon pure maple syrup
+
+Directions:
+
+Step 1
+Combine banana, lentils, milk, cocoa and syrup in a blender. Puree until smooth.
+
+Nutrition Facts
+
+Serving Size:
+1 smoothie
+
+Per Serving:
+310 calories; protein 15.3g; carbohydrates 63.8g; dietary fiber 8.5g; sugars 24.6g; fat 1.8g; saturated fat 0.6g; cholesterol 2.5mg; vitamin a iu 347.7IU; vitamin c 10.9mg; folate 109.2mcg; calcium 185.2mg; iron 3.7mg; magnesium 87.3mg; potassium 938.8mg; sodium 56.9mg; added sugar 4g.
+
+Exchanges:
+2 fruit, 1 starch, 1/2 other carb,1/2 NF milk, 1 lean protein
 """,
                                """
-            "String cheese is a very handy high-calorie snack because it can be consumed one stick at a time. Moreover, string cheese is rich in both fats and proteins while having solid amounts of calcium, sodium, and vitamin A.
-                               •    Calories: 340 calories / 4 sticks (112 g)
-                               •    Macronutrients: 25 g of protein, 3 g of carbs, and 25 g of fats
-                               •    Micronutrients (% daily value):  44% calcium, 30% sodium, 15.2% vitamin A
-                               •    How to add more calories to this snack? String cheese tastes great alongside crackers or in a salad. You can also have the strings with some tortilla chips on the side
-""",
-                               """
-Ice cream doesn't have to be your enemy. This sweet high-calorie snack has plenty of fats and carbs that will energize you while delighting your taste buds.
-                               •    Calories: 207 calories / 100 g
-                               •    Macronutrients: 4 g of protein, 23.5 g of carbs, and 11.4 g of fats
-                               •    Micronutrients (% daily value):  10% calcium, 8% vitamin A, 6% potassium
-                               •    How to add more calories to this snack? Try eating ice cream along bananas or whole-wheat pretzels to get a higher calorie boost. Alternatively, you can sprinkle some nuts or dried fruits over the top of your ice cream.
-""",
-                               """
-                               When you're not in the mood to fill up your stomach with solid bulking snacks, pour yourself a large glass of whole milk and boost your calorie intake.
-                               •    Calories: 61 calories / 100 g
-                               •    Macronutrients: 3 g of protein, 5 g of carbs, and 3 g of fats
-                               •    Micronutrients (% daily value):  9% calcium
-                               •    How to add more calories to this snack? You can successfully combine whole milk with whole-grain snacks, or you can make yourself a healthy high-calorie milkshake by adding a banana and some peanut butter.
-""",
-                               """
-                               Macadamia nuts are as nutritious as fancy their name sounds. Featuring plenty of fats and iron, roasted macadamias make for a calorie-filled snack that is going to be extremely handy during the days you're far away from your necessary daily calorie intake.
-                               •    Calories: 716 calories / 100 g
-                               •    Macronutrients: 8 g of protein, 13 g of carbs, and 76 g of fats
-                               •    Micronutrients (% daily value):  21% iron, 11% potassium, and 7% calcium
-                               •    How to add more calories to this snack? Sprinkle some macadamia nuts over your ice cream and treat your taste buds with a delightful high-calorie snack.
-""",
-                               """
-Roasted pecans are loaded with fats while featuring some protein and carbs as well. Besides, they contain healthy minerals like iron, potassium, and calcium.
-                               •    Calories: 710 calories / 100 g
-                               •    Macronutrients: 10 g of protein, 14 g of carbs, and 74 g of fats
-                               •    Micronutrients (% daily value):  14% iron, 12% potassium, and 5% calcium
-                               •    How to add more calories to this snack? Try having pecans with a glass of whole milk, butter, or a few dried apricots.
-""",
-                               """
-            Pine nuts are a treasure of calories, offering good amounts of protein besides their almost 70 g of fats.
-                               •    Calories: 673 calories / 100 g
-                               •    Macronutrients: 14 g of protein, 13 g of carbs, and 68 g of fats
-                               •    Micronutrients (% daily value):  31% iron, 17% potassium
-                               •    How to add more calories to this snack? You can pair pine nuts with raisins to obtain a more nutritious bulking snack. Another good idea is to try having some kind of cheese along pine nuts.
+            Water-packed frozen cantaloupe acts like ice cubes in your blender; the smaller the dice, the easier it will be on the blades. Make this a traditional, pourable smoothie by adding a touch more carrot juice or water before whizzing everything together.
+
+Ingredients:
+
+4 cups frozen cubed cantaloupe (1/2-inch pieces)
+¾ cup carrot juice
+Pinch of salt
+Melon balls, berries, nuts and/or fresh basil for garnish
+
+Directions
+
+Step 1
+Combine cantaloupe, juice and salt in a food processor or high-speed blender. Alternate between pulsing and blending, stopping to stir and scrape down the sides as needed, until thick and smooth, 1 to 2 minutes. Serve the smoothie topped with more melon, berries, nuts and/or basil, if desired.
+
+Nutrition Facts
+
+Serving Size:
+generous 1 cup
+
+Per Serving:
+135 calories; protein 3.4g; carbohydrates 31.7g; dietary fiber 3.1g; sugars 28.3g; fat 0.6g; saturated fat 0.2g; vitamin a iu 22634.9IU; vitamin c 117.9mg; folate 3.1mcg; calcium 43.8mg; iron 0.8mg; magnesium 47.4mg; potassium 1053.2mg; sodium 180.1mg; added sugar 9g.
+
+Exchanges:
+1 1/2 fruit, 1 vegetable
 """]
-            self.arrImages = []
+            self.arrImages = ["Waffle with Cream Cheese, Plums & Granola","Really Green Smoothie","Cherry Smoothie","Chocolate-Banana Protein Smoothie","Cantaloupe Smoothie Bowl"]
             
         case .Dinner:
             self.lblTitle.text = "Dinner"
             self.subCategory = "Dinner"
             self.imgFoodType.image = UIImage(named: "dinner")
-            self.arrName = ["Roasted turkey breast","Cooked brown rice","Cucumber salad"]
+            self.arrName = ["Chicken, Peppers & Pasta Casserole","Brussels Sprouts & Pepperoni Pizza","Jason Mraz's Guacamole","Red Cabbage Salad with Blue Cheese & Maple-Glazed Walnuts","West Coast Avocado Toast"]
             self.arrDetails = ["""
-            202 calories
-            o    Amount: 150 g
-            o    Protein: 45 g
-            o    Fats: 1 g
+            You can assemble this healthy chicken casserole before you leave for a party and pop it in the oven at the host's house. Or bake it at home and bring it along--it's delicious at room temperature too.
+
+Ingredients:
+
+12 ounces whole-wheat fusilli
+16 mini sweet peppers
+1 ½ pounds boneless, skinless chicken breast, cut into 3/4-inch pieces
+3 tablespoons extra-virgin olive oil, divided
+1 teaspoon salt, divided
+½ teaspoon ground pepper
+2 medium fennel bulbs, chopped, plus 1/4 cup chopped fronds
+⅓ cup finely chopped shallot
+3 tablespoons all-purpose flour
+1 ½ cups low-sodium chicken broth
+½ cup dry white wine
+½ cup crème fraîche
+½ cup chopped fresh chives, divided
+2 tablespoons lemon juice
+½ cup Kalamata olives, chopped
+½ cup panko breadcrumbs, preferably whole-wheat
+
+Directions
+
+Step 1
+Bring a large pot of water to a boil. Cook pasta according to package directions. Drain and transfer to a large bowl. Set aside.
+
+Step 2
+Meanwhile, position a rack in upper third of oven; preheat broiler to high. Line a rimmed baking sheet with foil. Coat the foil with cooking spray.
+
+Step 3
+Place peppers on one side of the prepared baking sheet. Toss chicken, 1 tablespoon oil, 1/2 teaspoon salt and pepper in a medium bowl. Place the chicken in an even layer on the other half of the baking sheet. Broil, turning once, until the peppers start to char on both sides and the chicken is no longer pink in the middle, 4 to 8 minutes. Set aside to cool slightly.
+
+Step 4
+Preheat oven to 400 degrees F.
+
+Step 5
+Meanwhile, heat 1 tablespoon oil in a large skillet over medium heat. Add fennel and shallot and cook, stirring frequently, until softened and starting to brown, about 5 minutes. Add flour and stir to coat. Add broth and wine and bring to a simmer. Cook, stirring occasionally, until slightly thickened, about 2 minutes. Remove from heat. Stir in crème fraîche, 1/4 cup chives, lemon juice, the fennel fronds and the remaining 1/2 teaspoon salt. Transfer to the bowl with the pasta.
+
+Step 6
+Trim and quarter the peppers. Add the peppers, chicken and olives to the pasta; stir to combine. Transfer the mixture to a 9-by-13-inch pan (or similar-size 3-quart baking dish). Combine panko with the remaining 1 tablespoon oil in a small bowl. Sprinkle over the casserole.
+
+Step 7
+Bake the casserole until hot, about 30 minutes. Serve topped with the remaining 1/4 cup chives.
+
+Nutrition Facts
+
+Serving Size:
+1 1/2 cups
+
+Per Serving:
+443 calories; protein 25.6g; carbohydrates 47.6g; dietary fiber 7.3g; sugars 5.4g; fat 15.5g; saturated fat 4.9g; cholesterol 59.5mg; vitamin a iu 2339.3IU; vitamin c 74.1mg; folate 55.6mcg; calcium 80.3mg; iron 1.9mg; magnesium 37.3mg; potassium 576.3mg; sodium 530.8mg.
+
+Exchanges:
+2 1/2 starch, 1 1/2 vegetable, 2 1/2 lean meat, 2 1/2 fat
 """,
             """
-            222 calories
-            o    Amount: 200 g
-            o    Protein: 5 g
-            o    Carbs: 47 g
-            o    Fats: 2 g
+            If you want to spark some joy in your house, give this pizza combo a try. Brussels sprouts, pepperoni, lemon zest and fontina cheese make this healthy pizza recipe anything but boring. Preshredded Brussels will speed up your prep time, but try to get pepperoni sliced fresh from the deli--it has better flavor and texture than the shelf-stable kind.
+            
+            Ingredients:
+            
+            4 tablespoons extra-virgin olive oil, divided
+            4 cups thinly sliced Brussels sprouts
+            ¾ cup sliced shallots
+            ¼ teaspoon salt
+            ¼ teaspoon ground pepper
+            1 pound pizza dough, preferably whole-wheat
+            1 tablespoon minced garlic
+            1 ½ cups shredded fontina cheese
+            ⅓ cup pepperoni slices (1 ounce)
+            2 teaspoons lemon zest
+            
+            Directions
+            
+            Step 1
+            Preheat oven to 450 degrees F. Coat a large rimmed baking sheet with cooking spray.
+
+            Step 2
+            Heat 2 tablespoons oil in a large skillet over medium heat. Add Brussels sprouts, shallots, salt and pepper and cook, stirring, until softened, 5 to 8 minutes. Remove from heat.
+
+            Step 3
+            Roll out dough to the size of the baking sheet, then transfer to the baking sheet. Combine the remaining 2 tablespoons oil and garlic and brush over the dough. Top with the vegetables, cheese and pepperoni.
+
+            Step 4
+            Bake the pizza until golden, 18 to 20 minutes. Sprinkle with lemon zest.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1/6 pizza each
+            
+            Per Serving:
+            406 calories; protein 15.1g; carbohydrates 37g; dietary fiber 2.8g; sugars 3.3g; fat 24g; saturated fat 7.3g; cholesterol 36.3mg; vitamin a iu 855.2IU; vitamin c 32.5mg; folate 37.4mcg; calcium 178.1mg; iron 1mg; magnesium 19mg; potassium 255.4mg; sodium 607.8mg; added sugar 1g.
+            
+            Exchanges:
+            2 starch, 1 1/2 vegetable, 1 high fat meat, 2 fat
             """,
             """
-            43 calories
-            o    Amount: 150 g
-            o    Protein: 1 g
-            o    Carbs: 10 g
-            """,]
-            self.arrImages = []
+            In this easy guacamole recipe, musician Mraz prefers California Hass or Reed avocados because they are the creamiest. Adjust the heat, tang or other flavorings to suit your tastes.
+            
+            Ingredients:
+            
+            4 ripe avocados
+            ½ cup chopped fresh cilantro
+            ⅓ cup finely chopped red onion
+            ¼ cup lime or lemon juice
+            1 tablespoon extra-virgin olive oil
+            ½ teaspoon fine sea salt
+            Ground pepper to taste
+            Hot sauce, finely diced fresh jalapeños, cayenne pepper and/or chipotle powder to taste
+            
+            Directions
+            
+            Step 1
+            Mash avocados in a medium bowl. Add cilantro, onion, lime (or lemon) juice, oil, salt and pepper and stir to combine. Season with hot sauce, jalapenos, cayenne and/or chipotle, if desired.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            1/4 cup
+            
+            Per Serving:
+            121 calories; protein 1.4g; carbohydrates 6.6g; dietary fiber 4.6g; sugars 0.7g; fat 11g; saturated fat 1.6g; vitamin a iu 145.6IU; vitamin c 8.7mg; folate 56mcg; calcium 10.3mg; iron 0.4mg; magnesium 20.5mg; potassium 341.1mg; sodium 52mg; thiamin 0.1mg.
+            
+            Exchanges:
+            2 fat
+            """,
+            """
+            Serve this hearty salad recipe--combining red cabbage, blue cheese and glazed walnuts--as an accompaniment to roast pork or chicken. To slice the cabbage quickly, cut the head into wedges and slice in your food processor. A mandoline is also a great tool for the job.
+            
+            Ingredients:
+            
+            1 tablespoon crumbled blue cheese
+            ¼ cup extra-virgin olive oil
+            3 tablespoons red-wine vinegar
+            1 tablespoon Dijon mustard
+            ¼ teaspoon salt
+            ¼ teaspoon freshly ground pepper
+            1 tablespoon extra-virgin olive oil
+            1 teaspoon butter
+            1 cup walnuts
+            ¼ teaspoon salt
+            ¼ teaspoon freshly ground pepper
+            3 tablespoons pure maple syrup
+            8 cups very thinly sliced red cabbage
+            2 scallions, thinly sliced
+            ⅓ cup crumbled blue cheese
+            
+            Directions
+            
+            Step 1
+            To prepare vinaigrette: Combine 1 tablespoon blue cheese, 1/4 cup oil, vinegar, mustard, salt and pepper in a mini food processor or blender; process until creamy.
+
+            Step 2
+            To prepare salad: Place a piece of parchment or wax paper near your stove. Heat 1 tablespoon oil and butter in a medium skillet over medium heat. Add walnuts and cook, stirring, for 2 minutes. Add salt and pepper and drizzle in maple syrup. Cook, stirring, until the nuts are well coated and have begun to caramelize, 3 to 5 minutes. Transfer to the paper, spooning any remaining syrup over them. Separate the nuts while they're still warm. Let stand until cool, about 5 minutes.
+
+            Step 3
+            Place cabbage and scallions in a large bowl. Toss with the vinaigrette. Serve topped with blue cheese and the walnuts.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            about 1 cup
+            
+            Per Serving:
+            232 calories; protein 4.4g; carbohydrates 12.4g; dietary fiber 2.4g; sugars 7.7g; fat 19.4g; saturated fat 3.6g; cholesterol 6.3mg; vitamin a iu 884.8IU; vitamin c 40.8mg; folate 29.7mcg; calcium 90.5mg; iron 1mg; magnesium 35.3mg; potassium 272.8mg; sodium 267.4mg; thiamin 0.1mg; added sugar 5g.
+            
+            Exchanges:
+            1/2 other carbohydrate, 1 vegetable, 3 1/2 fat
+            """,
+            """
+            Hummus, sprouts and avocado top sprouted whole-wheat bread in this healthy vegan lunch idea. Look for sprouted bread in the freezer section of your grocery store.
+            
+            Ingredients:
+            
+            1 cup mixed salad greens
+            1 teaspoon red-wine vinegar
+            1 teaspoon extra-virgin olive oil
+            Pinch of salt
+            Pinch of pepper
+            2 slices sprouted whole-wheat bread, toasted
+            ¼ cup plain hummus
+            ¼ cup alfalfa sprouts
+            ¼ avocado, sliced
+            2 teaspoons unsalted sunflower seeds
+            
+            Directions
+            
+            Step 1
+            Toss greens with vinegar, oil, salt and pepper in a medium bowl. Spread each slice of toast with 2 tablespoons hummus. Top with sprouts, avocado and the greens and sprinkle with sunflower seeds.
+            
+            Nutrition Facts
+            
+            Serving Size:
+            2 toasts each
+            
+            Per Serving:
+            429 calories; protein 16.2g; carbohydrates 46.4g; dietary fiber 15.1g; sugars 0.9g; fat 21.9g; saturated fat 2.9g; vitamin a iu 1601.6IU; niacin equivalents 1.7mg; vitamin b6 0.3mg; vitamin c 14.7mg; folate 171.8mcg; calcium 67.3mg; iron 4.3mg; magnesium 81.7mg; potassium 616.2mg; sodium 550.7mg; thiamin 0.2mg; calories from fat 197kcal.
+            
+            Exchanges:
+            2 1/2 starch, 3 fat, 1 medium-fat protein
+            """
+            ]
+            self.arrImages = ["Chicken, Peppers & Pasta Casserole","Brussels Sprouts & Pepperoni Pizza","Jason Mraz's Guacamole","Red Cabbage Salad with Blue Cheese & Maple-Glazed Walnuts","West Coast Avocado Toast"]
             
         case .Protein:
             self.lblTitle.text = "Protein"
