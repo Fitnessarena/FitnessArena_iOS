@@ -784,62 +784,41 @@ Stop the movement a safe and comfortable distance away from your forehead, then 
         """
             Step 1
             
-            Using an underhand grip, hold onto a EZ-curl bar.
-            Rest your upper arms on the sloping preacher
-            bench, as illustrated, while holding the bar at an
-            arm's length in front. Try to have a slight bend in
-            your elbows of 5-10 degrees.
+            Using an underhand grip, hold onto a EZ-curl bar. Rest your upper arms on the sloping preacher bench, as illustrated, while holding the bar at an arm's length in front. Try to have a slight bend in your elbows of 5-10 degrees.
             
             Step 2
             
-            Lift the bar as high as possible while keeping your
-            upper arms firmly planted on the pad.
+            Lift the bar as high as possible while keeping your upper arms firmly planted on the pad.
             
             Step 3
             
-            Pause, then slowly return the bar to the
-            starting position.
+            Pause, then slowly return the bar to the starting position.
             """,
             //Standing biceps curl
         """
-            This is a useful exercise that allows you to lift
-            heavy weights and increase the size and strength
-            of your biceps muscles. Experimenting with
-            variations on the handgrip can help all-round
-            development.
+            This is a useful exercise that allows you to lift heavy weights and increase the size and strength of your biceps muscles. Experimenting with variations on the handgrip can help all-round development.
             
             Step 1
             
-            Stand tall with your feet a shoulder-width apart
-            and your knees slightly flexed. Work your hands
-            from the ends of the bar toward the middle,
-            gripping the bar at the first bends you reach.
+            Stand tall with your feet a shoulder-width apart and your knees slightly flexed. Work your hands from the ends of the bar toward the middle, gripping the bar at the first bends you reach.
             
             Step 2
             
-            Inhale, then slowly raise the bar toward your
-            shoulders as you exhale, keeping your elbows
-            close to your sides without letting them travel
-            forward.
+            Inhale, then slowly raise the bar toward your shoulders as you exhale, keeping your elbows close to your sides without letting them travel forward.
             
             Step 3
             
-            Inhale and slowly return the bar to the
-            starting position.
+            Inhale and slowly return the bar to the starting position.
             """,
             //Standing wrist curl
         """
             Step 1
             
-            Grab a barbell from behind you using an
-            underhand grip while keeping your arms straight.
-            Hang the barbell so that it rests on your extended
-            fingers.
+            Grab a barbell from behind you using an underhand grip while keeping your arms straight. Hang the barbell so that it rests on your extended fingers.
             
             Step 2
             
-            Flex your wrists to raise the barbell up as high
-            as possible.
+            Flex your wrists to raise the barbell up as high as possible.
             
             Step 3
             
@@ -849,23 +828,15 @@ Stop the movement a safe and comfortable distance away from your forehead, then 
         """
             Step 1
             
-            Using an underhand grip, take hold of the barbell
-            with your hands a few inches apart. Sit on the end
-            of a bench, keep your back flat while resting your
-            forearms on it but making sure that your wrist and
-            hand hang off the end.
+            Using an underhand grip, take hold of the barbell with your hands a few inches apart. Sit on the end of a bench, keep your back flat while resting your forearms on it but making sure that your wrist and hand hang off the end.
             
             Step 2
             
-            Allow your wrists to bend back and the barbell to
-            roll to the ends of your fingers. Close your
-            fingertips as you curl your palms toward your
-            biceps.
+            Allow your wrists to bend back and the barbell to roll to the ends of your fingers. Close your fingertips as you curl your palms toward your biceps.
             
             Step 3
             
-            Pause, reverse the motion, and let the bar roll back
-            to your fingertips.
+            Pause, reverse the motion, and let the bar roll back to your fingertips.
             """],
         // Third section
         

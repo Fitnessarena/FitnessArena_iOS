@@ -207,8 +207,8 @@
 		41BDBC76276865CE00E23F78 /* Weights */ = {
 			isa = PBXGroup;
 			children = (
-				BA1A307E27AAE11300A5C7A3 /* Arms */,
 				415D30DD2768F508001AA95E /* weightsViewController.swift */,
+				BA1A307E27AAE11300A5C7A3 /* Arms */,
 				41BDBC82276865CE00E23F78 /* chest */,
 				41BDBC7E276865CE00E23F78 /* Legs */,
 				41BDBC88276865CE00E23F78 /* Shoulders */,
