@@ -76,19 +76,19 @@ class CardioViewController: UIViewController {
                         """,
                        
                        """
-                        Playing tennis is a good sport to maintain your health, fitness, strength and agility. It has been calculated that a good hour-long game of singles tennis burns around 600 calories for men and 420calories for women. In addition to the fitness and physical health benefits, tennis also provides numerous social and mental health benefits as well.
+                    Playing tennis is a good sport to maintain your health, fitness, strength and agility. It has been calculated that a good hour-long game of singles tennis burns around 600 calories for men and 420calories for women. In addition to the fitness and physical health benefits, tennis also provides numerous social and mental health benefits as well.
 
-                        Tennis can be a great workout and lots of fun. The numerous health benefits of tennis include increased aerobic capacity, lowering of resting heart rate and pressure, improved metabolic function, bone density and muscle tone! It is no wonder that tennis is considered the sport for all ages.
+                    Tennis can be a great workout and lots of fun. The numerous health benefits of tennis include increased aerobic capacity, lowering of resting heart rate and pressure, improved metabolic function, bone density and muscle tone! It is no wonder that tennis is considered the sport for all ages.
                     """,
                        
                        """
-                        Running or walking on a treadmill can be an effective way to work out, like other complex cardiovascular exercises. As with all exercise, regular treadmill use increases endurance.
+                    Running or walking on a treadmill can be an effective way to work out, like other complex cardiovascular exercises. As with all exercise, regular treadmill use increases endurance.
                         
-                        Treadmills offer the benefit of reduced impact since all treadmills offer some sort of shock absorption. Exercising on a treadmill can reduce the strain to the ankles, knees and lower back of users.
+                    Treadmills offer the benefit of reduced impact since all treadmills offer some sort of shock absorption. Exercising on a treadmill can reduce the strain to the ankles, knees and lower back of users.
 
-                        Lack of wind resistance makes running on a treadmill easier than running outdoors - even at the same elevation. Wind resistance is thought to increase the workload by 2-3%. This problem is very easily overcome by elevating your treadmill to 1% or level 1. The slight incline will make your treadmill workout more equal to running outside on level ground.
+                    Lack of wind resistance makes running on a treadmill easier than running outdoors - even at the same elevation. Wind resistance is thought to increase the workload by 2-3%. This problem is very easily overcome by elevating your treadmill to 1% or level 1. The slight incline will make your treadmill workout more equal to running outside on level ground.
 
-                        Increasing the incline actually requires more muscle activation than running on a level terrain. You build more than just your leg muscles – your core stabilizer muscles also get worked out. An increase in incline also results in improved bone density, increased cardiovascular fitness, and stamina.
+                    Increasing the incline actually requires more muscle activation than running on a level terrain. You build more than just your leg muscles – your core stabilizer muscles also get worked out. An increase in incline also results in improved bone density, increased cardiovascular fitness, and stamina.
                     """]
     
     @IBOutlet weak var tableView: UITableView!
