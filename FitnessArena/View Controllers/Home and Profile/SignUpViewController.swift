@@ -25,7 +25,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.backButton.setTitle("", for: .normal)
+        //self.backButton.setTitle("", for: .normal)
         // Do any additional setup after loading the view.
         
     }

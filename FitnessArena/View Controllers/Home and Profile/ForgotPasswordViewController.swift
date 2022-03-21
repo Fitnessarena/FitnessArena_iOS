@@ -19,7 +19,7 @@ class ForgotPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.backButton.setTitle("", for: .normal)
+        //self.backButton.setTitle("", for: .normal)
         
         if self.email != "" {
             self.emailTextField.text = email
