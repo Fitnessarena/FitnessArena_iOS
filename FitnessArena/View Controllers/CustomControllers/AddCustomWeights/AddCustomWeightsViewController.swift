@@ -21,7 +21,9 @@ class AddCustomWeightsViewController: UIViewController {
     let ref = Database.database().reference()
     
     var arrCustoms : [Customs] = []
+    var updateCustoms : Customs = Customs()
     var favourite = Favourite()
+    var isEditModeOn : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +80,28 @@ class AddCustomWeightsViewController: UIViewController {
         self.tableView.reloadData()
     }
     
+    func updateCustomWeights() {
+        self.view.endEditing(true)
+        let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(self.updateCustoms.id ?? "")").updateChildValues([
+            "id": "\(self.updateCustoms.id ?? "")",
+            "title" : self.favourite.title!,
+            "desc": self.favourite.desc!,
+            "imageName": self.favourite.imageName!,
+            "category": self.favourite.category!,
+            "subCategory": self.favourite.subCategory!,
+            "weights": self.weightsText.text!,
+            "repititions": self.repititionsText.text!,
+            
+        ])
+        
+        self.giveAlertToUser(message: "Successfully updated.")
+        self.getCustomWeights()
+        self.isEditModeOn = false
+        self.weightsText.text = ""
+        self.repititionsText.text = ""
+    }
+    
     func addToCustomWeights() {
         self.view.endEditing(true)
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
@@ -118,18 +142,25 @@ class AddCustomWeightsViewController: UIViewController {
     @IBAction func submitButtonTapped(_ sender: Any) {
         
         if self.weightsText.text?.trimmingCharacters(in: .whitespaces) != "" && self.repititionsText.text?.trimmingCharacters(in: .whitespaces) != "" {
-            self.addToCustomWeights()
+            
+            if self.isEditModeOn {
+                //UPDATE DATA
+                self.updateCustomWeights()
+            } else {
+                //ADD NEW DATA
+                self.addToCustomWeights()
+            }
         }
     }
 }
 
 extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            self.removeCustomWeights(indexId: indexPath.row)
-        }
-    }
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            self.removeCustomWeights(indexId: indexPath.row)
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrCustoms.count
@@ -151,5 +182,32 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
         cell.lblDateTime?.text = timestamp
         return cell
     }
+    
+    func tableView(_ tableView: UITableView,
+                       trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+        {
+            // Write action code for the trash
+            let TrashAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                print("Update action ...")
+                self.removeCustomWeights(indexId: indexPath.row)
+                success(true)
+            })
+            TrashAction.backgroundColor = .red
+
+            // Write action code for the Flag
+            let FlagAction = UIContextualAction(style: .normal, title:  "Edit", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                print("Update action ...")
+                
+                self.weightsText.text = self.arrCustoms[indexPath.row].weights
+                self.repititionsText.text = self.arrCustoms[indexPath.row].repititions
+                self.updateCustoms = self.arrCustoms[indexPath.row]
+                self.isEditModeOn = true
+                success(true)
+            })
+            FlagAction.backgroundColor = .blue
+
+
+            return UISwipeActionsConfiguration(actions: [TrashAction,FlagAction])
+        }
 }
 
