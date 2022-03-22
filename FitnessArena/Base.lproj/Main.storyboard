@@ -479,7 +479,7 @@
                                             <constraint firstAttribute="width" constant="64" id="leY-7f-zL9"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="fn4-yP-qgT" eventType="touchUpInside" id="lQz-YK-fgW"/>
                                         </connections>
@@ -589,7 +589,7 @@
                                             <constraint firstAttribute="width" constant="64" id="kBf-C4-u7r"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="FkT-Ze-rKW" eventType="touchUpInside" id="xl2-zs-J1O"/>
                                         </connections>
@@ -822,7 +822,7 @@
                                             <constraint firstAttribute="width" constant="64" id="8QL-3O-Amg"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButton:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="CGZ-rD-0Gu"/>
                                         </connections>
@@ -979,7 +979,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="nutritionBackTapped:" destination="rep-R8-5co" eventType="touchUpInside" id="naZ-35-kYY"/>
                                         </connections>
@@ -1054,7 +1054,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpy-tp-z7R">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtontapped:" destination="TVy-QX-WOC" eventType="touchUpInside" id="lHW-eX-zqa"/>
                                         </connections>
@@ -1161,7 +1161,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9l-8F-ed4">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="NOi-0k-PxS" eventType="touchUpInside" id="Ocw-ty-TCh"/>
                                         </connections>
@@ -1962,7 +1962,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ain-Me-aEv">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="34t-LQ-qAQ" eventType="touchUpInside" id="WUu-u6-mYQ"/>
                                         </connections>
@@ -2303,7 +2303,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7G-1p-O8Q">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="of6-hW-Atr" eventType="touchUpInside" id="Haf-tI-Tx4"/>
                                         </connections>
@@ -2401,7 +2401,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM0-w3-Kx4">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="rIQ-Lg-q7x" eventType="touchUpInside" id="tGv-g6-Qc1"/>
                                         </connections>
@@ -2511,7 +2511,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHJ-0w-uMv">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="fsN-L0-bbA" eventType="touchUpInside" id="E2L-Gb-RY0"/>
                                         </connections>
@@ -2757,7 +2757,7 @@
                                             <constraint firstAttribute="width" constant="64" id="T5F-rH-t4V"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backBtn:" destination="KXc-gR-tGy" eventType="touchUpInside" id="I5X-Ca-8qk"/>
                                         </connections>
@@ -2831,7 +2831,7 @@
                                             <constraint firstAttribute="width" constant="64" id="VPm-XY-afd"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backBtnTapped:" destination="Ezc-IN-des" eventType="touchUpInside" id="bjs-bl-Kt3"/>
                                         </connections>
@@ -2976,7 +2976,7 @@
                                             <constraint firstAttribute="width" constant="64" id="awn-UU-2Vo"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backBtnTapped:" destination="IwI-Vf-weN" eventType="touchUpInside" id="GxS-Qm-J4f"/>
                                         </connections>
@@ -3035,7 +3035,7 @@
                                             <constraint firstAttribute="width" constant="64" id="Fn7-bj-D0y"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_backbutton"/>
                                         <connections>
                                             <action selector="backBtnTapped:" destination="mWp-h1-hVw" eventType="touchUpInside" id="rZ6-Rr-osi"/>
                                         </connections>
@@ -3144,7 +3144,6 @@
         <image name="Arms" width="40" height="40"/>
         <image name="BF" width="64" height="64"/>
         <image name="Back" width="16" height="16"/>
-        <image name="BackButton" width="50" height="50"/>
         <image name="Cardio" width="50" height="50"/>
         <image name="ChestWeights" width="48" height="48"/>
         <image name="Custom" width="50" height="50"/>
