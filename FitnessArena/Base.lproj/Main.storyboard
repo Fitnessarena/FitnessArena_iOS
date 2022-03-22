@@ -175,17 +175,17 @@
                                 <rect key="frame" x="0.0" y="108" width="414" height="754"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2J-F0-Avq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="803"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="710"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo appicon" translatesAutoresizingMaskIntoConstraints="NO" id="S2j-e8-l28">
-                                                <rect key="frame" x="107" y="40" width="200" height="200"/>
+                                                <rect key="frame" x="107" y="10" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="QDr-ma-DQN"/>
                                                     <constraint firstAttribute="height" constant="200" id="nR2-OB-5TO"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customising Your Workout?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWH-jJ-nXo">
-                                                <rect key="frame" x="74.5" y="621" width="265.5" height="30"/>
+                                                <rect key="frame" x="74.5" y="528" width="265.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="7du-85-NG6"/>
                                                 </constraints>
@@ -194,7 +194,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqc-yP-4y5">
-                                                <rect key="frame" x="127" y="675" width="160" height="56"/>
+                                                <rect key="frame" x="127" y="582" width="160" height="56"/>
                                                 <color key="backgroundColor" red="0.85882353779999998" green="0.87058818339999999" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="90b-Lc-vjX"/>
@@ -210,13 +210,13 @@
                                                     <action selector="customButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="ZM9-Ry-sjX"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="n26-wk-kHO">
-                                                <rect key="frame" x="30" y="280" width="354" height="301"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n26-wk-kHO">
+                                                <rect key="frame" x="30" y="242" width="354" height="254"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-fr-6cJ">
-                                                        <rect key="frame" x="120" y="0.0" width="114" height="64"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-fr-6cJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="64" id="Ttf-kP-BtF"/>
+                                                            <constraint firstAttribute="height" constant="56" id="Ttf-kP-BtF"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
@@ -228,8 +228,8 @@
                                                             <action selector="cardioButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="UNh-CO-b7A"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-Ni-CSM">
-                                                        <rect key="frame" x="112.5" y="79" width="129" height="64"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-Ni-CSM">
+                                                        <rect key="frame" x="0.0" y="66" width="354" height="56"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -240,8 +240,8 @@
                                                             <action selector="weightsButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="M8d-Om-564"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWX-s4-Wsa">
-                                                        <rect key="frame" x="110" y="158" width="134" height="64"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWX-s4-Wsa">
+                                                        <rect key="frame" x="0.0" y="132" width="354" height="56"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -252,8 +252,8 @@
                                                             <action selector="nutritionButtonTapped:" destination="xYc-s4-CsQ" eventType="touchUpInside" id="Tqv-9L-c8u"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-H3-nYt">
-                                                        <rect key="frame" x="95" y="237" width="164" height="64"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-H3-nYt">
+                                                        <rect key="frame" x="0.0" y="198" width="354" height="56"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -265,17 +265,27 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="MBg-Ni-CSM" secondAttribute="trailing" id="0nu-oJ-NzO"/>
+                                                    <constraint firstItem="rWX-s4-Wsa" firstAttribute="leading" secondItem="n26-wk-kHO" secondAttribute="leading" id="3Ey-cu-cbi"/>
+                                                    <constraint firstItem="MBg-Ni-CSM" firstAttribute="leading" secondItem="n26-wk-kHO" secondAttribute="leading" id="PRS-fD-Ei4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rWX-s4-Wsa" secondAttribute="trailing" id="Wbo-L5-6wA"/>
+                                                    <constraint firstItem="5bJ-fr-6cJ" firstAttribute="leading" secondItem="n26-wk-kHO" secondAttribute="leading" id="aCT-Dv-1kI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3VB-H3-nYt" secondAttribute="trailing" id="gE9-tB-aXj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5bJ-fr-6cJ" secondAttribute="trailing" id="rKm-t1-ib4"/>
+                                                    <constraint firstItem="3VB-H3-nYt" firstAttribute="leading" secondItem="n26-wk-kHO" secondAttribute="leading" id="wHp-OI-W6y"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="aqc-yP-4y5" firstAttribute="top" secondItem="OWH-jJ-nXo" secondAttribute="bottom" constant="24" id="78K-bA-oSQ"/>
                                             <constraint firstAttribute="trailing" secondItem="n26-wk-kHO" secondAttribute="trailing" constant="30" id="7Dc-OQ-E9d"/>
-                                            <constraint firstItem="S2j-e8-l28" firstAttribute="top" secondItem="q2J-F0-Avq" secondAttribute="top" constant="40" id="bhe-YU-VrG"/>
+                                            <constraint firstItem="S2j-e8-l28" firstAttribute="top" secondItem="q2J-F0-Avq" secondAttribute="top" constant="10" id="bhe-YU-VrG"/>
                                             <constraint firstItem="OWH-jJ-nXo" firstAttribute="centerX" secondItem="q2J-F0-Avq" secondAttribute="centerX" id="dtj-xW-5Mo"/>
                                             <constraint firstItem="S2j-e8-l28" firstAttribute="centerX" secondItem="q2J-F0-Avq" secondAttribute="centerX" id="eyV-j8-S89"/>
-                                            <constraint firstItem="OWH-jJ-nXo" firstAttribute="top" secondItem="n26-wk-kHO" secondAttribute="bottom" constant="40" id="jQo-Xa-2On"/>
-                                            <constraint firstItem="n26-wk-kHO" firstAttribute="top" secondItem="S2j-e8-l28" secondAttribute="bottom" constant="40" id="lX6-pr-W3v"/>
+                                            <constraint firstItem="OWH-jJ-nXo" firstAttribute="top" secondItem="n26-wk-kHO" secondAttribute="bottom" constant="32" id="jQo-Xa-2On"/>
+                                            <constraint firstItem="n26-wk-kHO" firstAttribute="top" secondItem="S2j-e8-l28" secondAttribute="bottom" constant="32" id="lX6-pr-W3v"/>
                                             <constraint firstItem="aqc-yP-4y5" firstAttribute="centerX" secondItem="q2J-F0-Avq" secondAttribute="centerX" id="mfP-rU-bzd"/>
                                             <constraint firstAttribute="bottom" secondItem="aqc-yP-4y5" secondAttribute="bottom" constant="72" id="y2T-0m-aBv"/>
                                             <constraint firstItem="n26-wk-kHO" firstAttribute="leading" secondItem="q2J-F0-Avq" secondAttribute="leading" constant="30" id="yF9-3d-aD2"/>
@@ -356,76 +366,85 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-yb-SBT">
-                                <rect key="frame" x="24" y="220" width="366" height="400"/>
+                                <rect key="frame" x="24" y="220" width="366" height="436"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixP-cD-pLE">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.31764706970000001" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Arms" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="BDv-ZZ-OE1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Arms">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="armsButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="5t8-pC-EM1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyT-r5-79h" userLabel="Chest">
-                                        <rect key="frame" x="0.0" y="70" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Chest" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="76" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Chest">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="chestButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="s44-i6-t5r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-1s-pRk">
-                                        <rect key="frame" x="0.0" y="140" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Legs" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="152" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Legs">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="legsButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="3qE-nK-osL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgL-dD-Snh">
-                                        <rect key="frame" x="0.0" y="210" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Shoulders" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="228" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Shoulders">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="shouldersButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="3ZJ-Av-2Mu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-Vd-C2S">
-                                        <rect key="frame" x="0.0" y="280" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Back" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="304" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="Hoh-1N-TKo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-L3-mon">
-                                        <rect key="frame" x="0.0" y="350" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Abdominals" cornerStyle="fixed">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="380" width="366" height="56"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Abdominals">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="absButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="djy-hF-frx"/>
                                         </connections>
@@ -734,32 +753,34 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="tHx-N3-x1N">
-                                <rect key="frame" x="32" y="300" width="350" height="228"/>
+                                <rect key="frame" x="32" y="300" width="350" height="212"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsY-AA-OgQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="64"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsY-AA-OgQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
                                         <color key="backgroundColor" red="0.6588235294117647" green="0.29019607843137252" blue="0.29803921568627451" alpha="0.80048894557823125" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="PcF-p9-zRa"/>
+                                            <constraint firstAttribute="height" constant="56" id="PcF-p9-zRa"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Weight Loss">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Weight Loss">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="absButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="GWS-ys-7Pl"/>
                                             <action selector="weightLossBtnTapped:" destination="VB4-ZA-tzI" eventType="touchUpInside" id="gtZ-Ve-3Ef"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-Ve-5dN">
-                                        <rect key="frame" x="0.0" y="164" width="350" height="64"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-Ve-5dN">
+                                        <rect key="frame" x="0.0" y="156" width="350" height="56"/>
                                         <color key="backgroundColor" red="0.6588235294117647" green="0.29019607843137252" blue="0.29803921568627451" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Building Muscle">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Building Muscle">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="absButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="BDC-3x-lCO"/>
                                             <action selector="buildingMuscleBtnTapped:" destination="VB4-ZA-tzI" eventType="touchUpInside" id="yfm-gY-7cV"/>
@@ -804,7 +825,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veggies" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-6b-DUK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrots" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-6b-DUK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKM-HC-MTS">
@@ -813,7 +834,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Loss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-Lh-jeO">
                                         <rect key="frame" x="121.5" y="14" width="171.5" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-gT-TMV">
@@ -839,77 +860,86 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1xT-YL-yy9">
-                                <rect key="frame" x="20" y="172" width="374" height="626"/>
+                                <rect key="frame" x="20" y="172" width="374" height="536"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDu-VD-fOn">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDu-VD-fOn">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.65882354970000001" green="0.2901961207" blue="0.29803922770000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="qh3-bX-i7S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Breakfast">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Breakfast">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="absButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="Iyo-4w-WM4"/>
                                             <action selector="bfBtnTaped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="VIb-R6-B0k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7U-0V-mA1">
-                                        <rect key="frame" x="0.0" y="111" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7U-0V-mA1">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.65882354970000001" green="0.2901961207" blue="0.29803922770000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="A.M. Snack">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="A.M. Snack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="amSnackBtnTapped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="lEu-YA-0hK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-7b-C4J">
-                                        <rect key="frame" x="0.0" y="222" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-7b-C4J">
+                                        <rect key="frame" x="0.0" y="192" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.65882354970000001" green="0.2901961207" blue="0.29803922770000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Lunch">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Lunch">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="lunchBtnTapped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="UaA-fD-0Fj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNw-eS-nB0">
-                                        <rect key="frame" x="0.0" y="333" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNw-eS-nB0">
+                                        <rect key="frame" x="0.0" y="288" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.65882354970000001" green="0.2901961207" blue="0.29803922770000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="P.M. Snack">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="P.M. Snack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="pmSnackBtnTapped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="Uda-ub-xmy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-vY-lem">
-                                        <rect key="frame" x="0.0" y="444" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-vY-lem">
+                                        <rect key="frame" x="0.0" y="384" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.65882354970000001" green="0.2901961207" blue="0.29803922770000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Dinner">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Dinner">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="dineerBtnTapped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="9co-lD-i0c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWp-zd-sxJ">
-                                        <rect key="frame" x="0.0" y="555" width="374" height="71"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWp-zd-sxJ">
+                                        <rect key="frame" x="0.0" y="480" width="374" height="56"/>
                                         <color key="backgroundColor" red="0.6588235294117647" green="0.29019607843137252" blue="0.29803921568627451" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Intermittent Fasting">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Intermittent Fasting">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="absButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="wBz-nu-QTK"/>
                                             <action selector="ifBtnTapped:" destination="BXU-Nn-bpp" eventType="touchUpInside" id="P5R-eM-fvh"/>
@@ -925,7 +955,6 @@
                             <constraint firstItem="vBU-6b-DUK" firstAttribute="trailing" secondItem="dML-Yb-jOF" secondAttribute="trailing" id="OhJ-YE-4Sq"/>
                             <constraint firstItem="vBU-6b-DUK" firstAttribute="top" secondItem="yl7-lA-gn2" secondAttribute="top" id="Xka-Dh-5Gd"/>
                             <constraint firstItem="1xT-YL-yy9" firstAttribute="top" secondItem="PKM-HC-MTS" secondAttribute="bottom" constant="64" id="ZTn-0f-Zfc"/>
-                            <constraint firstItem="dML-Yb-jOF" firstAttribute="bottom" secondItem="1xT-YL-yy9" secondAttribute="bottom" constant="64" id="bM1-ax-7sD"/>
                             <constraint firstItem="1xT-YL-yy9" firstAttribute="leading" secondItem="dML-Yb-jOF" secondAttribute="leading" constant="20" id="dEx-le-dJg"/>
                             <constraint firstItem="vBU-6b-DUK" firstAttribute="leading" secondItem="dML-Yb-jOF" secondAttribute="leading" id="fnE-fQ-ZVA"/>
                             <constraint firstItem="dML-Yb-jOF" firstAttribute="trailing" secondItem="1xT-YL-yy9" secondAttribute="trailing" constant="20" id="pdO-Vi-ufk"/>
@@ -1480,7 +1509,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-B3-j9m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-B3-j9m">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -2702,116 +2731,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weightGain" translatesAutoresizingMaskIntoConstraints="NO" id="glu-ax-sif">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrots" translatesAutoresizingMaskIntoConstraints="NO" id="glu-ax-sif">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Now-Nw-bAp">
-                                <rect key="frame" x="20" y="172" width="374" height="626"/>
+                                <rect key="frame" x="20" y="132" width="374" height="706"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oe-b0-Osh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Breakfast">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oe-b0-Osh">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Breakfast">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="bfBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="2k7-p8-dem"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-73-0p1">
-                                        <rect key="frame" x="0.0" y="72" width="374" height="51.5"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="A.M. Snack">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-73-0p1">
+                                        <rect key="frame" x="0.0" y="80.5" width="374" height="61"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="A.M. Snack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="amSnackTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="wAv-ci-GKE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eH-29-7Oc">
-                                        <rect key="frame" x="0.0" y="143.5" width="374" height="52"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Lunch">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eH-29-7Oc">
+                                        <rect key="frame" x="0.0" y="161.5" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Lunch">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="lunchBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="mta-Ef-w6o"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-eq-eTA">
-                                        <rect key="frame" x="0.0" y="215.5" width="374" height="51.5"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="P.M. Snack">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-eq-eTA">
+                                        <rect key="frame" x="0.0" y="242" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="P.M. Snack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="pmSnackBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="xzR-LK-n7r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4e-lS-Gzc">
-                                        <rect key="frame" x="0.0" y="287" width="374" height="52"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Dinner">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4e-lS-Gzc">
+                                        <rect key="frame" x="0.0" y="322.5" width="374" height="61"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Dinner">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="dinnerBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="UMb-DB-NRA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqC-eV-dDT">
-                                        <rect key="frame" x="0.0" y="359" width="374" height="51.5"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Protein">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqC-eV-dDT">
+                                        <rect key="frame" x="0.0" y="403.5" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Protein">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="proteinBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="FZT-4h-qtu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCh-wQ-ybL">
-                                        <rect key="frame" x="0.0" y="430.5" width="374" height="52"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Pre - Workout">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCh-wQ-ybL">
+                                        <rect key="frame" x="0.0" y="484" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Pre - Workout">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="preWorkoutBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="dCC-KG-aYk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-Eb-2Ky">
-                                        <rect key="frame" x="0.0" y="502.5" width="374" height="51.5"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Post - Workout">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-Eb-2Ky">
+                                        <rect key="frame" x="0.0" y="564.5" width="374" height="61"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Post - Workout">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="postWorkoutBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="dEd-mN-cqb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-ff-Hkq">
-                                        <rect key="frame" x="0.0" y="574" width="374" height="52"/>
-                                        <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Pre - Bed Snack">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-ff-Hkq">
+                                        <rect key="frame" x="0.0" y="645.5" width="374" height="60.5"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Pre - Bed Snack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="preBedSnackBtnTapped:" destination="KXc-gR-tGy" eventType="touchUpInside" id="Dc7-uy-Hpg"/>
                                         </connections>
@@ -2857,12 +2895,12 @@
                             <constraint firstItem="glu-ax-sif" firstAttribute="trailing" secondItem="Bl3-kL-JWV" secondAttribute="trailing" id="BAf-vq-aJP"/>
                             <constraint firstItem="glu-ax-sif" firstAttribute="top" secondItem="Evi-Ih-uQX" secondAttribute="top" id="Hsb-kv-0ll"/>
                             <constraint firstItem="Now-Nw-bAp" firstAttribute="leading" secondItem="Bl3-kL-JWV" secondAttribute="leading" constant="20" id="LOP-2R-5AF"/>
-                            <constraint firstItem="Now-Nw-bAp" firstAttribute="top" secondItem="LNk-zq-BuY" secondAttribute="bottom" constant="64" id="OcN-ky-jbX"/>
+                            <constraint firstItem="Now-Nw-bAp" firstAttribute="top" secondItem="LNk-zq-BuY" secondAttribute="bottom" constant="24" id="OcN-ky-jbX"/>
                             <constraint firstItem="LNk-zq-BuY" firstAttribute="top" secondItem="Bl3-kL-JWV" secondAttribute="top" id="Pbd-sE-FRz"/>
                             <constraint firstItem="glu-ax-sif" firstAttribute="leading" secondItem="Bl3-kL-JWV" secondAttribute="leading" id="Rc8-cG-9LZ"/>
                             <constraint firstItem="Bl3-kL-JWV" firstAttribute="trailing" secondItem="LNk-zq-BuY" secondAttribute="trailing" id="YTf-Sr-nxv"/>
                             <constraint firstItem="LNk-zq-BuY" firstAttribute="leading" secondItem="Bl3-kL-JWV" secondAttribute="leading" id="cDb-bc-PYz"/>
-                            <constraint firstItem="Bl3-kL-JWV" firstAttribute="bottom" secondItem="Now-Nw-bAp" secondAttribute="bottom" constant="64" id="rW6-a0-SdC"/>
+                            <constraint firstItem="Bl3-kL-JWV" firstAttribute="bottom" secondItem="Now-Nw-bAp" secondAttribute="bottom" constant="24" id="rW6-a0-SdC"/>
                             <constraint firstItem="Bl3-kL-JWV" firstAttribute="trailing" secondItem="Now-Nw-bAp" secondAttribute="trailing" constant="20" id="we2-Ke-Px9"/>
                         </constraints>
                     </view>
@@ -3217,7 +3255,7 @@
         <image name="Cardio" width="50" height="50"/>
         <image name="ChestWeights" width="48" height="48"/>
         <image name="Custom" width="50" height="50"/>
-        <image name="Favourite" width="64" height="64"/>
+        <image name="Favourite" width="44" height="44"/>
         <image name="Legs" width="48" height="48"/>
         <image name="Nutrition" width="50" height="50"/>
         <image name="Profile" width="50" height="50"/>
@@ -3240,8 +3278,6 @@
         <image name="six" width="50" height="50"/>
         <image name="three" width="64" height="64"/>
         <image name="two" width="64" height="64"/>
-        <image name="veggies" width="736" height="1104"/>
-        <image name="weightGain" width="1920" height="1080"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

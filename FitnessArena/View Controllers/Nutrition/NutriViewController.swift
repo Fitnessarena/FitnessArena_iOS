@@ -17,12 +17,12 @@ class NutriViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.backBtn.setTitle("", for: .normal)
-        weightLossButton.titleLabel?.font = UIFont(name: "...", size: 38 )
-        buildingMuscleButton.titleLabel?.font = UIFont(name: "...", size: 38)
-        
-        
-        weightLossButton.layer.cornerRadius = 25.0
-        buildingMuscleButton.layer.cornerRadius = 25.0
+//        weightLossButton.titleLabel?.font = UIFont(name: "...", size: 38 )
+//        buildingMuscleButton.titleLabel?.font = UIFont(name: "...", size: 38)
+//
+//
+//        weightLossButton.layer.cornerRadius = 25.0
+//        buildingMuscleButton.layer.cornerRadius = 25.0
 
         // Do any additional setup after loading the view.
     }
