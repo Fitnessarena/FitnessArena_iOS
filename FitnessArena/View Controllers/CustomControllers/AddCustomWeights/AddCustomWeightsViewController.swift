@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import ObjectMapper
+import FirebaseAnalytics
 
 class AddCustomWeightsViewController: UIViewController {
 
@@ -17,6 +18,10 @@ class AddCustomWeightsViewController: UIViewController {
     @IBOutlet weak var repititionsText: UITextField!
     
     @IBOutlet weak var submitButton: UIButton!
+    
+    @IBOutlet weak var btnWeekDays: UISegmentedControl!
+    
+    var weekDay : Utilities.WeekDays = .Sun
     
     let ref = Database.database().reference()
     
@@ -31,11 +36,12 @@ class AddCustomWeightsViewController: UIViewController {
         self.registerTableViewCells()
         
         self.backBtn.setTitle("", for: .normal)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.getCustomWeights()
+        self.getCustomWeights(weekDay: self.weekDay)
     }
     
     class func identifier() -> AddCustomWeightsViewController {
@@ -52,12 +58,12 @@ class AddCustomWeightsViewController: UIViewController {
         self.tableView.register(addCustomWeightsTableViewCell, forCellReuseIdentifier: "AddCustomWeightsTableViewCell")
     }
     
-    func getCustomWeights() {
+    func getCustomWeights(weekDay: Utilities.WeekDays) {
         self.arrCustoms.removeAll()
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
         if userID != nil {
-            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData")
+            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("\(weekDay)").child("arrData")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
@@ -83,7 +89,7 @@ class AddCustomWeightsViewController: UIViewController {
     func updateCustomWeights() {
         self.view.endEditing(true)
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
-        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(self.updateCustoms.id ?? "")").updateChildValues([
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("\(self.weekDay)").child("arrData").child("\(self.updateCustoms.id ?? "")").updateChildValues([
             "id": "\(self.updateCustoms.id ?? "")",
             "title" : self.favourite.title!,
             "desc": self.favourite.desc!,
@@ -95,8 +101,12 @@ class AddCustomWeightsViewController: UIViewController {
             
         ])
         
+        let param = [AnalyticsParameterScreenName: "AddCustomWeightsViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
+        print("AnalyticsParameterScreenName Param : \(param)")
+        Analytics.logEvent("Custom Weight Updated", parameters: param)
+        
         self.giveAlertToUser(message: "Successfully updated.")
-        self.getCustomWeights()
+        self.getCustomWeights(weekDay: self.weekDay)
         self.isEditModeOn = false
         self.weightsText.text = ""
         self.repititionsText.text = ""
@@ -106,7 +116,7 @@ class AddCustomWeightsViewController: UIViewController {
         self.view.endEditing(true)
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         let timestamp = Int(NSDate().timeIntervalSince1970)
-        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(timestamp)").setValue([
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("\(self.weekDay)").child("arrData").child("\(timestamp)").setValue([
             "id": "\(timestamp)",
             "title" : self.favourite.title!,
             "desc": self.favourite.desc!,
@@ -118,8 +128,12 @@ class AddCustomWeightsViewController: UIViewController {
             
         ])
         
+        let param = [AnalyticsParameterScreenName: "AddCustomWeightsViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
+        print("AnalyticsParameterScreenName Param : \(param)")
+        Analytics.logEvent("Custom Weight Added", parameters: param)
+        
         self.giveAlertToUser(message: "Successfully added to customs.")
-        self.getCustomWeights()
+        self.getCustomWeights(weekDay: self.weekDay)
     }
     
     func removeCustomWeights(indexId: Int) {
@@ -132,7 +146,7 @@ class AddCustomWeightsViewController: UIViewController {
             // add the actions (buttons)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
                 // do something like...
-                self.getCustomWeights()
+                self.getCustomWeights(weekDay: self.weekDay)
             }))
             // show the alert
             self.present(alert, animated: true, completion: nil)
@@ -152,6 +166,29 @@ class AddCustomWeightsViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func btnWeekDaysAction(_ sender: UISegmentedControl) {
+        
+        print(sender.selectedSegmentIndex)
+        if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sun
+        } else if sender.selectedSegmentIndex == 1 {
+            self.weekDay = Utilities.WeekDays.Mon
+        }  else if sender.selectedSegmentIndex == 2 {
+            self.weekDay = Utilities.WeekDays.Tue
+        }  else if sender.selectedSegmentIndex == 3 {
+            self.weekDay = Utilities.WeekDays.Wed
+        }  else if sender.selectedSegmentIndex == 4 {
+            self.weekDay = Utilities.WeekDays.Thu
+        }  else if sender.selectedSegmentIndex == 5 {
+            self.weekDay = Utilities.WeekDays.Fri
+        }  else if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sat
+        }
+        
+        self.getCustomWeights(weekDay: self.weekDay)
+    }
+    
 }
 
 extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataSource {

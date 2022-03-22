@@ -2346,7 +2346,7 @@
                                     <outlet property="delegate" destination="of6-hW-Atr" id="ciE-VX-OYo"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHZ-uL-egA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHZ-uL-egA">
                                 <rect key="frame" x="330" y="812" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="1XT-Q9-xzG"/>
@@ -2459,34 +2459,56 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xLD-3G-veb">
-                                <rect key="frame" x="20" y="308" width="374" height="568"/>
+                                <rect key="frame" x="4" y="392" width="406" height="484"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="rIQ-Lg-q7x" id="dI4-vF-Oal"/>
                                     <outlet property="delegate" destination="rIQ-Lg-q7x" id="5Vc-BV-qGt"/>
                                 </connections>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-14-hT2">
+                                <rect key="frame" x="4" y="312" width="406" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="HuT-nn-EBa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Sun"/>
+                                    <segment title="Mon"/>
+                                    <segment title="Tue"/>
+                                    <segment title="Wed"/>
+                                    <segment title="Thu"/>
+                                    <segment title="Fri"/>
+                                    <segment title="Sat"/>
+                                </segments>
+                                <connections>
+                                    <action selector="btnWeekDaysAction:" destination="rIQ-Lg-q7x" eventType="valueChanged" id="0fq-Oe-QVb"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bXt-YD-hJ6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="KMf-14-hT2" firstAttribute="leading" secondItem="bXt-YD-hJ6" secondAttribute="leading" constant="4" id="0md-bg-NIe"/>
                             <constraint firstItem="EUG-4s-Wxf" firstAttribute="leading" secondItem="egE-am-QEu" secondAttribute="leading" id="9OD-Ve-JLB"/>
                             <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="7c4-1M-vi8" secondAttribute="trailing" constant="24" id="GLP-h5-e4A"/>
-                            <constraint firstItem="xLD-3G-veb" firstAttribute="leading" secondItem="bXt-YD-hJ6" secondAttribute="leading" constant="20" id="GdS-3C-x7F"/>
+                            <constraint firstItem="xLD-3G-veb" firstAttribute="leading" secondItem="bXt-YD-hJ6" secondAttribute="leading" constant="4" id="GdS-3C-x7F"/>
+                            <constraint firstItem="xLD-3G-veb" firstAttribute="top" secondItem="KMf-14-hT2" secondAttribute="bottom" constant="24" id="HyP-eG-gpf"/>
                             <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="EUG-4s-Wxf" secondAttribute="trailing" id="I0k-m6-Oyu"/>
                             <constraint firstItem="n20-J2-YNS" firstAttribute="leading" secondItem="bXt-YD-hJ6" secondAttribute="leading" constant="24" id="KWN-1r-t5K"/>
                             <constraint firstItem="7c4-1M-vi8" firstAttribute="top" secondItem="n20-J2-YNS" secondAttribute="bottom" constant="24" id="Nby-w8-BMN"/>
                             <constraint firstItem="7c4-1M-vi8" firstAttribute="leading" secondItem="bXt-YD-hJ6" secondAttribute="leading" constant="24" id="P9e-vY-4Xb"/>
+                            <constraint firstItem="KMf-14-hT2" firstAttribute="top" secondItem="7c4-1M-vi8" secondAttribute="bottom" constant="24" id="RWM-s8-N6H"/>
                             <constraint firstItem="EUG-4s-Wxf" firstAttribute="top" secondItem="bXt-YD-hJ6" secondAttribute="top" id="aDx-hD-aSv"/>
                             <constraint firstAttribute="bottom" secondItem="xLD-3G-veb" secondAttribute="bottom" constant="20" id="cnh-c3-kzP"/>
                             <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="n20-J2-YNS" secondAttribute="trailing" constant="24" id="dea-Qx-Fy7"/>
-                            <constraint firstItem="xLD-3G-veb" firstAttribute="top" secondItem="7c4-1M-vi8" secondAttribute="bottom" constant="20" id="h9C-j6-9c9"/>
-                            <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="xLD-3G-veb" secondAttribute="trailing" constant="20" id="qt3-JO-FfG"/>
+                            <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="xLD-3G-veb" secondAttribute="trailing" constant="4" id="qt3-JO-FfG"/>
                             <constraint firstItem="n20-J2-YNS" firstAttribute="top" secondItem="EUG-4s-Wxf" secondAttribute="bottom" constant="44" id="x1R-ll-dE6"/>
+                            <constraint firstItem="bXt-YD-hJ6" firstAttribute="trailing" secondItem="KMf-14-hT2" secondAttribute="trailing" constant="4" id="yS3-Ti-sk7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backBtn" destination="ZM0-w3-Kx4" id="T9p-nG-3o2"/>
+                        <outlet property="btnWeekDays" destination="KMf-14-hT2" id="KMm-8U-L4E"/>
                         <outlet property="repititionsText" destination="Z14-2h-jYi" id="i55-lF-kWe"/>
                         <outlet property="submitButton" destination="7c4-1M-vi8" id="bes-fM-a59"/>
                         <outlet property="tableView" destination="xLD-3G-veb" id="K2m-eW-vuK"/>

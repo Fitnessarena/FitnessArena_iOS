@@ -11,6 +11,10 @@ import UIKit
 
 class Utilities {
     
+    enum WeekDays {
+        case Mon, Tue, Wed, Thu, Fri, Sat, Sun
+    }
+    
     // validate password
     static func isPasswordValid(_ password : String) -> Bool {
         
