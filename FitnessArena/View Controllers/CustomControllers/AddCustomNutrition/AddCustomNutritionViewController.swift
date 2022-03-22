@@ -149,7 +149,7 @@ extension AddCustomNutritionViewController : UITableViewDelegate, UITableViewDat
         print(myDate)
     
         let format = DateFormatter()
-        format.dateFormat = "MMM-dd-yyyy 'at' HH:mm a"
+        format.dateFormat = "MMM-dd-yyyy, HH:mm a"
         let timestamp = format.string(from: myDate as Date)
         
         cell.lblDateTime?.text = timestamp

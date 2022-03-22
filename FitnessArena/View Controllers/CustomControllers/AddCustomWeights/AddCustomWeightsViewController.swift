@@ -79,6 +79,7 @@ class AddCustomWeightsViewController: UIViewController {
     }
     
     func addToCustomWeights() {
+        self.view.endEditing(true)
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         let timestamp = Int(NSDate().timeIntervalSince1970)
         self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights").child("\(self.favourite.id ?? "")").child("arrData").child("\(timestamp)").setValue([
@@ -95,8 +96,6 @@ class AddCustomWeightsViewController: UIViewController {
         
         self.giveAlertToUser(message: "Successfully added to customs.")
         self.getCustomWeights()
-        self.weightsText.text = ""
-        self.repititionsText.text = ""
     }
     
     func removeCustomWeights(indexId: Int) {
@@ -117,12 +116,11 @@ class AddCustomWeightsViewController: UIViewController {
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
+        
         if self.weightsText.text?.trimmingCharacters(in: .whitespaces) != "" && self.repititionsText.text?.trimmingCharacters(in: .whitespaces) != "" {
             self.addToCustomWeights()
         }
-        
     }
-    
 }
 
 extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataSource {
@@ -139,7 +137,7 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddCustomWeightsTableViewCell") as! AddCustomWeightsTableViewCell
-        cell.lblText?.text = "\(self.arrCustoms[indexPath.row].weights ?? "") * \(self.arrCustoms[indexPath.row].repititions ?? "")"
+        cell.lblText?.text = "\(self.arrCustoms[indexPath.row].weights ?? "") kg * \(self.arrCustoms[indexPath.row].repititions ?? "") reps"
         
         
         let a = Double(self.arrCustoms[indexPath.row].id ?? "") ?? 0.0
@@ -147,7 +145,7 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
         print(myDate)
     
         let format = DateFormatter()
-        format.dateFormat = "MMM-dd-yyyy 'at' HH:mm a"
+        format.dateFormat = "MMM-dd-yyyy, HH:mm a"
         let timestamp = format.string(from: myDate as Date)
         
         cell.lblDateTime?.text = timestamp

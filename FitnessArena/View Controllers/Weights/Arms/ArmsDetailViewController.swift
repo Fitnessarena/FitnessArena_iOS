@@ -165,10 +165,59 @@ class ArmsDetailViewController: UIViewController {
             "subCategory": self.subCategory
         ])
         
-        self.giveAlertToUser(message: "Successfully added to customs.")
+        
         self.favouriteBtn.setImage(UIImage(named: "ic_minus"), for: .normal)
         //SET IT TO 1 as it is Marked as favourite
         self.favouriteBtn.tag = 1
+        
+        //PASS DATA WHICH WE NEED IN NEXT SCREEN
+        let vc = AddCustomWeightsViewController.identifier()
+        vc.favourite.id = "\(timestamp)"
+        vc.favourite.title = self.name
+        vc.favourite.desc = self.details
+        vc.favourite.imageName = self.images
+        vc.favourite.category = self.category
+        vc.favourite.subCategory = self.subCategory
+        self.push(vc: vc)
+    }
+    
+//    func getFavouritesFromFirebase() {
+//        self.arrFavourites.removeAll()
+//        let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
+//
+//        if userID != nil {
+//            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights")
+//
+//            placeRef.observeSingleEvent(of: .value, with: { snapshot in
+//
+//                if snapshot.childrenCount > 0 {
+//                    for child in snapshot.children {
+//                        let snap = child as! DataSnapshot
+//                        let placeDict = snap.value as! [String: Any]
+//
+//                        if let favourite: Favourite = Mapper<Favourite>().map(JSON: placeDict) {
+//                            self.arrFavourites.append(favourite)
+//                            if favourite.id == self.
+//                        }
+//                    }
+//                }
+//
+//            })
+//        }
+//    }
+    
+    func showAlertAndNavigate() {
+        
+        let  alertController = UIAlertController(title: "FitnessArena", message: "Successfully added to customs.", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+            
+            let vc = AddCustomWeightsViewController.identifier()
+            
+            self.push(vc: vc)
+            
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func removeCustoms() {

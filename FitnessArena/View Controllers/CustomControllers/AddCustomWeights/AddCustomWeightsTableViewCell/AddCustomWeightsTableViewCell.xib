@@ -40,11 +40,21 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-Ew-hrI">
+                                <rect key="frame" x="12" y="59" width="330" height="1"/>
+                                <color key="backgroundColor" red="0.6588235294" green="0.2901960784" blue="0.29803921570000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5fL-fe-Mbc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dWP-vO-8r9" firstAttribute="leading" secondItem="BPj-K0-Up6" secondAttribute="leading" constant="8" id="0h3-DQ-tRA"/>
+                            <constraint firstAttribute="trailing" secondItem="YnB-Ew-hrI" secondAttribute="trailing" constant="12" id="Uxt-Sd-hXU"/>
+                            <constraint firstItem="YnB-Ew-hrI" firstAttribute="leading" secondItem="BPj-K0-Up6" secondAttribute="leading" constant="12" id="biX-K9-I24"/>
                             <constraint firstAttribute="trailing" secondItem="dWP-vO-8r9" secondAttribute="trailing" constant="8" id="qbR-ID-H5N"/>
+                            <constraint firstAttribute="bottom" secondItem="YnB-Ew-hrI" secondAttribute="bottom" id="uV1-eJ-2Ng"/>
                             <constraint firstItem="dWP-vO-8r9" firstAttribute="top" secondItem="BPj-K0-Up6" secondAttribute="top" constant="8" id="yDd-IO-TU7"/>
                             <constraint firstAttribute="bottom" secondItem="dWP-vO-8r9" secondAttribute="bottom" constant="8" id="yX2-Mv-9oW"/>
                         </constraints>
@@ -61,7 +71,7 @@
                 <outlet property="lblDateTime" destination="v8q-Tq-nrZ" id="j8U-bZ-PuD"/>
                 <outlet property="lblText" destination="LOT-ZV-x44" id="Jai-B5-lli"/>
             </connections>
-            <point key="canvasLocation" x="87" y="108"/>
+            <point key="canvasLocation" x="86.956521739130437" y="107.8125"/>
         </tableViewCell>
     </objects>
     <resources>

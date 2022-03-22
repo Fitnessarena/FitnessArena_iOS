@@ -302,8 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */,
-				BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */,
-				BA56428D27C4B5F400D234B3 /* AddCustomWeightsTableViewCell.xib */,
+				BA534DA627E95DF600B2BEB1 /* AddCustomWeightsTableViewCell */,
 			);
 			path = AddCustomWeights;
 			sourceTree = "<group>";
@@ -345,6 +344,15 @@
 				BA35A47E27AA880F0014F5DC /* FavouritesDetailViewController.swift */,
 			);
 			path = Favourite;
+			sourceTree = "<group>";
+		};
+		BA534DA627E95DF600B2BEB1 /* AddCustomWeightsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */,
+				BA56428D27C4B5F400D234B3 /* AddCustomWeightsTableViewCell.xib */,
+			);
+			path = AddCustomWeightsTableViewCell;
 			sourceTree = "<group>";
 		};
 		BA8BBE4127BE19EC00BE9083 /* CustomControllers */ = {
