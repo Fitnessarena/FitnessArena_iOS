@@ -10,6 +10,7 @@ import Firebase
 import ObjectMapper
 import IQKeyboardManagerSwift
 import IQDropDownTextField
+import FirebaseAnalytics
 
 class AddCustomNutritionViewController: UIViewController {
 
@@ -134,6 +135,11 @@ class AddCustomNutritionViewController: UIViewController {
         self.isEditModeOn = false
         self.FoodNameText.text = ""
         self.CaloriesText.text = ""
+        
+        let param = [AnalyticsParameterScreenName: "AddCustomNutritionViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
+        print("AnalyticsParameterScreenName Param : \(param)")
+        Analytics.logEvent("CustomNutritionUpdated", parameters: param)
+        
     }
     
     func addToCustomNutrition() {
@@ -150,6 +156,10 @@ class AddCustomNutritionViewController: UIViewController {
         self.getCustomNutritions()
         self.FoodNameText.text = ""
         self.CaloriesText.text = ""
+        
+        let param = [AnalyticsParameterScreenName: "AddCustomNutritionViewController", "user_id" : "\(userID ?? "")", "foodCalories": "\(self.CaloriesText.text!)", "foodCategory": "\(self.CategoryText.selectedItem!)"]
+        print("AnalyticsParameterScreenName Param : \(param)")
+        Analytics.logEvent("CustomNutritionAdded", parameters: param)
     }
     
     func removeCustomNutrition(indexId: String?) {

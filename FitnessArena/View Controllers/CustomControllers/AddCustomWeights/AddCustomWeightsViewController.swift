@@ -101,9 +101,11 @@ class AddCustomWeightsViewController: UIViewController {
             "weekDay": "\(self.weekDay)"
         ])
         
+        
+        //FIREBASE ANALYTICS 
         let param = [AnalyticsParameterScreenName: "AddCustomWeightsViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
         print("AnalyticsParameterScreenName Param : \(param)")
-        Analytics.logEvent("Custom Weight Updated", parameters: param)
+        Analytics.logEvent("CustomWeightUpdated", parameters: param)
         
         self.giveAlertToUser(message: "Successfully updated.")
         self.getCustomWeights()
@@ -130,7 +132,7 @@ class AddCustomWeightsViewController: UIViewController {
         
         let param = [AnalyticsParameterScreenName: "AddCustomWeightsViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
         print("AnalyticsParameterScreenName Param : \(param)")
-        Analytics.logEvent("Custom Weight Added", parameters: param)
+        Analytics.logEvent("CustomWeightAdded", parameters: param)
         
         self.giveAlertToUser(message: "Successfully added to customs.")
         self.getCustomWeights()
