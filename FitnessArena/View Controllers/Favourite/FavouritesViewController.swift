@@ -47,16 +47,21 @@ class FavouritesViewController: UIViewController {
             let placeRef = self.ref.child("users").child("\(userID ?? "")").child("favourites").child("\(val)")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
-                
+                var tempArr : [Favourite] = []
                 if snapshot.childrenCount > 0 {
                     for child in snapshot.children {
                         let snap = child as! DataSnapshot
                         let placeDict = snap.value as! [String: Any]
                         
                         if let favourite: Favourite = Mapper<Favourite>().map(JSON: placeDict) {
-                            self.arrFavourites.append(favourite)
+                            tempArr.append(favourite)
                         }
                     }
+                    
+                    self.arrFavourites = tempArr.sorted {
+                        $0.subCategory! < $1.subCategory!
+                    }
+                    
                     self.tableView.reloadData()
                 } else {
                     self.tableView.reloadData()
