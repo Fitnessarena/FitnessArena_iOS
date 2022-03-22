@@ -22,11 +22,19 @@ class CustomControllers: UIViewController {
     var arrCustoms : [Customs] = []
     let ref = Database.database().reference()
     
+    var weekDay : Utilities.WeekDays = .Sun
+    
+    @IBOutlet weak var btnWeekDays: UISegmentedControl!
+    
+    @IBOutlet weak var btnWeekDaysHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerTableViewCells()
         self.backBtn.setTitle("", for: .normal)
         self.addCustoms.setTitle("", for: .normal)
+        self.btnWeekDays.isHidden = true
+        self.btnWeekDaysHeight.constant = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +59,7 @@ class CustomControllers: UIViewController {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
         if userID != nil {
-            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions")
+            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(self.weekDay)")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
@@ -169,8 +177,36 @@ class CustomControllers: UIViewController {
         self.arrFavourites.removeAll()
         self.tableView.reloadData()
         self.calApi()
+        
+        if sender.selectedSegmentIndex == 0 {
+            self.btnWeekDays.isHidden = true
+            self.btnWeekDaysHeight.constant = 0
+        } else {
+            self.btnWeekDays.isHidden = false
+            self.btnWeekDaysHeight.constant = 56
+        }
     }
     
+    @IBAction func btnWeekDaysAction(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sun
+        } else if sender.selectedSegmentIndex == 1 {
+            self.weekDay = Utilities.WeekDays.Mon
+        }  else if sender.selectedSegmentIndex == 2 {
+            self.weekDay = Utilities.WeekDays.Tue
+        }  else if sender.selectedSegmentIndex == 3 {
+            self.weekDay = Utilities.WeekDays.Wed
+        }  else if sender.selectedSegmentIndex == 4 {
+            self.weekDay = Utilities.WeekDays.Thu
+        }  else if sender.selectedSegmentIndex == 5 {
+            self.weekDay = Utilities.WeekDays.Fri
+        }  else if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sat
+        }
+        
+        self.getCustomNutritions()
+    }
 }
 
 extension CustomControllers : UITableViewDelegate, UITableViewDataSource {

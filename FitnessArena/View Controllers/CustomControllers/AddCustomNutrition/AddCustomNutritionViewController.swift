@@ -24,10 +24,16 @@ class AddCustomNutritionViewController: UIViewController {
     
     var arrCategory = ["Breakfast", "A.M Snack", "Lunch", "P.M. Snack", "Dinner"]
     
+    var weekDay : Utilities.WeekDays = .Sun
+    
     let ref = Database.database().reference()
     
     var arrCustoms : [Customs] = []
     var favourite = Favourite()
+    
+    var isEditModeOn : Bool = false
+    
+    @IBOutlet weak var btnWeekDays: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +70,7 @@ class AddCustomNutritionViewController: UIViewController {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
         if userID != nil {
-            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions")
+            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(weekDay)")
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
@@ -87,10 +93,28 @@ class AddCustomNutritionViewController: UIViewController {
         self.tableView.reloadData()
     }
     
+    func updateCustomNutrition() {
+        let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
+        let timestamp = Int(NSDate().timeIntervalSince1970)
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(weekDay)").child("\(timestamp)").setValue([
+            "id": "\(timestamp)",
+            "foodName": self.FoodNameText.text!,
+            "foodCalories": self.CaloriesText.text!,
+            "foodCategory": self.CategoryText.selectedItem!,
+            "weekDay": "\(self.weekDay)"
+        ])
+        
+        self.giveAlertToUser(message: "Successfully added to customs.")
+        self.getCustomNutritions()
+        self.isEditModeOn = false
+        self.FoodNameText.text = ""
+        self.CaloriesText.text = ""
+    }
+    
     func addToCustomNutrition() {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         let timestamp = Int(NSDate().timeIntervalSince1970)
-        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(timestamp)").setValue([
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(weekDay)").child("\(timestamp)").setValue([
             "id": "\(timestamp)",
             "foodName": self.FoodNameText.text!,
             "foodCalories": self.CaloriesText.text!,
@@ -105,7 +129,7 @@ class AddCustomNutritionViewController: UIViewController {
     
     func removeCustomNutrition(indexId: String?) {
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
-        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(indexId ?? "")").removeValue()
+        self.ref.child("users").child("\(userID ?? "")").child("customs").child("Nutritions").child("\(weekDay)").child("\(indexId ?? "")").removeValue()
         let alert = UIAlertController(title: "Success", message: "Successfully removed from favourites.", preferredStyle: UIAlertController.Style.alert)
         
         // add the actions (buttons)
@@ -119,9 +143,36 @@ class AddCustomNutritionViewController: UIViewController {
     
     @IBAction func submitButtonTapped(_ sender: Any) {
         if self.CategoryText.selectedItem?.count != 0 && self.CaloriesText.text?.trimmingCharacters(in: .whitespaces) != "" && self.FoodNameText.text?.trimmingCharacters(in: .whitespaces) != "" {
-            self.addToCustomNutrition()
+            
+            if self.isEditModeOn {
+                //UPDATE DATA
+                self.updateCustomNutrition()
+            } else {
+                //ADD NEW DATA
+                self.addToCustomNutrition()
+            }
+        }
+    }
+    
+    @IBAction func btnWeekDaysAction(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sun
+        } else if sender.selectedSegmentIndex == 1 {
+            self.weekDay = Utilities.WeekDays.Mon
+        }  else if sender.selectedSegmentIndex == 2 {
+            self.weekDay = Utilities.WeekDays.Tue
+        }  else if sender.selectedSegmentIndex == 3 {
+            self.weekDay = Utilities.WeekDays.Wed
+        }  else if sender.selectedSegmentIndex == 4 {
+            self.weekDay = Utilities.WeekDays.Thu
+        }  else if sender.selectedSegmentIndex == 5 {
+            self.weekDay = Utilities.WeekDays.Fri
+        }  else if sender.selectedSegmentIndex == 0 {
+            self.weekDay = Utilities.WeekDays.Sat
         }
         
+        self.getCustomNutritions()
     }
     
 }

@@ -41,7 +41,7 @@ class AddCustomWeightsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.getCustomWeights(weekDay: self.weekDay)
+        self.getCustomWeights()
     }
     
     class func identifier() -> AddCustomWeightsViewController {
@@ -58,7 +58,7 @@ class AddCustomWeightsViewController: UIViewController {
         self.tableView.register(addCustomWeightsTableViewCell, forCellReuseIdentifier: "AddCustomWeightsTableViewCell")
     }
     
-    func getCustomWeights(weekDay: Utilities.WeekDays) {
+    func getCustomWeights() {
         self.arrCustoms.removeAll()
         let userID = UserDefaults.standard.value(forKey: "loggedInUserID")
         
@@ -98,7 +98,7 @@ class AddCustomWeightsViewController: UIViewController {
             "subCategory": self.favourite.subCategory!,
             "weights": self.weightsText.text!,
             "repititions": self.repititionsText.text!,
-            
+            "weekDay": "\(self.weekDay)"
         ])
         
         let param = [AnalyticsParameterScreenName: "AddCustomWeightsViewController", "user_id" : "\(userID ?? "")", "Weight_Category": "\(self.favourite.category!)", "Weight_SubCategory": "\(self.favourite.subCategory!)"]
@@ -106,7 +106,7 @@ class AddCustomWeightsViewController: UIViewController {
         Analytics.logEvent("Custom Weight Updated", parameters: param)
         
         self.giveAlertToUser(message: "Successfully updated.")
-        self.getCustomWeights(weekDay: self.weekDay)
+        self.getCustomWeights()
         self.isEditModeOn = false
         self.weightsText.text = ""
         self.repititionsText.text = ""
@@ -133,7 +133,7 @@ class AddCustomWeightsViewController: UIViewController {
         Analytics.logEvent("Custom Weight Added", parameters: param)
         
         self.giveAlertToUser(message: "Successfully added to customs.")
-        self.getCustomWeights(weekDay: self.weekDay)
+        self.getCustomWeights()
     }
     
     func removeCustomWeights(indexId: Int) {
@@ -146,7 +146,7 @@ class AddCustomWeightsViewController: UIViewController {
             // add the actions (buttons)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
                 // do something like...
-                self.getCustomWeights(weekDay: self.weekDay)
+                self.getCustomWeights()
             }))
             // show the alert
             self.present(alert, animated: true, completion: nil)
@@ -186,7 +186,7 @@ class AddCustomWeightsViewController: UIViewController {
             self.weekDay = Utilities.WeekDays.Sat
         }
         
-        self.getCustomWeights(weekDay: self.weekDay)
+        self.getCustomWeights()
     }
     
 }
