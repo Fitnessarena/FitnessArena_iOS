@@ -63,16 +63,24 @@ class CustomControllers: UIViewController {
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
+                var tempArr : [Customs] = []
+                
                 if snapshot.childrenCount > 0 {
                     for child in snapshot.children {
                         let snap = child as! DataSnapshot
                         let placeDict = snap.value as! [String: Any]
                         
                         if let customs: Customs = Mapper<Customs>().map(JSON: placeDict) {
-                            self.arrCustoms.append(customs)
+                            tempArr.append(customs)
                         }
                     }
-                    self.arrCustoms = self.arrCustoms.reversed()
+                    
+                    //SORT DATA
+                    self.arrCustoms = tempArr.sorted {
+                        $0.foodCategory! < $1.foodCategory!
+                    }
+                    
+                    //self.arrCustoms = self.arrCustoms.reversed()
                     self.tableView.reloadData()
                 } else {
                     self.tableView.reloadData()
@@ -93,14 +101,21 @@ class CustomControllers: UIViewController {
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
+                var tempArr : [Favourite] = []
+                
                 if snapshot.childrenCount > 0 {
                     for child in snapshot.children {
                         let snap = child as! DataSnapshot
                         let placeDict = snap.value as! [String: Any]
                         
                         if let favourite: Favourite = Mapper<Favourite>().map(JSON: placeDict) {
-                            self.arrFavourites.append(favourite)
+                            tempArr.append(favourite)
                         }
+                    }
+                    
+                    //SORT DATA
+                    self.arrFavourites = tempArr.sorted {
+                        $0.subCategory! < $1.subCategory!
                     }
                     self.tableView.reloadData()
                 } else {

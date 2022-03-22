@@ -58,6 +58,7 @@ class FavouritesViewController: UIViewController {
                         }
                     }
                     
+                    //SORT DATA
                     self.arrFavourites = tempArr.sorted {
                         $0.subCategory! < $1.subCategory!
                     }

@@ -91,16 +91,24 @@ class AddCustomNutritionViewController: UIViewController {
             
             placeRef.observeSingleEvent(of: .value, with: { snapshot in
                 
+                var tempArr : [Customs] = []
+                
                 if snapshot.childrenCount > 0 {
                     for child in snapshot.children {
                         let snap = child as! DataSnapshot
                         let placeDict = snap.value as! [String: Any]
                         
                         if let customs: Customs = Mapper<Customs>().map(JSON: placeDict) {
-                            self.arrCustoms.append(customs)
+                            tempArr.append(customs)
                         }
                     }
-                    self.arrCustoms = self.arrCustoms.reversed()
+                    //self.arrCustoms = self.arrCustoms.reversed()
+                    
+                    //SORT DATA
+                    self.arrCustoms = tempArr.sorted {
+                        $0.foodCategory! < $1.foodCategory!
+                    }
+                    
                     self.tableView.reloadData()
                 } else {
                     self.tableView.reloadData()
