@@ -28,27 +28,29 @@ class WeightsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        buttonTxt.titleLabel?.font = UIFont(name: "...", size: 38 )
-        chestBtn.titleLabel?.font = UIFont(name: "...", size: 38)
-        legsBtn.titleLabel?.font = UIFont(name: "...", size: 38)
-        shouldersBtn.titleLabel?.font = UIFont(name: "...", size: 38)
-        backBtn.titleLabel?.font = UIFont(name: "...", size: 38)
-        absBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+        
         self.backButton.setTitle("", for: .normal)
         
-        buttonTxt.frame.size.height = 50
-        chestBtn.frame.size.height = 50
-        legsBtn.frame.size.height = 50
-        shouldersBtn.frame.size.height = 50
-        backBtn.frame.size.height = 50
-        absBtn.frame.size.height = 50
-        
-        buttonTxt.layer.cornerRadius = buttonTxt.frame.height / 2
-        chestBtn.layer.cornerRadius = buttonTxt.frame.height / 2
-        legsBtn.layer.cornerRadius = buttonTxt.frame.height / 2
-        shouldersBtn.layer.cornerRadius = buttonTxt.frame.height / 2
-        backBtn.layer.cornerRadius = buttonTxt.frame.height / 2
-        absBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+//        buttonTxt.titleLabel?.font = UIFont(name: "...", size: 38 )
+//        chestBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+//        legsBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+//        shouldersBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+//        backBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+//        absBtn.titleLabel?.font = UIFont(name: "...", size: 38)
+//
+//        buttonTxt.frame.size.height = 50
+//        chestBtn.frame.size.height = 50
+//        legsBtn.frame.size.height = 50
+//        shouldersBtn.frame.size.height = 50
+//        backBtn.frame.size.height = 50
+//        absBtn.frame.size.height = 50
+//
+//        buttonTxt.layer.cornerRadius = buttonTxt.frame.height / 2
+//        chestBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+//        legsBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+//        shouldersBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+//        backBtn.layer.cornerRadius = buttonTxt.frame.height / 2
+//        absBtn.layer.cornerRadius = buttonTxt.frame.height / 2
     }
     
     class func identifier() -> WeightsViewController {

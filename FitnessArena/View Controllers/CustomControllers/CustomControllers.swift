@@ -165,6 +165,7 @@ class CustomControllers: UIViewController {
             self.push(vc: vc)
         case 1:
             let vc = AddCustomNutritionViewController.identifier()
+            vc.weekDay = self.weekDay
             self.push(vc: vc)
         default:
             break

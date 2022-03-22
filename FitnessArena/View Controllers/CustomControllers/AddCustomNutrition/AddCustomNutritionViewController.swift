@@ -45,6 +45,23 @@ class AddCustomNutritionViewController: UIViewController {
         CategoryText.isOptionalDropDown = false
         CategoryText.itemList = self.arrCategory
         CategoryText.selectedItem = self.arrCategory[0]
+        
+        if self.weekDay == .Sun {
+            self.btnWeekDays.selectedSegmentIndex = 0
+        } else if self.weekDay == .Mon {
+            self.btnWeekDays.selectedSegmentIndex = 1
+        } else if self.weekDay == .Tue {
+            self.btnWeekDays.selectedSegmentIndex = 2
+        } else if self.weekDay == .Wed {
+            self.btnWeekDays.selectedSegmentIndex = 3
+        } else if self.weekDay == .Thu {
+            self.btnWeekDays.selectedSegmentIndex = 4
+        } else if self.weekDay == .Fri {
+            self.btnWeekDays.selectedSegmentIndex = 5
+        } else if self.weekDay == .Sat {
+            self.btnWeekDays.selectedSegmentIndex = 6
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

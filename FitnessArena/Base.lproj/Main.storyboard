@@ -358,72 +358,72 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-yb-SBT">
                                 <rect key="frame" x="24" y="220" width="366" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixP-cD-pLE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixP-cD-pLE">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.31764706970000001" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Arms">
+                                        <buttonConfiguration key="configuration" style="plain" title="Arms" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="armsButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="5t8-pC-EM1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyT-r5-79h" userLabel="Chest">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyT-r5-79h" userLabel="Chest">
                                         <rect key="frame" x="0.0" y="70" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Chest">
+                                        <buttonConfiguration key="configuration" style="plain" title="Chest" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="chestButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="s44-i6-t5r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-1s-pRk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-1s-pRk">
                                         <rect key="frame" x="0.0" y="140" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Legs">
+                                        <buttonConfiguration key="configuration" style="plain" title="Legs" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="legsButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="3qE-nK-osL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgL-dD-Snh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgL-dD-Snh">
                                         <rect key="frame" x="0.0" y="210" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Shoulders">
+                                        <buttonConfiguration key="configuration" style="plain" title="Shoulders" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="shouldersButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="3ZJ-Av-2Mu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-Vd-C2S">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-Vd-C2S">
                                         <rect key="frame" x="0.0" y="280" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Back">
+                                        <buttonConfiguration key="configuration" style="plain" title="Back" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="1Lt-UT-NJg" eventType="touchUpInside" id="Hoh-1N-TKo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-L3-mon">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-L3-mon">
                                         <rect key="frame" x="0.0" y="350" width="366" height="50"/>
                                         <color key="backgroundColor" red="0.32156863810000003" green="0.70588237050000002" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.96862745289999996" green="0.88235294819999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Abdominals">
+                                        <buttonConfiguration key="configuration" style="plain" title="Abdominals" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
