@@ -13,7 +13,7 @@ import GoogleMobileAds
 import IQKeyboardManagerSwift
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 20.0
+        
+        configureNotification(application: application)
         
         return true
     }
@@ -42,6 +44,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+    }
+           
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        defer { completionHandler() }
+        guard response.actionIdentifier == UNNotificationDefaultActionIdentifier else { return }
+        // perform action here
+        
+    }
+    
+    // this method enables user permission
+    func configureNotification(application: UIApplication) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge, .sound, .alert]) { granted, _ in
+            guard granted else { return }
+            DispatchQueue.main.async {
+                application.registerForRemoteNotifications()
+            }
+        }
+    }
 
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
+        print("device token \(token)")
+    }
 }
 
