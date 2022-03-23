@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     func setAdBanner() {
         
         let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-8791299504524224/2274531703",
+        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-3940256099942544/4411468910",
                                request: request,
                                completionHandler: { [self] ad, error in
             if let error = error {

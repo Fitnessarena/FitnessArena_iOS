@@ -188,7 +188,7 @@ class ArmsDetailViewController: UIViewController {
 //        if userID != nil {
 //            let placeRef = self.ref.child("users").child("\(userID ?? "")").child("customs").child("Weights")
 //
-//            placeRef.observeSingleEvent(of: .value, with: { snapshot in
+//            placeRef.observeSingleEvent(of: .value, with: { snapshot in#imageLiteral(resourceName: "simulator_screenshot_A19908B7-3F7E-4D99-964F-E90825EE0DD3.png")
 //
 //                if snapshot.childrenCount > 0 {
 //                    for child in snapshot.children {
