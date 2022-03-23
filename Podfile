@@ -12,7 +12,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-
+pod 'Firebase/Messaging'
 # Object Mapping
 pod 'ObjectMapper'
 

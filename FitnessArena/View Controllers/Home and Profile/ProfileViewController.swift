@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-
+import UserNotifications
 
 class ProfileViewController: UIViewController {
     
@@ -19,8 +19,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var btnNotification: UISwitch!
     
     let ref = Database.database().reference()
+    
+    let center = UNUserNotificationCenter.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,20 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.backButton.setTitle("", for: .normal)
         self.getUserProfile()
+        
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                print("Yay!")
+            } else {
+                print("D'oh")
+            }
+        }
+        
+        if UserDefaults.standard.valueExists(forKey: "isNotificationEnabled") {
+            if let isNotificationEnabled = UserDefaults.standard.value(forKey: "isNotificationEnabled"), isNotificationEnabled as! Bool {
+                self.btnNotification.isOn = true
+            }
+        }
     }
     
     class func identifier() -> ProfileViewController {
@@ -115,7 +132,44 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    func scheduleNotification() {
+        let center = UNUserNotificationCenter.current()
+
+        let content = UNMutableNotificationContent()
+        content.title = "Add your routine"
+        content.body = "Come back and add your today's routine."
+        content.categoryIdentifier = "daily_reminder"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = UNNotificationSound.default
+        content.badge = 1
+//        var dateComponents = DateComponents()
+//        dateComponents.hour = 4
+//        dateComponents.minute = 11
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        var dateComponents = DateComponents()
+            dateComponents.hour = 10
+            dateComponents.minute = 30
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
+    }
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         self.popVC()
+    }
+    
+    @IBAction func btnNotificationAction(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            UserDefaults.standard.set(true, forKey: "isNotificationEnabled")
+            self.scheduleNotification()
+        } else {
+            //REMOVE NOTIFICATION
+            UserDefaults.standard.set(false, forKey: "isNotificationEnabled")
+            UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        }
+        
     }
 }

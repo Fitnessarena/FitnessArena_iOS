@@ -1542,7 +1542,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fw7-eb-Zhv">
-                                <rect key="frame" x="20" y="148" width="374" height="328"/>
+                                <rect key="frame" x="20" y="148" width="374" height="386"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-vp-AxS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
@@ -1601,6 +1601,36 @@
                                             <action selector="logOutButtonTapped:" destination="dt7-PE-Bbh" eventType="touchUpInside" id="S3Z-1F-b4C"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDT-Ah-q0F">
+                                        <rect key="frame" x="0.0" y="348" width="374" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on notification reminders?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-ob-zKY">
+                                                <rect key="frame" x="0.0" y="0.0" width="306" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="76Q-Dl-edf">
+                                                <rect key="frame" x="310" y="0.0" width="66" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="Q4p-dF-RXt"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="btnNotificationAction:" destination="dt7-PE-Bbh" eventType="valueChanged" id="TqP-l0-5iu"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="76Q-Dl-edf" secondAttribute="trailing" id="9Iu-pR-NBy"/>
+                                            <constraint firstItem="76Q-Dl-edf" firstAttribute="leading" secondItem="QVb-ob-zKY" secondAttribute="trailing" constant="4" id="PSn-Zu-LCo"/>
+                                            <constraint firstItem="QVb-ob-zKY" firstAttribute="leading" secondItem="aDT-Ah-q0F" secondAttribute="leading" id="SC2-lK-IJh"/>
+                                            <constraint firstAttribute="bottom" secondItem="QVb-ob-zKY" secondAttribute="bottom" id="TLW-wd-Fv3"/>
+                                            <constraint firstAttribute="bottom" secondItem="76Q-Dl-edf" secondAttribute="bottom" id="cnk-Mm-TOP"/>
+                                            <constraint firstItem="76Q-Dl-edf" firstAttribute="top" secondItem="aDT-Ah-q0F" secondAttribute="top" id="djx-1f-lRb"/>
+                                            <constraint firstItem="QVb-ob-zKY" firstAttribute="top" secondItem="aDT-Ah-q0F" secondAttribute="top" id="waU-5F-g63"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -1618,6 +1648,7 @@
                     <navigationItem key="navigationItem" id="HnF-UZ-HdY"/>
                     <connections>
                         <outlet property="backButton" destination="H4R-C9-1dO" id="V9S-tm-0xW"/>
+                        <outlet property="btnNotification" destination="76Q-Dl-edf" id="Pxk-5p-Mpz"/>
                         <outlet property="emailTextField" destination="SO8-wh-1la" id="u2J-LE-s8r"/>
                         <outlet property="firstNameTextField" destination="H0j-vp-AxS" id="S5L-J7-FmC"/>
                         <outlet property="lastNameTextField" destination="lFQ-JZ-O4Y" id="nEK-lM-eba"/>
