@@ -142,15 +142,15 @@ class ProfileViewController: UIViewController {
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default
         content.badge = 1
-//        var dateComponents = DateComponents()
-//        dateComponents.hour = 4
-//        dateComponents.minute = 11
-//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        
         var dateComponents = DateComponents()
-            dateComponents.hour = 10
-            dateComponents.minute = 30
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        dateComponents.hour = 10
+        dateComponents.minute = 30
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+//        var dateComponents = DateComponents()
+//            dateComponents.hour = 10
+//            dateComponents.minute = 30
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
