@@ -26,28 +26,6 @@ class BuildingMuscleViewController: UIViewController {
         super.viewDidLoad()
         
         self.backBtn.setTitle("", for: .normal)
-        breakfastBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
-        amSnack.titleLabel?.font = UIFont(name: "...", size: 38 )
-        lunchBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
-        pmSnack.titleLabel?.font = UIFont(name: "...", size: 38 )
-        dinnerBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
-        proteinBtn.titleLabel?.font = UIFont(name: "...", size: 38 )
-        preWorkout.titleLabel?.font = UIFont(name: "...", size: 38 )
-        postWorkout.titleLabel?.font = UIFont(name: "...", size: 38 )
-        preBedSnack.titleLabel?.font = UIFont(name: "...", size: 38 )
-        
-        
-        breakfastBtn.layer.cornerRadius = 20.0
-        amSnack.layer.cornerRadius = 20.0
-        lunchBtn.layer.cornerRadius = 20.0
-        pmSnack.layer.cornerRadius = 20.0
-        dinnerBtn.layer.cornerRadius = 20.0
-        proteinBtn.layer.cornerRadius = 20.0
-        preWorkout.layer.cornerRadius = 20.0
-        postWorkout.layer.cornerRadius = 20.0
-        preBedSnack.layer.cornerRadius = 20.0
-
-        
         
         // Do any additional setup after loading the view.
     }
