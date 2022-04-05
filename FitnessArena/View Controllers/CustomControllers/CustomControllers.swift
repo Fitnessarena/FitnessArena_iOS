@@ -273,13 +273,58 @@ extension CustomControllers : UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            if self.segmentedControl.selectedSegmentIndex == 0 {
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            if self.segmentedControl.selectedSegmentIndex == 0 {
+//                self.removeCustomWeights(indexId: self.arrFavourites[indexPath.row].id)
+//            } else {
+//                self.removeCustomNutrition(indexId: self.arrCustoms[indexPath.row].id)
+//            }
+//        }
+//    }
+    
+    func tableView(_ tableView: UITableView,
+                       trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        if self.segmentedControl.selectedSegmentIndex == 0 {
+            
+            // Write action code for the trash
+            let TrashAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                print("Update action ...")
                 self.removeCustomWeights(indexId: self.arrFavourites[indexPath.row].id)
-            } else {
+                success(true)
+            })
+            TrashAction.backgroundColor = .red
+            
+            return UISwipeActionsConfiguration(actions: [TrashAction])
+        } else {
+            
+            // Write action code for the trash
+            let TrashAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                print("Update action ...")
                 self.removeCustomNutrition(indexId: self.arrCustoms[indexPath.row].id)
-            }
+                success(true)
+            })
+            TrashAction.backgroundColor = .red
+            
+            // Write action code for the Flag
+            let ShareAction = UIContextualAction(style: .normal, title:  "Share", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                print("Share action ...")
+                
+                let text = "I consumed \(self.arrCustoms[indexPath.row].foodName ?? "") for \(self.arrCustoms[indexPath.row].foodCategory ?? ""). It was of \(self.arrCustoms[indexPath.row].foodCalories ?? "") calories."
+                
+                let myWebsite = NSURL(string:"https://apps.apple.com/tt/app/fitness-arena/id1607786727")
+                
+                let shareAll = [text , myWebsite!] as [Any]
+                let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
+                activityViewController.popoverPresentationController?.sourceView = self.view
+                self.present(activityViewController, animated: true, completion: nil)
+                
+                success(true)
+            })
+            ShareAction.backgroundColor = .brown
+            
+            return UISwipeActionsConfiguration(actions: [TrashAction,ShareAction])
         }
     }
 }
