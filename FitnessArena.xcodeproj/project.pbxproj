@@ -55,6 +55,7 @@
 		BA8BBE4527BE478B00BE9083 /* AddCustomWeightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */; };
 		BA8BBE4727BE547600BE9083 /* Customs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4627BE547500BE9083 /* Customs.swift */; };
 		BA8BBE4927BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */; };
+		BAF6C54427F4212900ACFD59 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF6C54227F4211E00ACFD59 /* GoogleMobileAds.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,8 @@
 		BA8BBE4427BE478B00BE9083 /* AddCustomWeightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWeightsViewController.swift; sourceTree = "<group>"; };
 		BA8BBE4627BE547500BE9083 /* Customs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customs.swift; sourceTree = "<group>"; };
 		BA8BBE4827BE657D00BE9083 /* AddCustomWeightsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWeightsTableViewCell.swift; sourceTree = "<group>"; };
+		BAF6C51927F41BF600ACFD59 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		BAF6C54227F4211E00ACFD59 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551EE4E2B57CD7B4403151CE /* Pods_FitnessArena.framework in Frameworks */,
+				BAF6C54427F4212900ACFD59 /* GoogleMobileAds.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +176,8 @@
 				41BDBC6B2768126500E23F78 /* Utilities.swift */,
 				41BDBC4A2768084000E23F78 /* AppDelegate.swift */,
 				41BDBC4C2768084000E23F78 /* SceneDelegate.swift */,
+				BA35A47627AA1EED0014F5DC /* Extensions */,
+				BA81D65927FB9FB500A8C757 /* Models */,
 				41BDBC5E27680A2300E23F78 /* View Controllers */,
 				41BDBC502768084000E23F78 /* Main.storyboard */,
 				41BDBC6927680D6000E23F78 /* GoogleService-Info.plist */,
@@ -187,7 +193,6 @@
 			children = (
 				BA8BBE4127BE19EC00BE9083 /* CustomControllers */,
 				BA35A47B27AA81A20014F5DC /* Favourite */,
-				BA35A47627AA1EED0014F5DC /* Extensions */,
 				BA35A47127AA12DC0014F5DC /* NavigationControllers */,
 				41BDBCA52768660F00E23F78 /* Home and Profile */,
 				41BDBC6F276865C300E23F78 /* Cardio */,
@@ -357,10 +362,17 @@
 			path = AddCustomWeightsTableViewCell;
 			sourceTree = "<group>";
 		};
-		BA8BBE4127BE19EC00BE9083 /* CustomControllers */ = {
+		BA81D65927FB9FB500A8C757 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BA8BBE4627BE547500BE9083 /* Customs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA8BBE4127BE19EC00BE9083 /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
 				BA8BBE4227BE1A1D00BE9083 /* CustomControllers.swift */,
 				BA211CE427C213A6005A1281 /* AddCustomWeights */,
 				BA211CE527C213B8005A1281 /* AddCustomNutrition */,
@@ -371,6 +383,8 @@
 		DD9A767ADF5166E331DFE3C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAF6C54227F4211E00ACFD59 /* GoogleMobileAds.xcframework */,
+				BAF6C51927F41BF600ACFD59 /* GoogleMobileAds.xcframework */,
 				9F740273C4D1253990B8E32B /* Pods_FitnessArena.framework */,
 			);
 			name = Frameworks;
@@ -703,7 +717,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = FitnessArena/FitnessArena.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4NB8K5E4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessArena/Info.plist;
@@ -717,7 +731,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FitnessArena.FitnessArena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -735,7 +749,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = FitnessArena/FitnessArena.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4NB8K5E4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessArena/Info.plist;
@@ -749,7 +763,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FitnessArena.FitnessArena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
