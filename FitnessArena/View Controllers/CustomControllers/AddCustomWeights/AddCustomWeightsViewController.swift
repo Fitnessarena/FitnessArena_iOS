@@ -195,12 +195,6 @@ class AddCustomWeightsViewController: UIViewController {
 
 extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataSource {
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            self.removeCustomWeights(indexId: indexPath.row)
-//        }
-//    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrCustoms.count
     }

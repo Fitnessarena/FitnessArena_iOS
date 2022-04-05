@@ -214,12 +214,6 @@ class AddCustomNutritionViewController: UIViewController {
 
 extension AddCustomNutritionViewController : UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            self.removeCustomNutrition(indexId: self.arrCustoms[indexPath.row].id)
-        }
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrCustoms.count
     }
