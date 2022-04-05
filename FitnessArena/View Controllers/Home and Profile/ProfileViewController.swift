@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import UserNotifications
+import Stripe
 
 class ProfileViewController: UIViewController {
     
@@ -20,10 +21,19 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var btnNotification: UISwitch!
+    @IBOutlet weak var btnRemoveAdvertisements: UIButton!
     
     let ref = Database.database().reference()
     
     let center = UNUserNotificationCenter.current()
+    
+//    let rzpKeyId = "rzp_test_itVjkb02ZaYVbm"
+//    let rzpKeySecret = "BYVZ4s5kWWbhxf0mSZl2Z0gb"
+    
+    private var paymentIntentClientSecret: String?
+    
+    private static let backendURL = URL(string: "http://127.0.0.1:4242")!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +55,7 @@ class ProfileViewController: UIViewController {
                 self.btnNotification.isOn = true
             }
         }
+        
     }
     
     class func identifier() -> ProfileViewController {
@@ -132,6 +143,15 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    @IBAction func btnRemoveAdvertisementsAction(_ sender: Any) {
+        let config = STPPaymentConfiguration()
+        config.requiredBillingAddressFields = .name
+        let viewController = STPAddCardViewController(configuration: config, theme: STPTheme.default())
+        viewController.delegate = self
+        let navigationController = UINavigationController(rootViewController: viewController)
+        present(navigationController, animated: true, completion: nil)
+    }
+    
     func scheduleNotification() {
         let center = UNUserNotificationCenter.current()
 
@@ -171,5 +191,15 @@ class ProfileViewController: UIViewController {
             UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         }
         
+    }
+}
+
+extension ProfileViewController : STPAddCardViewControllerDelegate {
+    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
+        print(addCardViewController)
+    }
+    
+    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreatePaymentMethod paymentMethod: STPPaymentMethod, completion: @escaping STPErrorBlock) {
+        print(paymentMethod)
     }
 }

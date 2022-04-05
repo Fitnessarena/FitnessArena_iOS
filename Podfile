@@ -21,4 +21,7 @@ pod 'Google-Mobile-Ads-SDK'
 
 pod 'IQKeyboardManagerSwift', '6.5.9'
 pod 'IQDropDownTextField'
+
+#PAYMENT
+pod 'Stripe'
 end

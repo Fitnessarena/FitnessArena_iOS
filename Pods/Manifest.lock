@@ -507,6 +507,20 @@ PODS:
   - nanopb/encode (2.30908.0)
   - ObjectMapper (4.2.0)
   - PromisesObjC (2.0.0)
+  - Stripe (22.1.0):
+    - Stripe/Stripe3DS2 (= 22.1.0)
+    - StripeApplePay (= 22.1.0)
+    - StripeCore (= 22.1.0)
+    - StripeUICore (= 22.1.0)
+  - Stripe/Stripe3DS2 (22.1.0):
+    - StripeApplePay (= 22.1.0)
+    - StripeCore (= 22.1.0)
+    - StripeUICore (= 22.1.0)
+  - StripeApplePay (22.1.0):
+    - StripeCore (= 22.1.0)
+  - StripeCore (22.1.0)
+  - StripeUICore (22.1.0):
+    - StripeCore (= 22.1.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -519,6 +533,7 @@ DEPENDENCIES:
   - IQDropDownTextField
   - IQKeyboardManagerSwift (= 6.5.9)
   - ObjectMapper
+  - Stripe
 
 SPEC REPOS:
   trunk:
@@ -547,6 +562,10 @@ SPEC REPOS:
     - nanopb
     - ObjectMapper
     - PromisesObjC
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -574,7 +593,11 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  Stripe: 151086f5a0ad9cbc03190fdb2f9b92f0ec6df08b
+  StripeApplePay: 3840077c849a760c321734ef004eaa9062ff1b45
+  StripeCore: 1ece9b1aa1882380437a7a980ed1fa914b5b72f4
+  StripeUICore: 38cbdf5e4d8a279af2426e9a57b179294dca8a40
 
-PODFILE CHECKSUM: e213b8b5628050070851620113968095fea8785c
+PODFILE CHECKSUM: 9a0b13396d3128cf753e6315de2f2fff804cf0ad
 
 COCOAPODS: 1.11.3
