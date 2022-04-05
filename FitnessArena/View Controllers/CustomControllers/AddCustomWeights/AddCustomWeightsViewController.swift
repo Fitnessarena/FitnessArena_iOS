@@ -249,24 +249,20 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
         let ShareAction = UIContextualAction(style: .normal, title:  "Share", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
             print("Share action ...")
             
-            let text = "Checkout my achievement. I completed \(self.arrCustoms[indexPath.row].repititions ?? "") reps of \(self.arrCustoms[indexPath.row].weights ?? "") kg(s)"
-            let textShare = [ text ]
-            let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+            let text = "Checkout my achievement for \(self.favourite.title ?? ""). I completed \(self.arrCustoms[indexPath.row].repititions ?? "") reps of \(self.arrCustoms[indexPath.row].weights ?? "") kg(s)"
+            let image = UIImage(named: "\(self.favourite.imageName ?? "AppIcon")")
+            let myWebsite = NSURL(string:"https://apps.apple.com/tt/app/fitness-arena/id1607786727")
+            let shareAll = [text , image! , myWebsite!] as [Any]
+            let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
+            
             success(true)
         })
-        ShareAction.backgroundColor = .cyan
+        ShareAction.backgroundColor = .brown
         
         return UISwipeActionsConfiguration(actions: [TrashAction,EditAction,ShareAction])
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let text = "Checkout my achievement. I completed \(self.arrCustoms[indexPath.row].repititions ?? "") reps of \(self.arrCustoms[indexPath.row].weights ?? "") kg(s)"
-        let textShare = [ text ]
-        let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
-        self.present(activityViewController, animated: true, completion: nil)
-    }
 }
 
