@@ -224,29 +224,49 @@ extension AddCustomWeightsViewController : UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView,
                        trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-        {
-            // Write action code for the trash
-            let TrashAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-                print("Update action ...")
-                self.removeCustomWeights(indexId: indexPath.row)
-                success(true)
-            })
-            TrashAction.backgroundColor = .red
-
-            // Write action code for the Flag
-            let FlagAction = UIContextualAction(style: .normal, title:  "Edit", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-                print("Update action ...")
-                
-                self.weightsText.text = self.arrCustoms[indexPath.row].weights
-                self.repititionsText.text = self.arrCustoms[indexPath.row].repititions
-                self.updateCustoms = self.arrCustoms[indexPath.row]
-                self.isEditModeOn = true
-                success(true)
-            })
-            FlagAction.backgroundColor = .blue
-
-
-            return UISwipeActionsConfiguration(actions: [TrashAction,FlagAction])
-        }
+    {
+        // Write action code for the trash
+        let TrashAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            print("Update action ...")
+            self.removeCustomWeights(indexId: indexPath.row)
+            success(true)
+        })
+        TrashAction.backgroundColor = .red
+        
+        // Write action code for the Flag
+        let EditAction = UIContextualAction(style: .normal, title:  "Edit", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            print("Update action ...")
+            
+            self.weightsText.text = self.arrCustoms[indexPath.row].weights
+            self.repititionsText.text = self.arrCustoms[indexPath.row].repititions
+            self.updateCustoms = self.arrCustoms[indexPath.row]
+            self.isEditModeOn = true
+            success(true)
+        })
+        EditAction.backgroundColor = .blue
+        
+        // Write action code for the Flag
+        let ShareAction = UIContextualAction(style: .normal, title:  "Share", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            print("Share action ...")
+            
+            let text = "Checkout my achievement. I completed \(self.arrCustoms[indexPath.row].repititions ?? "") reps of \(self.arrCustoms[indexPath.row].weights ?? "") kg(s)"
+            let textShare = [ text ]
+            let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
+            success(true)
+        })
+        ShareAction.backgroundColor = .cyan
+        
+        return UISwipeActionsConfiguration(actions: [TrashAction,EditAction,ShareAction])
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let text = "Checkout my achievement. I completed \(self.arrCustoms[indexPath.row].repititions ?? "") reps of \(self.arrCustoms[indexPath.row].weights ?? "") kg(s)"
+        let textShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
 }
 
