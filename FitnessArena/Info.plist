@@ -189,7 +189,7 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To capture image for profile picture.</string>
 </dict>
 </plist>
